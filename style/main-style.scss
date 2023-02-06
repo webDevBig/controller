@@ -1,0 +1,14 @@
+$main-bg-color:#141414;
+
+
+
+.controller
+{
+    width: 1180px;
+    height: 820px;
+    background-color: $main-bg-color;
+    border-radius: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

@@ -1,0 +1,18 @@
+$nav-bg-color:#1E1E20;
+
+.nav-bar {
+    width: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgba($nav-bg-color,0.3);
+    backdrop-filter: blur(128px);
+    border-radius: 24px 0 0 24px;
+
+    .nav-tabs {
+        width: 100%;
+        list-style-type: none;
+        padding: 0;
+    }
+}
