@@ -1,0 +1,74 @@
+.nav-tabs {
+    li {
+
+        width: 100%;
+        height: 56px;
+        margin: 12px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            img {
+                color: red;
+            }
+        }
+
+        &.active {
+
+            >a,
+            >a:hover,
+            >a:focus {
+                color: #555;
+                cursor: default;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-bottom-color: transparent;
+            }
+        }
+    }
+}
+
+
+
+
+.monitor
+{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    -webkit-mask: url(../../../img/vuesax/linear/monitor.svg) no-repeat center;
+    mask: url(../main-style.css.map) no-repeat center;
+}
+
+
+
+
+
+
+
+
+.tab-content {
+    float: left;
+    width: 100%;
+
+    >.tab-pane {
+        display: none;
+
+        &.active {
+            display: block;
+            padding: 2.5% 3.5%;
+            background-color: #efefef;
+        }
+    }
+
+    >.active {
+        display: block;
+    }
+}
