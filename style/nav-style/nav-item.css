@@ -18,8 +18,8 @@
   width: 24px;
   height: 24px;
   background-color: #52525A;
-  -webkit-mask: url(../../../img/vuesax/linear/monitor.svg) no-repeat center contain;
-  mask: url(../main-style.css.map) no-repeat center contain;
+  -webkit-mask: url(../../../img/vuesax/linear/monitor.svg) no-repeat center;
+  mask: url(../main-style.css.map) no-repeat center;
 }
 
 .tab-content {
