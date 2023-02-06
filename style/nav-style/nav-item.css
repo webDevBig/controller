@@ -7,19 +7,36 @@
   justify-content: center;
 }
 .nav-tabs li a {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.monitor {
   width: 24px;
   height: 24px;
   background-color: #52525A;
-  -webkit-mask: url(../../../img/vuesax/linear/monitor.svg) no-repeat center;
-  mask: url(../main-style.css.map) no-repeat center;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+  font-size: 14px;
+}
+.nav-tabs li a.tab1 {
+  -webkit-mask: url(../../img/menu-icons/element-icon.svg) no-repeat center;
+  mask: url(../../img/menu-icons/element-icon.svg) no-repeat center;
+}
+.nav-tabs li a.tab2 {
+  -webkit-mask: url(../../img/menu-icons/monitor-icon.svg) no-repeat center;
+  mask: url(../../img/menu-icons/monitor-icon.svg) no-repeat center;
+}
+.nav-tabs li a.tab3 {
+  -webkit-mask: url(../../img/menu-icons/monitor-icon.svg) no-repeat center;
+  mask: url(../../img/menu-icons/monitor-icon.svg) no-repeat center;
+}
+.nav-tabs li a.tab4 {
+  -webkit-mask: url(../../img/menu-icons/climmate-icon.svg) no-repeat center;
+  mask: url(../../img/menu-icons/climmate-icon.svg) no-repeat center;
+}
+.nav-tabs li a.tab5 {
+  -webkit-mask: url(../../img/menu-icons/setting-icon.svg) no-repeat center;
+  mask: url(../../img/menu-icons/setting-icon.svg) no-repeat center;
+}
+.nav-tabs li.active a:hover {
+  background-color: #41FFB4;
 }
 
 .tab-content {
