@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style/main-style.css">
-    
+    <link rel="stylesheet" href="style/logo-style.css">
 
     <link rel="stylesheet" href="style/nav-style/nav-main-style.css">
     <link rel="stylesheet" href="style/nav-style/nav-item.css">
@@ -19,13 +19,14 @@
 <body>
     <div class="controller">
         <nav class="nav-bar">
-            <a><img alt="logo" src="img/DCP.svg" /></a>
+            <a class="logo"><img alt="logo" src="img/DCP.svg" /></a>
             <ul class="nav nav-tabs">
-                <li class="active"><a href="#tab-1" class="tab1">M</a></li>
-                <li class=""><a href="#tab-2" class="tab2">Tab 3</a></li>
-                <li class=""><a href="#tab-3" class="tab3">Lighting</a></li>
-                <li class=""><a href="#tab-4" class="tab4">Climate</a></li>
-                <li class=""><a href="#tab-5" class="tab5">Settings</a></li>
+                <li class="active current-menu-item menu-item"><a href="#tab-1" class="tab1">M</a></li>
+                <li class="menu-item"><a href="#tab-2" class="tab2">T</a></li>
+                <li class="menu-item"><a href="#tab-3" class="tab3">L</a></li>
+                <li class="menu-item"><a href="#tab-4" class="tab4">C</a></li>
+                <li class="menu-item"><a href="#tab-5" class="tab5">S</a></li>
+                <div id="marker-menu" class="tab-indicator"></div>
             </ul>
         </nav>
         <section class="row">

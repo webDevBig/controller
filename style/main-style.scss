@@ -1,9 +1,12 @@
 $main-bg-color:#141414;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-
-.controller
-{
+.controller {
     width: 1180px;
     height: 820px;
     background-color: $main-bg-color;
