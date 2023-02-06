@@ -1,3 +1,7 @@
+$icon-color:#52525A;
+$icon-active-color:#41FFB4;
+
+
 .nav-tabs {
     li {
 
@@ -15,22 +19,10 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            img {
-                color: red;
-            }
         }
 
         &.active {
 
-            >a,
-            >a:hover,
-            >a:focus {
-                color: #555;
-                cursor: default;
-                background-color: #fff;
-                border: 1px solid #ddd;
-                border-bottom-color: transparent;
-            }
         }
     }
 }
@@ -38,13 +30,12 @@
 
 
 
-.monitor
-{
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    -webkit-mask: url(../../../img/vuesax/linear/monitor.svg) no-repeat center;
-    mask: url(../main-style.css.map) no-repeat center;
+.monitor {
+    width: 24px;
+    height: 24px;
+    background-color: $icon-color;
+    -webkit-mask: url(../../../img/vuesax/linear/monitor.svg) no-repeat center contain;
+    mask: url(../main-style.css.map) no-repeat center contain;
 }
 
 
