@@ -24,8 +24,8 @@
   mask: url(../../img/menu-icons/monitor-icon.svg) no-repeat center;
 }
 .nav-tabs li a.tab3 {
-  -webkit-mask: url(../../img/menu-icons/monitor-icon.svg) no-repeat center;
-  mask: url(../../img/menu-icons/monitor-icon.svg) no-repeat center;
+  -webkit-mask: url(../../img/menu-icons/lamp-on-icon.svg) no-repeat center;
+  mask: url(../../img/menu-icons/lamp-on-icon.svg) no-repeat center;
 }
 .nav-tabs li a.tab4 {
   -webkit-mask: url(../../img/menu-icons/climmate-icon.svg) no-repeat center;
@@ -35,7 +35,8 @@
   -webkit-mask: url(../../img/menu-icons/setting-icon.svg) no-repeat center;
   mask: url(../../img/menu-icons/setting-icon.svg) no-repeat center;
 }
-.nav-tabs li.active a:hover {
+.nav-tabs li.active a:hover,
+.nav-tabs li.active a {
   background-color: #41FFB4;
 }
 

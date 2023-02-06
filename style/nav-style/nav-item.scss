@@ -25,18 +25,22 @@ $icon-active-color:#41FFB4;
                 -webkit-mask: url(../../img/menu-icons/element-icon.svg) no-repeat center;
                 mask: url(../../img/menu-icons/element-icon.svg) no-repeat center;
             }
+
             &.tab2 {
                 -webkit-mask: url(../../img/menu-icons/monitor-icon.svg) no-repeat center;
                 mask: url(../../img/menu-icons/monitor-icon.svg) no-repeat center;
             }
+
             &.tab3 {
                 -webkit-mask: url(../../img/menu-icons/lamp-on-icon.svg) no-repeat center;
                 mask: url(../../img/menu-icons/lamp-on-icon.svg) no-repeat center;
             }
+
             &.tab4 {
                 -webkit-mask: url(../../img/menu-icons/climmate-icon.svg) no-repeat center;
                 mask: url(../../img/menu-icons/climmate-icon.svg) no-repeat center;
             }
+
             &.tab5 {
                 -webkit-mask: url(../../img/menu-icons/setting-icon.svg) no-repeat center;
                 mask: url(../../img/menu-icons/setting-icon.svg) no-repeat center;
@@ -44,7 +48,9 @@ $icon-active-color:#41FFB4;
         }
 
         &.active {
-            a:hover, a {
+
+            a:hover,
+            a {
                 background-color: $icon-active-color;
             }
         }
