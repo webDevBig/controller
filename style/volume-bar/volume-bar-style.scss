@@ -1,0 +1,92 @@
+$volume-bar-color:#313538;
+$volume-bar-active-color: linear-gradient(270deg, #41FFB4 9.76%, rgba(65, 255, 180, 0) 108.54%);
+$volume-thumb-color:#41FFB4;
+$font-color: white;
+
+$font-size-small: 12px;
+
+.volume-bar-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.volume-bar {
+    .volume {
+        display: flex;
+        align-items: center;
+
+
+        input {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 1em;
+            font-family: Arial, sans-serif;
+        }
+
+        input[type="range"] {
+            -webkit-appearance: none;
+            width: 434px;
+            height: 4px;
+            background: $volume-bar-color;
+            border-radius: 8px;
+            background-image: $volume-bar-active-color;
+            background-size: 70% 100%;
+            background-repeat: no-repeat;
+            margin: 0 16px;
+
+
+            &::-webkit-slider-thumb {
+                background: $volume-thumb-color;
+            }
+
+            &::-moz-range-thumb {
+                background: $volume-thumb-color;
+            }
+
+            &::-ms-thumb {
+                background: $volume-thumb-color;
+            }
+        }
+
+        /* Input Thumb */
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: $volume-thumb-color;
+            cursor: pointer;
+            border: none;
+        }
+
+    }
+
+}
+
+.volume-setings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn-minus,
+    .btn-plus {
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+    }
+    .volume-value
+    {
+        margin: 0 16px;
+        font-weight: 600;
+        font-size: $font-size-small;
+        letter-spacing: -0.02em;
+        min-width: 33px;
+        text-align: center;
+    }
+}

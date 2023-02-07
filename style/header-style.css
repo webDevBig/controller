@@ -1,0 +1,53 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.title-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 150px;
+}
+.title-box .source-name {
+  font-family: "PlusJakartaSans-Medium";
+  line-height: 28px;
+  font-size: 24px;
+}
+.title-box .source-subtitle {
+  font-family: "PlusJakartaSans-Regular";
+  line-height: 24px;
+  opacity: 0.3;
+  font-size: 14px;
+}
+
+.header-btn {
+  border-radius: 50%;
+  border: 1px solid #313538;
+  width: 56px;
+  height: 56px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header-btn.notification-btn {
+  position: relative;
+  margin: 0 16px 0 0;
+}
+.header-btn.notification-btn::after {
+  content: "";
+  border-radius: 50%;
+  background: #F96E6E;
+  border: 1px solid #1E1E20;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  right: 15px;
+}
+.header-btn.power-btn {
+  background: conic-gradient(from 21.45deg at 50.26% 50.26%, #2D3134 -54.74deg, #1E1E20 0.33deg, #3C3E44 65.93deg, #1E1E20 124.22deg, #2E2F33 179.4deg, #1E1E20 236.11deg, #2D3134 305.26deg, #1E1E20 360.33deg);
+  box-shadow: 0px 7px 24px rgba(8, 8, 9, 0.25);
+}/*# sourceMappingURL=header-style.css.map */

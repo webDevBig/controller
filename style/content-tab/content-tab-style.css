@@ -1,0 +1,129 @@
+.tab-content {
+  float: left;
+  width: 100%;
+}
+.tab-content > .content-tab-pane {
+  display: none;
+}
+.tab-content > .content-tab-pane.active {
+  display: block;
+}
+.tab-content > .active {
+  display: block;
+}
+
+.content-nav-tabs {
+  width: auto;
+  list-style-type: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -24px;
+}
+.content-nav-tabs.hide {
+  display: none;
+}
+.content-nav-tabs li {
+  width: 56px;
+  height: 56px;
+  margin: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-nav-tabs li.hide-device-tab, .content-nav-tabs li.hide-settings-tab, .content-nav-tabs li.hide {
+  display: none;
+}
+.content-nav-tabs li a {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.content-nav-tabs li a.content-tab-1 {
+  background-image: url(../../img/tab-icons/mask.svg);
+}
+.content-nav-tabs li a.content-tab-2 {
+  background-image: url(../../img/tab-icons/monitor-recorder.svg);
+}
+.content-nav-tabs li a.content-tab-3 {
+  background-image: url(../../img/tab-icons/mask.svg);
+}
+.content-nav-tabs li a.content-tab-4 {
+  background-image: url(../../img/tab-icons/headphone.svg);
+}
+.content-nav-tabs li a.content-tab-5 {
+  background-image: url(../../img/tab-icons/Power.svg);
+}
+.content-nav-tabs li a.content-tab-6 {
+  background-image: url(../../img/tab-icons/Seating.svg);
+}
+.content-nav-tabs li a.content-tab-7 {
+  background-image: url(../../img/tab-icons/Property.svg);
+}
+.content-nav-tabs li a.content-tab-8 {
+  background-image: url(../../img/tab-icons/Frame.svg);
+}
+.content-nav-tabs li a.content-tab-9 {
+  background-image: url(../../img/tab-icons/Health.svg);
+}
+.content-nav-tabs li a.content-tab-10 {
+  background-image: url(../../img/tab-icons/designtools.svg);
+}
+.content-nav-tabs li.active a:hover.content-tab-1,
+.content-nav-tabs li.active a.content-tab-1 {
+  background-image: url(../../img/tab-icons/mask-active.svg);
+}
+.content-nav-tabs li.active a:hover.content-tab-2,
+.content-nav-tabs li.active a.content-tab-2 {
+  background-image: url(../../img/tab-icons/monitor-recorder-active.svg);
+}
+.content-nav-tabs li.active a:hover.content-tab-3,
+.content-nav-tabs li.active a.content-tab-3 {
+  background-image: url(../../img/tab-icons/mask-active.svg);
+}
+.content-nav-tabs li.active a:hover.content-tab-4,
+.content-nav-tabs li.active a.content-tab-4 {
+  background-image: url(../../img/tab-icons/headphone-active.svg);
+}
+.content-nav-tabs li.active a:hover.content-tab-5,
+.content-nav-tabs li.active a.content-tab-5 {
+  background-image: url(../../img/tab-icons/Power-active.svg);
+}
+.content-nav-tabs li.active a:hover.content-tab-6,
+.content-nav-tabs li.active a.content-tab-6 {
+  background-image: url(../../img/tab-icons/Seating-active.svg);
+}
+.content-nav-tabs li.active a:hover.content-tab-7,
+.content-nav-tabs li.active a.content-tab-7 {
+  background-image: url(../../img/tab-icons/Property-active.svg);
+}
+.content-nav-tabs li.active a:hover.content-tab-8,
+.content-nav-tabs li.active a.content-tab-8 {
+  background-image: url(../../img/tab-icons/Frame-active.svg);
+}
+.content-nav-tabs li.active a:hover.content-tab-9,
+.content-nav-tabs li.active a.content-tab-9 {
+  background-image: url(../../img/tab-icons/Health-active.svg);
+}
+.content-nav-tabs li.active a:hover.content-tab-10,
+.content-nav-tabs li.active a.content-tab-10 {
+  background-image: url(../../img/tab-icons/designtools-active.svg);
+}
+
+.content-tab-indicator {
+  width: 56px;
+  height: 4px;
+  background: #41FFB4;
+  box-shadow: 0px 0px 24px rgba(0, 119, 254, 0.32);
+  border-radius: 6px 6px 0px 0px;
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  transition: all 0.3s;
+}/*# sourceMappingURL=content-tab-style.css.map */

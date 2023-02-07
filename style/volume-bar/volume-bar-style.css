@@ -1,0 +1,71 @@
+.volume-bar-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volume-bar .volume {
+  display: flex;
+  align-items: center;
+  /* Input Thumb */
+}
+.volume-bar .volume input {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+}
+.volume-bar .volume input[type=range] {
+  -webkit-appearance: none;
+  width: 434px;
+  height: 4px;
+  background: #313538;
+  border-radius: 8px;
+  background-image: linear-gradient(270deg, #41FFB4 9.76%, rgba(65, 255, 180, 0) 108.54%);
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+  margin: 0 16px;
+}
+.volume-bar .volume input[type=range]::-webkit-slider-thumb {
+  background: #41FFB4;
+}
+.volume-bar .volume input[type=range]::-moz-range-thumb {
+  background: #41FFB4;
+}
+.volume-bar .volume input[type=range]::-ms-thumb {
+  background: #41FFB4;
+}
+.volume-bar .volume input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #41FFB4;
+  cursor: pointer;
+  border: none;
+}
+
+.volume-setings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.volume-setings .btn-minus,
+.volume-setings .btn-plus {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.volume-setings .volume-value {
+  margin: 0 16px;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  min-width: 33px;
+  text-align: center;
+}/*# sourceMappingURL=volume-bar-style.css.map */

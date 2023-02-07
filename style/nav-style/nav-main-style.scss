@@ -1,15 +1,29 @@
 $nav-bg-color:#1E1E20;
+$nav-border-color:white;
 
 .nav-bar {
     width: 72px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     background: rgba($nav-bg-color, 0.3);
     backdrop-filter: blur(128px);
+    
     border-radius: 24px 0 0 24px;
     padding: 24px 0;
+    border-width: 1px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        rgba($nav-border-color,0.28),
+        rgba($nav-border-color,0.04)
+      ) 1 100%;
+      border-left: none;
+    border-top: none;
+    border-bottom: none;
 
 
     .nav-tabs {
@@ -26,7 +40,9 @@ $nav-bg-color:#1E1E20;
             top: 12px;
             background: #41FFB4;
             border-radius: 0px 6px 6px 0px;
-            transition: all .3s;
+            transition: top .3s linear;
+            box-shadow: 0px 0px 24px rgba(0, 119, 254, 0.32);
+            z-index: 1;
         }
 
     }

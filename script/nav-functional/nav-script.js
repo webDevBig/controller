@@ -1,11 +1,22 @@
 window.addEventListener("load", function () {
     // store tabs variable
+    var myDeviseShow = document.querySelector("ul.devise-nav-tabs"),
+        mySettingsShow = document.querySelector("ul.settings-nav-tabs");
+
+
+
     var myTabs = document.querySelectorAll("ul.nav-tabs > li");
- 
+    var source_name = document.querySelector('.source-name'),
+        source_subtitle = document.querySelector('.source-subtitle');
+    var name = ['DCP', '', 'Lighting', 'Climate', 'Settings']
+    var subtitle = ['current source', '', 'Control', 'Control', '']
+
 
     function myTabClicks(tabClickEvent) {
         for (var i = 0; i < myTabs.length; i++) {
             myTabs[i].classList.remove("active");
+
+
         }
         var clickedTab = tabClickEvent.currentTarget;
         clickedTab.classList.add("active");
@@ -34,32 +45,22 @@ window.addEventListener("load", function () {
     for (let i = 0; i < myTabs.length; i++) {
         myTabs[i].addEventListener("click", function () {
             _class("tab-indicator")[0].style.top = `calc(12px + ${i*68}px)`;
+            source_name.innerHTML = name[i];
+            source_subtitle.innerHTML = subtitle[i];
+            if (i == 0) {
+                myDeviseShow.classList.remove('hide');
+                mySettingsShow.classList.add('hide')
+            }
+            else 
+            if (i == 4) {
+                mySettingsShow.classList.remove('hide')
+                myDeviseShow.classList.add('hide');
+
+            }
+             else {
+                mySettingsShow.classList.add('hide')
+                myDeviseShow.classList.add('hide');
+            }
         });
     }
 });
-
-
-
-
-
-
-
-// markerMenu.style.top = '12px';
-// markerMenu.style.display = 'block';
-
-
-
-
-
-
-
-
-
-
-// let tabPanesH = document.querySelectorAll(".chooseTabH");
-
-// for (let i = 0; i < tabPanesH.length; i++) {
-//     tabPanesH[i].addEventListener("click", function () {
-//         _class("tab-indicatorH")[0].style.top = `calc(8px + ${i*54}px)`;
-//     });
-// }

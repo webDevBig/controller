@@ -1,0 +1,156 @@
+$icon-color:#52525A;
+$icon-active-color:#41FFB4;
+
+
+.tab-content {
+    float: left;
+    width: 100%;
+
+    >.content-tab-pane {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    >.active {
+        display: block;
+    }
+}
+
+
+.content-nav-tabs {
+    width: auto;
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -24px;
+    &.hide
+    {
+        display: none;
+    }
+
+    li {
+
+        width: 56px;
+        height: 56px;
+        margin: 0 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.hide-device-tab,
+        &.hide-settings-tab,
+        &.hide {
+            display: none;
+        }
+
+        a {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 24;
+            cursor: pointer;
+            transition: all .3s linear;
+
+            &.content-tab-1 {
+                background-image: url(../../img/tab-icons/mask.svg);
+            }
+
+            &.content-tab-2 {
+                background-image: url(../../img/tab-icons/monitor-recorder.svg);
+            }
+
+            &.content-tab-3 {
+                background-image: url(../../img/tab-icons/mask.svg);
+            }
+
+            &.content-tab-4 {
+                background-image: url(../../img/tab-icons/headphone.svg);
+            }
+
+            &.content-tab-5 {
+                background-image: url(../../img/tab-icons/Power.svg);
+            }
+            &.content-tab-6 {
+                background-image: url(../../img/tab-icons/Seating.svg);
+            }
+
+            &.content-tab-7 {
+                background-image: url(../../img/tab-icons/Property.svg);
+            }
+
+            &.content-tab-8 {
+                background-image: url(../../img/tab-icons/Frame.svg);
+            }
+            &.content-tab-9 {
+                background-image: url(../../img/tab-icons/Health.svg);
+            }
+
+            &.content-tab-10 {
+                background-image: url(../../img/tab-icons/designtools.svg);
+            }
+        }
+
+        &.active {
+
+            a:hover,
+            a {
+                &.content-tab-1 {
+                    background-image: url(../../img/tab-icons/mask-active.svg);
+                }
+    
+                &.content-tab-2 {
+                    background-image: url(../../img/tab-icons/monitor-recorder-active.svg);
+                }
+    
+                &.content-tab-3 {
+                    background-image: url(../../img/tab-icons/mask-active.svg);
+                }
+    
+                &.content-tab-4 {
+                    background-image: url(../../img/tab-icons/headphone-active.svg);
+                }
+    
+                &.content-tab-5 {
+                    background-image: url(../../img/tab-icons/Power-active.svg);
+                }
+                &.content-tab-6 {
+                    background-image: url(../../img/tab-icons/Seating-active.svg);
+                }
+    
+                &.content-tab-7 {
+                    background-image: url(../../img/tab-icons/Property-active.svg);
+                }
+    
+                &.content-tab-8 {
+                    background-image: url(../../img/tab-icons/Frame-active.svg);
+                }
+                &.content-tab-9 {
+                    background-image: url(../../img/tab-icons/Health-active.svg);
+                }
+                &.content-tab-10 {
+                    background-image: url(../../img/tab-icons/designtools-active.svg);
+                }
+            }
+        }
+
+    }
+}
+
+.content-tab-indicator {
+    width: 56px;
+    height: 4px;
+    background: $icon-active-color;
+    box-shadow: 0px 0px 24px rgba(0, 119, 254, 0.32);
+    border-radius: 6px 6px 0px 0px;
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    transition: all .3s;
+}

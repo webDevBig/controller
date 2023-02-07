@@ -1,0 +1,19 @@
+.oval-btn {
+  width: 135px;
+  padding: 15px 0px;
+  border: 1px solid #313538;
+  border-radius: 32px;
+  background-color: transparent;
+  font-family: "PlusJakartaSans-SemiBold";
+  font-size: 14px;
+  line-height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+.oval-btn img {
+  max-width: 24px;
+  margin: 0 8px 0 0;
+}/*# sourceMappingURL=oval-button-style.css.map */

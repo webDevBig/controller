@@ -6,13 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="style/font.css">
+
     <link rel="stylesheet" href="style/main-style.css">
     <link rel="stylesheet" href="style/logo-style.css">
+    <link rel="stylesheet" href="style/footer-style.css">
+    <link rel="stylesheet" href="style/header-style.css">
+    <link rel="stylesheet" href="style/oval-button-style.css">
 
     <link rel="stylesheet" href="style/nav-style/nav-main-style.css">
     <link rel="stylesheet" href="style/nav-style/nav-item.css">
 
-    <script src="script/nav-functional/nav-script.js"></script>
+    <link rel="stylesheet" href="style/volume-bar/volume-bar-style.css">
+
+    <link rel="stylesheet" href="style/content-tab/content-tab-style.css">
+
+
     <title>Document</title>
 </head>
 
@@ -21,22 +30,77 @@
         <nav class="nav-bar">
             <a class="logo"><img alt="logo" src="img/DCP.svg" /></a>
             <ul class="nav nav-tabs">
-                <li class="active current-menu-item menu-item"><a href="#tab-1" class="tab1">M</a></li>
-                <li class="menu-item"><a href="#tab-2" class="tab2">T</a></li>
-                <li class="menu-item"><a href="#tab-3" class="tab3">L</a></li>
-                <li class="menu-item"><a href="#tab-4" class="tab4">C</a></li>
-                <li class="menu-item"><a href="#tab-5" class="tab5">S</a></li>
+                <li class="active current-menu-item menu-item"><a href="#tab-1" class="tab1"></a></li>
+                <li class="menu-item"><a href="#tab-2" class="tab2"></a></li>
+                <li class="menu-item"><a href="#tab-3" class="tab3"></a></li>
+                <li class="menu-item"><a href="#tab-4" class="tab4"></a></li>
+                <li class="menu-item"><a href="#tab-5" class="tab5"></a></li>
                 <div id="marker-menu" class="tab-indicator"></div>
             </ul>
         </nav>
-        <section class="row">
-            <div class="tab-content">
+        <div class="content">
+            <header>
+                <div class="title-box">
+                    <p class="source-name">DCP</p>
+                    <p class="source-subtitle">current source</p>
+                </div>
+                <ul class="content-nav content-nav-tabs devise-nav-tabs">
+                    <li class="active"><a href="#content-tab-1" class="content-tab-1"></a></li>
+                    <li class=""><a href="#content-tab-2" class="content-tab-2"></a></li>
+                    <li class=""><a href="#content-tab-3" class="content-tab-3"></a></li>
+                    <li class=""><a href="#content-tab-4" class="content-tab-4"></a></li>
+                    <li class=""><a href="#content-tab-5" class="content-tab-5"></a></li>
+                    <div id="marker-content" class="content-tab-indicator marker-devise"></div>
+                </ul>
+                <ul class="content-nav content-nav-tabs settings-nav-tabs hide">
+                    <li class="active"><a href="#content-tab-6" class="content-tab-6"></a></li>
+                    <li class=""><a href="#content-tab-7" class="content-tab-7"></a></li>
+                    <li class=""><a href="#content-tab-8" class="content-tab-8"></a></li>
+                    <li class=""><a href="#content-tab-9" class="content-tab-9"></a></li>
+                    <li class=""><a href="#content-tab-10" class="content-tab-10"></a></li>
+                    <div id="marker-content" class="content-tab-indicator marker-settings"></div>
+                </ul>
+                <div class="btn-box">
+                    <button class="header-btn notification-btn active"><img alt="notification"
+                            src="img/button-icon/notification.svg" /></button>
+                    <button class="header-btn power-btn"><img alt="power" src="img/button-icon/Power.svg" /></button>
+                </div>
+            </header>
+
+            <div class="menu-tab-content">
                 <div id="tab-1" class="tab-pane active">
-                    <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
-                    <span class="col-md-10">
-                        <h3>Feature 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </span>
+                    <div class="tab-content">
+                        <div id="content-tab-1" class="content-tab-pane active"> 
+                            <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
+                            <span class="col-md-10">
+                                <h3>Feature 1</h3>
+                            </span>
+                        </div> 
+                        <div id="content-tab-2" class="content-tab-pane">
+                            <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                            <span class="col-md-10">
+                                <h3>Feature 2</h3>
+                            </span>
+                        </div>
+                        <div id="content-tab-3" class="content-tab-pane">
+                            <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                            <span class="col-md-10">
+                                <h3>Feature 3</h3>
+                            </span>
+                        </div>
+                        <div id="content-tab-4" class="content-tab-pane">
+                            <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                            <span class="col-md-10">
+                                <h3>Feature 4</h3>
+                            </span>
+                        </div>
+                        <div id="content-tab-5" class="content-tab-pane">
+                            <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                            <span class="col-md-10">
+                                <h3>Feature 5</h3>
+                            </span>
+                        </div>
+                    </div>
                 </div>
                 <div id="tab-2" class="tab-pane">
                     <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
@@ -60,17 +124,70 @@
                     </span>
                 </div>
                 <div id="tab-5" class="tab-pane">
-                    <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
-                    <span class="col-md-10">
-                        <h3>Feature 5</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </span>
+                    <div class="tab-content">
+                    <div id="content-tab-6" class="content-tab-pane active">
+                        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                        <span class="col-md-10">
+                            <h3>Feature 6</h3>
+                        </span>
+                    </div>
+                    <div id="content-tab-7" class="content-tab-pane">
+                        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                        <span class="col-md-10">
+                            <h3>Feature 7</h3>
+                        </span>
+                    </div>
+                    <div id="content-tab-8" class="content-tab-pane">
+                        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                        <span class="col-md-10">
+                            <h3>Feature 8</h3>
+                        </span>
+                    </div>
+                    <div id="content-tab-9" class="content-tab-pane">
+                        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                        <span class="col-md-10">
+                            <h3>Feature 9</h3>
+                        </span>
+                    </div>
+                    <div id="content-tab-10" class="content-tab-pane">
+                        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                        <span class="col-md-10">
+                            <h3>Feature 10</h3>
+                        </span>
+                    </div>
+                    </div>
                 </div>
             </div>
-        </section>
+
+
+            <footer>
+                <button class="oval-btn mute-btn"><img alt="mute" src="img/button-icon/volume-slash.svg" />
+                    Mute</button>
+                <div class="volume-bar-box">
+                    <img alt="mute" src="img/button-icon/volume-high.svg" />
+                    <div class="volume-bar">
+                        <div class="volume">
+                            <input type="range" value="70" min="0" max="100" step="1">
+                        </div>
+                    </div>
+                    <div class="volume-setings">
+                        <button class="btn-minus"><img alt="plus" src="img/button-icon/minus.svg" /></button>
+                        <p class="volume-value"></p>
+                        <button class="btn-plus"><img alt="minus" src="img/button-icon/add.svg" /></button>
+                    </div>
+                </div>
+                <button class="oval-btn"><img alt="reference" src="img/button-icon/refrence.svg" /> Reference</button>
+            </footer>
+        </div>
+
+
+
 
     </div>
-
+   
+    <script src="script/volume-bar-functional/volume-bar-script.js"></script>
+    <script src="script/content-tab-functional/content-tab-script.js"></script>
+    <script src="script/nav-functional/nav-script.js"></script>
 
 </body>
 

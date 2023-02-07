@@ -4,7 +4,6 @@ $icon-active-color:#41FFB4;
 
 .nav-tabs {
     li {
-
         width: 100%;
         height: 56px;
         margin: 12px 0;
@@ -13,72 +12,63 @@ $icon-active-color:#41FFB4;
         justify-content: center;
 
         a {
-            width: 24px;
-            height: 24px;
-            background-color: $icon-color;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 24;
             cursor: pointer;
-            transition: all .3s;
-            color: white;
-            font-size: 14px;
+            transition: all .3s ease;
 
             &.tab1 {
-                -webkit-mask: url(../../img/menu-icons/element-icon.svg) no-repeat center;
-                mask: url(../../img/menu-icons/element-icon.svg) no-repeat center;
+                background-image: url(../../img/menu-icons/element-icon.svg);
             }
 
             &.tab2 {
-                -webkit-mask: url(../../img/menu-icons/monitor-icon.svg) no-repeat center;
-                mask: url(../../img/menu-icons/monitor-icon.svg) no-repeat center;
+                background-image: url(../../img/menu-icons/monitor-icon.svg);
             }
 
             &.tab3 {
-                -webkit-mask: url(../../img/menu-icons/lamp-on-icon.svg) no-repeat center;
-                mask: url(../../img/menu-icons/lamp-on-icon.svg) no-repeat center;
+                background-image: url(../../img/menu-icons/lamp-on-icon.svg);
             }
 
             &.tab4 {
-                -webkit-mask: url(../../img/menu-icons/climmate-icon.svg) no-repeat center;
-                mask: url(../../img/menu-icons/climmate-icon.svg) no-repeat center;
+                background-image: url(../../img/menu-icons/climmate-icon.svg);
             }
 
             &.tab5 {
-                -webkit-mask: url(../../img/menu-icons/setting-icon.svg) no-repeat center;
-                mask: url(../../img/menu-icons/setting-icon.svg) no-repeat center;
+                background-image: url(../../img/menu-icons/setting-icon.svg);
             }
         }
 
         &.active {
 
-            a:hover,
-            a {
-                background-color: $icon-active-color;
+            a,
+            a:hover {
+                &.tab1 {
+                    background-image: url(../../img/menu-icons/element-active.svg);
+                }
+
+                &.tab2 {
+                    background-image: url(../../img/menu-icons/monitor-icon.svg);
+                }
+
+                &.tab3 {
+                    background-image: url(../../img/menu-icons/lamp-on-icon-active.svg);
+                }
+
+                &.tab4 {
+                    background-image: url(../../img/menu-icons/climmate-active.svg);
+                }
+
+                &.tab5 {
+                    background-image: url(../../img/menu-icons/setting-active.svg);
+                }
             }
+
+
         }
 
-    }
-}
-
-
-
-
-
-
-
-.tab-content {
-    float: left;
-    width: 100%;
-
-    >.tab-pane {
-        display: none;
-
-        &.active {
-            display: block;
-            padding: 2.5% 3.5%;
-            background-color: #efefef;
-        }
-    }
-
-    >.active {
-        display: block;
     }
 }

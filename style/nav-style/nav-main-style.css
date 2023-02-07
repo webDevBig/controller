@@ -1,5 +1,6 @@
 .nav-bar {
   width: 72px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +10,13 @@
           backdrop-filter: blur(128px);
   border-radius: 24px 0 0 24px;
   padding: 24px 0;
+  border-width: 1px;
+  border-style: solid;
+  -o-border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.04)) 1 100%;
+     border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.04)) 1 100%;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
 }
 .nav-bar .nav-tabs {
   width: 100%;
@@ -24,5 +32,7 @@
   top: 12px;
   background: #41FFB4;
   border-radius: 0px 6px 6px 0px;
-  transition: all 0.3s;
+  transition: top 0.3s linear;
+  box-shadow: 0px 0px 24px rgba(0, 119, 254, 0.32);
+  z-index: 1;
 }/*# sourceMappingURL=nav-main-style.css.map */
