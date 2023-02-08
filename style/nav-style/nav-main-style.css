@@ -21,13 +21,15 @@
   list-style-type: none;
   padding: 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .nav-bar .nav-tabs .tab-indicator {
   position: absolute;
   width: 4px;
   height: 56px;
   left: 0px;
-  top: 12px;
+  top: 0px;
   background: #41FFB4;
   border-radius: 0px 6px 6px 0px;
   transition: top 0.3s linear;

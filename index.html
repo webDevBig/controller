@@ -29,9 +29,9 @@
 <body>
     <div class="controller">
         <nav class="nav-bar">
-            <a class="logo"><img alt="logo" src="img/DCP.svg" /></a>
             <ul class="nav nav-tabs">
-                <li class="active current-menu-item menu-item"><a href="#tab-1" class="tab1"></a></li>
+                <li class="menu-item active current-menu-item logo-item"><a href="#tab-source" class="tab-source logo"></a></li>
+                <li class="menu-item"><a href="#tab-1" class="tab1"></a></li>
                 <li class="menu-item"><a href="#tab-2" class="tab2"></a></li>
                 <li class="menu-item"><a href="#tab-3" class="tab3"></a></li>
                 <li class="menu-item"><a href="#tab-4" class="tab4"></a></li>
@@ -69,7 +69,7 @@
             </header>
 
             <div class="menu-tab-content">
-                <div id="tab-1" class="tab-pane active">
+                <div id="#tab-source" class="tab-pane">
                     <div class="tab-content">
                         <div id="content-tab-1" class="content-tab-pane active"> 
                             <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
@@ -98,6 +98,13 @@
                             </span>
                         </div>
                     </div>
+                </div>
+                <div id="tab-1" class="tab-pane">
+                    <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+                    <span class="col-md-10">
+                        <h3>Feature 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </span>
                 </div>
                 <div id="tab-2" class="tab-pane">
                     <div class="source-box">
@@ -212,6 +219,7 @@
     <script src="script/volume-bar-functional/volume-bar-script.js"></script>
     <script src="script/content-tab-functional/content-tab-script.js"></script>
     <script src="script/nav-functional/nav-script.js"></script>
+    <script src="script/item-functional/item-script.js"></script>
 
 </body>
 

@@ -6,6 +6,9 @@
   align-items: center;
   justify-content: center;
 }
+.nav-tabs li.logo-item {
+  margin: 0 0 20px;
+}
 .nav-tabs li a {
   width: 100%;
   height: 100%;

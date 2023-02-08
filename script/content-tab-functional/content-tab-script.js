@@ -31,8 +31,11 @@ window.addEventListener("load", function () {
 
     for (let i = 0; i < myTabs.length; i++) {
         myTabs[i].addEventListener("click", function () {
-            _class("marker-devise")[0].style.left = `calc(16px + ${i*88}px)`;
-            console.log(i)
+            let coords = this.getBoundingClientRect();
+            let parentPos = document.querySelector('.devise-nav-tabs').getBoundingClientRect();
+
+            _class("marker-devise")[0].style.left = `calc(${coords.left}px - ${parentPos.left}px)`;
+          
 
         });
     }
@@ -72,8 +75,12 @@ window.addEventListener("load", function () {
 
     for (let i = 0; i < myTabs.length; i++) {
         myTabs[i].addEventListener("click", function () {
-            _class("marker-settings")[0].style.left = `calc(16px + ${i*88}px)`;
-            console.log(i)
+
+            let coords = this.getBoundingClientRect();
+            let parentPos = document.querySelector('.settings-nav-tabs').getBoundingClientRect();
+
+            _class("marker-settings")[0].style.left = `calc(${coords.left}px - ${parentPos.left}px)`;
+         
 
         });
     }

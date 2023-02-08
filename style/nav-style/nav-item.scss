@@ -10,6 +10,10 @@ $icon-active-color:#41FFB4;
         display: flex;
         align-items: center;
         justify-content: center;
+        &.logo-item
+        {
+            margin: 0 0 20px;
+        }
 
         a {
             width: 100%;

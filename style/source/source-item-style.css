@@ -26,24 +26,24 @@
   mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
 }
 .source-item .source-icon.source-bluray {
-  -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
-  mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+  -webkit-mask: url(../../img/source-icon/bluray.svg) no-repeat center;
+  mask: url(../../img/source-icon/bluray.svg) no-repeat center;
 }
 .source-item .source-icon.source-apple {
-  -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
-  mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+  -webkit-mask: url(../../img/source-icon/Icon-Mac.svg) no-repeat center;
+  mask: url(../../img/source-icon/Icon-Mac.svg) no-repeat center;
 }
 .source-item .source-icon.source-xbox {
-  -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
-  mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+  -webkit-mask: url(../../img/source-icon/microsoft-xbox.svg) no-repeat center;
+  mask: url(../../img/source-icon/microsoft-xbox.svg) no-repeat center;
 }
 .source-item .source-icon.source-nintendo {
-  -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
-  mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+  -webkit-mask: url(../../img/source-icon/nintendo-switch.svg) no-repeat center;
+  mask: url(../../img/source-icon/nintendo-switch.svg) no-repeat center;
 }
 .source-item .source-icon.source-ps {
-  -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
-  mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+  -webkit-mask: url(../../img/source-icon/sony-playstation.svg) no-repeat center;
+  mask: url(../../img/source-icon/sony-playstation.svg) no-repeat center;
 }
 .source-item.active {
   background: linear-gradient(130.35deg, #313538 -8.16%, rgba(49, 53, 56, 0) 135.93%);

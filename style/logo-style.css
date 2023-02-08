@@ -1,12 +1,17 @@
-.logo
-{
+.logo {
     height: 56px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 20px;
+    background-color: white;
+    -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+    mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
 }
+.active .logo{
+    background-color: #41FFB4;
+}
+
 .logo img {
     max-width: 24px;
 }
