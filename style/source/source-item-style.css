@@ -15,6 +15,24 @@
   font-size: 20px;
   line-height: 24px;
 }
+.source-item .icon {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  -webkit-mask: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/heart.svg) no-repeat 50% 50%;
+  mask: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/heart.svg) no-repeat 50% 50%;
+  -webkit-mask-size: 24px;
+  mask-size: 24px;
+}
+.source-item .icon-red {
+  background-color: red;
+}
+.source-item .icon-orange {
+  background-color: orange;
+}
+.source-item .icon-yellow {
+  background-color: yellow;
+}
 .source-item .source-icon {
   width: 72px;
   height: 72px;
