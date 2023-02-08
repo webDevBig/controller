@@ -7,12 +7,12 @@
 @font-face {
     font-family: 'PlusJakartaSans-Medium';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     src: local('PlusJakartaSans-Medium'), url('../font/Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf');
 }
 @font-face {
     font-family: 'PlusJakartaSans-Regular';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     src: local('PlusJakartaSans-Regular'), url('../font/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf');
 }

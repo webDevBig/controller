@@ -1,0 +1,56 @@
+.source-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  border: 1px solid #313538;
+  border-radius: 20px;
+  margin: 24px;
+  transition: all 0.3s;
+}
+.source-item .source-name {
+  font-family: "PlusJakartaSans-Regular";
+  font-size: 20px;
+  line-height: 24px;
+}
+.source-item .source-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 0 48px;
+  background-color: #52525A;
+}
+.source-item .source-icon.source-dcp {
+  -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+  mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+}
+.source-item .source-icon.source-bluray {
+  -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+  mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+}
+.source-item .source-icon.source-apple {
+  -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+  mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+}
+.source-item .source-icon.source-xbox {
+  -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+  mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+}
+.source-item .source-icon.source-nintendo {
+  -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+  mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+}
+.source-item .source-icon.source-ps {
+  -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+  mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+}
+.source-item.active {
+  background: linear-gradient(130.35deg, #313538 -8.16%, rgba(49, 53, 56, 0) 135.93%);
+}
+.source-item.active .source-name {
+  color: #41FFB4;
+}
+.source-item.active .source-icon {
+  background-color: #41FFB4;
+}/*# sourceMappingURL=source-item-style.css.map */

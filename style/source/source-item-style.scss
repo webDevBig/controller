@@ -1,0 +1,82 @@
+$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
+$font-family-Medium: 'PlusJakartaSans-Medium';
+$font-family-Regular: 'PlusJakartaSans-Regular';
+
+$font-color: white;
+
+$icon-color:#52525A;
+$active-color:#41FFB4;
+
+$font-size-big: 24px;
+$font-size-regular: 14px;
+$font-size-small: 12px;
+
+
+.source-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 240px;
+    border: 1px solid #313538;
+    border-radius: 20px;
+    margin: 24px;
+    transition: all .3s;
+
+    .source-name {
+        font-family: $font-family-Regular;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .source-icon {
+        width: 72px;
+        height: 72px;
+        margin: 0 0 48px;
+        background-color: $icon-color;
+
+        &.source-dcp {
+            -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+            mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+        }
+
+        &.source-bluray {
+            -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+            mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+        }
+
+        &.source-apple {
+            -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+            mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+        }
+
+        &.source-xbox {
+            -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+            mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+        }
+
+        &.source-nintendo {
+            -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+            mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+        }
+
+        &.source-ps {
+            -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+            mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+        }
+
+    }
+
+    &.active {
+        background: linear-gradient(130.35deg, #313538 -8.16%, rgba(49, 53, 56, 0) 135.93%);
+
+        .source-name {
+            color: $active-color;
+        }
+        .source-icon
+        {
+            background-color: $active-color;
+        }
+    }
+}

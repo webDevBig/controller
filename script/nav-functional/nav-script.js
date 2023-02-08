@@ -8,8 +8,8 @@ window.addEventListener("load", function () {
     var myTabs = document.querySelectorAll("ul.nav-tabs > li");
     var source_name = document.querySelector('.source-name'),
         source_subtitle = document.querySelector('.source-subtitle');
-    var name = ['DCP', '', 'Lighting', 'Climate', 'Settings']
-    var subtitle = ['current source', '', 'Control', 'Control', '']
+    var name = ['DCP', 'Sources', 'Lighting', 'Climate', 'Settings']
+    var subtitle = ['current source', 'Control', 'Control', 'Control', '']
 
 
     function myTabClicks(tabClickEvent) {

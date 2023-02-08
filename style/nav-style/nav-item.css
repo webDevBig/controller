@@ -37,7 +37,7 @@
 }
 .nav-tabs li.active a.tab2,
 .nav-tabs li.active a:hover.tab2 {
-  background-image: url(../../img/menu-icons/monitor-icon.svg);
+  background-image: url(../../img/menu-icons/monitor-active.svg);
 }
 .nav-tabs li.active a.tab3,
 .nav-tabs li.active a:hover.tab3 {

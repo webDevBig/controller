@@ -46,4 +46,14 @@ body {
 }
 .menu-tab-content > .active {
   display: block;
+}
+
+.source-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2px 0;
 }/*# sourceMappingURL=main-style.css.map */
