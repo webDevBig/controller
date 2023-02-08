@@ -4,12 +4,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
-    mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+    background: url(../img/source-icon/Digital-Cinema-white.svg) no-repeat center;
+    background-size: 24px;
+   
 }
 .active .logo{
-    background-color: #41FFB4;
+   background-image: url(../img/source-icon/Digital-Cinema-active.svg);
 }
 
 .logo img {

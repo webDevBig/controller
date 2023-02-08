@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="style/logo-style.css">
     <link rel="stylesheet" href="style/footer-style.css">
     <link rel="stylesheet" href="style/header-style.css">
-    <link rel="stylesheet" href="style/oval-button-style.css">
+    <link rel="stylesheet" href="style/buttons-style/oval-button-style.css">
+    <link rel="stylesheet" href="style/buttons-style/rectangle-button-style.css">
 
     <link rel="stylesheet" href="style/nav-style/nav-main-style.css">
     <link rel="stylesheet" href="style/nav-style/nav-item.css">
@@ -22,15 +23,20 @@
     <link rel="stylesheet" href="style/content-tab/content-tab-style.css">
     <link rel="stylesheet" href="style/source/source-item-style.css">
 
+    <link rel="stylesheet" href="style/dashboard/dashboard-style.css">
+
 
     <title>Document</title>
 </head>
 
 <body>
     <div class="controller">
+
+        <!-- left side menu -->
         <nav class="nav-bar">
             <ul class="nav nav-tabs">
-                <li class="menu-item active current-menu-item logo-item"><a href="#tab-source" class="tab-source"><i class="logo"></i></a></li>
+                <li class="menu-item active current-menu-item logo-item"><a href="#tab-source"
+                        class="tab-source logo"></a></li>
                 <li class="menu-item"><a href="#tab-1" class="tab1"></a></li>
                 <li class="menu-item"><a href="#tab-2" class="tab2"></a></li>
                 <li class="menu-item"><a href="#tab-3" class="tab3"></a></li>
@@ -39,12 +45,18 @@
                 <div id="marker-menu" class="tab-indicator"></div>
             </ul>
         </nav>
+
+        <!-- content -->
         <div class="content">
+
+            <!-- content header -->
             <header>
                 <div class="title-box">
                     <p class="source-name">DCP</p>
                     <p class="source-subtitle">current source</p>
                 </div>
+
+                <!-- tabs for sources -->
                 <ul class="content-nav content-nav-tabs devise-nav-tabs">
                     <li class="active"><a href="#content-tab-1" class="content-tab-1"></a></li>
                     <li class=""><a href="#content-tab-2" class="content-tab-2"></a></li>
@@ -53,6 +65,8 @@
                     <li class=""><a href="#content-tab-5" class="content-tab-5"></a></li>
                     <div id="marker-content" class="content-tab-indicator marker-devise"></div>
                 </ul>
+
+                <!-- tabs for settings -->
                 <ul class="content-nav content-nav-tabs settings-nav-tabs hide">
                     <li class="active"><a href="#content-tab-6" class="content-tab-6"></a></li>
                     <li class=""><a href="#content-tab-7" class="content-tab-7"></a></li>
@@ -68,78 +82,104 @@
                 </div>
             </header>
 
+            <!-- content for menu items -->
             <div class="menu-tab-content">
-                <div id="#tab-source" class="tab-pane">
+
+                <!-- source tab -->
+                <div id="#tab-source" class="tab-pane active">
                     <div class="tab-content">
-                        <div id="content-tab-1" class="content-tab-pane active"> 
-                            <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
+                        <div id="content-tab-1" class="content-tab-pane active">
+                            <span
+                                class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
                             <span class="col-md-10">
                                 <h3>Feature 1</h3>
                             </span>
-                        </div> 
+                        </div>
                         <div id="content-tab-2" class="content-tab-pane">
                         </div>
                         <div id="content-tab-3" class="content-tab-pane">
-                            <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                            <span
+                                class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
                             <span class="col-md-10">
                                 <h3>Feature 3</h3>
                             </span>
                         </div>
                         <div id="content-tab-4" class="content-tab-pane">
-                            <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                            <span
+                                class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
                             <span class="col-md-10">
                                 <h3>Feature 4</h3>
                             </span>
                         </div>
                         <div id="content-tab-5" class="content-tab-pane">
-                            <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                            <span
+                                class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
                             <span class="col-md-10">
                                 <h3>Feature 5</h3>
                             </span>
                         </div>
                     </div>
                 </div>
+
+                <!-- dashboard tab -->
                 <div id="tab-1" class="tab-pane">
-                    <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
-                    <span class="col-md-10">
-                        <h3>Feature 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </span>
+                    <div class="dashboard-content">
+                        <div class="dashboard-clm">
+                            <p class="dashboard-title">Sources</p>
+                            <button class="rectangle-btn active"> <i></i>DCP</button>
+                            <button class="rectangle-btn">Blu-ray</button>
+                            <button class="rectangle-btn">Apple TV</button>
+                            <button class="rectangle-btn">Xbox</button>
+                            <button class="rectangle-btn">Nintendo</button>
+                            <button class="rectangle-btn">PS 5</button>
+                        </div>
+                        <div class="dashboard-clm">
+                            <p class="dashboard-title">Lighting</p>
+                            <button class="rectangle-btn active">Scene1</button>
+                            <button class="rectangle-btn">Scene2</button>
+                            <button class="rectangle-btn">Scene3</button>
+                            <button class="rectangle-btn">Scene4</button>
+                            <button class="rectangle-btn">Scene5</button>
+                            <button class="rectangle-btn">Scene6</button>
+                        </div>
+                        <div class="dashboard-clm">
+                            <p class="dashboard-title">Climate</p>
+                        </div>
+
+                    </div>
                 </div>
+
+                <!-- all sources tab -->
                 <div id="tab-2" class="tab-pane">
                     <div class="source-box">
                         <div class="source-item active">
-                            <div class="source-icon source-dcp"></div>
-                            <!-- <img src="img/source-icon/Digital-Cinema.svg" /> -->
+                            <div class="source-icon dcp-icon"></div>
                             <p class="source-name">DCP</p>
                         </div>
                         <div class="source-item">
-                            <div class="source-icon source-bluray"></div>
-                            <!-- <img src="img/source-icon/bluray.svg" /> -->
+                            <div class="source-icon bluray-icon"></div>
                             <p class="source-name">Blu-ray</p>
                         </div>
                         <div class="source-item">
-                            <div class="source-icon source-apple"></div>
-                            <!-- <img src="img/source-icon/Icon-Mac.svg" /> -->
+                            <div class="source-icon apple-icon"></div>
                             <p class="source-name">Apple TV</p>
                         </div>
                         <div class="source-item">
-                            <div class="source-icon source-xbox"></div>
-                            <!-- <img src="img/source-icon/microsoft-xbox.svg" /> -->
+                            <div class="source-icon xbox-icon"></div>
                             <p class="source-name">Xbox</p>
                         </div>
                         <div class="source-item">
-                            <div class="source-icon source-nintendo"></div>
-                            <!-- <img src="img/source-icon/nintendo-switch.svg" /> -->
+                            <div class="source-icon nintendo-icon"></div>
                             <p class="source-name">Nintendo</p>
                         </div>
                         <div class="source-item">
-                            <div class="source-icon source-ps"></div>
-                            <!-- <img src="img/source-icon/sony-playstation.svg" /> -->
+                            <div class="source-icon ps-icon"></div>
                             <p class="source-name">PS 5</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- lightings tab -->
                 <div id="tab-3" class="tab-pane">
                     <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
                     <span class="col-md-10">
@@ -147,6 +187,8 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </span>
                 </div>
+
+                <!-- climate tab -->
                 <div id="tab-4" class="tab-pane">
                     <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
                     <span class="col-md-10">
@@ -154,38 +196,45 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </span>
                 </div>
+
+                <!-- settings tab -->
                 <div id="tab-5" class="tab-pane">
                     <div class="tab-content">
-                    <div id="content-tab-6" class="content-tab-pane active">
-                        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-                        <span class="col-md-10">
-                            <h3>Feature 6</h3>
-                        </span>
-                    </div>
-                    <div id="content-tab-7" class="content-tab-pane">
-                        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-                        <span class="col-md-10">
-                            <h3>Feature 7</h3>
-                        </span>
-                    </div>
-                    <div id="content-tab-8" class="content-tab-pane">
-                        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-                        <span class="col-md-10">
-                            <h3>Feature 8</h3>
-                        </span>
-                    </div>
-                    <div id="content-tab-9" class="content-tab-pane">
-                        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-                        <span class="col-md-10">
-                            <h3>Feature 9</h3>
-                        </span>
-                    </div>
-                    <div id="content-tab-10" class="content-tab-pane">
-                        <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-                        <span class="col-md-10">
-                            <h3>Feature 10</h3>
-                        </span>
-                    </div>
+                        <div id="content-tab-6" class="content-tab-pane active">
+                            <span
+                                class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                            <span class="col-md-10">
+                                <h3>Feature 6</h3>
+                            </span>
+                        </div>
+                        <div id="content-tab-7" class="content-tab-pane">
+                            <span
+                                class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                            <span class="col-md-10">
+                                <h3>Feature 7</h3>
+                            </span>
+                        </div>
+                        <div id="content-tab-8" class="content-tab-pane">
+                            <span
+                                class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                            <span class="col-md-10">
+                                <h3>Feature 8</h3>
+                            </span>
+                        </div>
+                        <div id="content-tab-9" class="content-tab-pane">
+                            <span
+                                class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                            <span class="col-md-10">
+                                <h3>Feature 9</h3>
+                            </span>
+                        </div>
+                        <div id="content-tab-10" class="content-tab-pane">
+                            <span
+                                class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                            <span class="col-md-10">
+                                <h3>Feature 10</h3>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -215,7 +264,7 @@
 
 
     </div>
-   
+
     <script src="script/volume-bar-functional/volume-bar-script.js"></script>
     <script src="script/content-tab-functional/content-tab-script.js"></script>
     <script src="script/nav-functional/nav-script.js"></script>

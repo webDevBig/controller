@@ -35,10 +35,13 @@ $font-size-small: 12px;
         height: 72px;
         margin: 0 0 48px;
         background-color: $icon-color;
+        -webkit-mask-size: cover;
+        mask-size: cover;
 
         &.source-dcp {
             -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
             mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+
         }
 
         &.source-bluray {
@@ -74,8 +77,8 @@ $font-size-small: 12px;
         .source-name {
             color: $active-color;
         }
-        .source-icon
-        {
+
+        .source-icon {
             background-color: $active-color;
         }
     }

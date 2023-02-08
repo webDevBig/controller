@@ -20,6 +20,8 @@
   height: 72px;
   margin: 0 0 48px;
   background-color: #52525A;
+  -webkit-mask-size: cover;
+  mask-size: cover;
 }
 .source-item .source-icon.source-dcp {
   -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
