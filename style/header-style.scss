@@ -38,13 +38,9 @@ header {
     }
 }
 
-.header-btn {
-    border-radius: 50%;
-    border: 1px solid #313538;
+.circle-btn {
     width: 56px;
     height: 56px;
-    background-color: transparent;
-    cursor: pointer;
 
     &.notification-btn {
         position: relative;

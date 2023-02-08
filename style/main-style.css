@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+button {
+  background-color: transparent;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
 body {
   padding: 20px;
   font-family: "PlusJakartaSans-Medium";
@@ -43,6 +51,7 @@ body {
 }
 .menu-tab-content > .tab-pane.active {
   display: block;
+  height: 100%;
 }
 .menu-tab-content > .active {
   display: block;

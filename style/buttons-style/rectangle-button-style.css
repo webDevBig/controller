@@ -1,21 +1,22 @@
 .rectangle-btn {
   width: 182px;
   height: 72px;
-  background-color: transparent;
   border-radius: 16px;
   position: relative;
-  border: none;
   color: white;
   padding: 0 24px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  transition: all 0.3s;
 }
 .rectangle-btn i {
   width: 24px;
   height: 24px;
+  background-color: #52525A;
   -webkit-mask-size: 24px;
   mask-size: 24px;
+  margin: 0 16px 0 0;
 }
 .rectangle-btn.active {
   background: linear-gradient(130.35deg, #313538 -8.16%, rgba(49, 53, 56, 0) 135.93%);
@@ -27,7 +28,7 @@
   width: calc(100% - 1px);
   height: calc(100% - 1px);
   border: 1px solid transparent;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.28)) border-box;
+  background: linear-gradient(133deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.04)) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;

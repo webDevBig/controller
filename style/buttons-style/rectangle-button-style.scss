@@ -17,21 +17,22 @@ $font-size-small: 12px;
 .rectangle-btn {
     width: 182px;
     height: 72px;
-    background-color: transparent;
     border-radius: 16px;
     position: relative;
-    border: none;
     color: $font-color;
     padding: 0 24px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    transition: all .3s;
 
     i {
         width: 24px;
         height: 24px;
+        background-color: $icon-color;
         -webkit-mask-size: 24px;
         mask-size: 24px;
+        margin: 0 16px 0 0;
     }
 
     &.active {
@@ -44,7 +45,7 @@ $font-size-small: 12px;
             width: calc(100% - 1px);
             height: calc(100% - 1px);
             border: 1px solid transparent;
-            background: linear-gradient(45deg, rgba($font-color, 0.28), rgba($font-color, 0.28)) border-box;
+            background: linear-gradient(133deg, rgba($font-color, 0.28), rgba($font-color, 0.04)) border-box;
             -webkit-mask:
                 linear-gradient(#fff 0 0) padding-box,
                 linear-gradient(#fff 0 0);
@@ -54,6 +55,7 @@ $font-size-small: 12px;
             top: 0;
             border-radius: 16px;
         }
+
         i {
             background-color: $active-color
         }

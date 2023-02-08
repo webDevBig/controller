@@ -1,0 +1,62 @@
+$main-bg-color:#1E1E20;
+
+$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
+$font-family-Medium: 'PlusJakartaSans-Medium';
+$font-family-Regular: 'PlusJakartaSans-Regular';
+
+$font-color: white;
+
+$icon-color:#52525A;
+$active-color:#41FFB4;
+
+$climate-color1:#ADEBFF;
+$climate-color2:#FFADAD;
+
+$font-size-big2: 24px;
+$font-size-big1: 20px;
+$font-size-regular: 14px;
+$font-size-small: 12px;
+
+
+.dashboard-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .circle-bg-btn {
+        width: 130px;
+        height: 130px;
+        font-size: $font-size-regular;
+        line-height: 24px;
+        margin: 0 35px 0 0;
+    }
+}
+
+.dashboard-clm {
+    border: 1px solid #30303B;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 48px 24px 0;
+    height: 100%;
+
+    .rectangle-btn {
+        font-size: $font-size-big1;
+        line-height: 24px;
+        font-weight: 400;
+
+        &:first-of-type {
+            margin-top: 24px;
+        }
+    }
+}
+
+.dashboard-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}

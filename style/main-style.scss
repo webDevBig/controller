@@ -9,6 +9,9 @@ $font-color: white;
 $icon-color:#52525A;
 $active-color:#41FFB4;
 
+$climate-color1:#ADEBFF;
+$climate-color2:#FFADAD;
+
 $font-size-big: 24px;
 $font-size-regular: 14px;
 $font-size-small: 12px;
@@ -18,6 +21,14 @@ $font-size-small: 12px;
     padding: 0;
     box-sizing: border-box;
     // font-family: 'Plus Jakarta Sans', sans-serif;
+}
+button
+{
+    background-color: transparent;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: $font-color;
 }
 
 body {
@@ -59,6 +70,7 @@ body {
 
         &.active {
             display: block;
+            height: 100%;
         }
     }
 

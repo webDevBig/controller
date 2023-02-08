@@ -1,0 +1,64 @@
+.temp-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto -12px;
+}
+
+.temp-item {
+  width: 92px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 12px;
+}
+
+.circle-btn {
+  width: 64px;
+  height: 64px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.circle-btn.up-temp {
+  background-image: url(../../img/button-icon/add.svg);
+}
+.circle-btn.down-temp {
+  background-image: url(../../img/button-icon/minus.svg);
+}
+
+.temp-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 48px 0;
+  min-width: 110px;
+}
+.temp-value .value {
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+}
+.temp-value .value span {
+  font-size: 48px;
+  line-height: 60px;
+}
+.temp-value .value sup {
+  font-size: 14px;
+  opacity: 0.14;
+  position: absolute;
+}
+.temp-value .value-text {
+  line-height: 28px;
+  font-size: 16px;
+  opacity: 0.14;
+  text-align: center;
+}
+.temp-value .cool {
+  color: #ADEBFF;
+}
+.temp-value .heat {
+  color: #FFADAD;
+}/*# sourceMappingURL=climate-box-style.css.map */
