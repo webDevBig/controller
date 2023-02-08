@@ -54,7 +54,7 @@ window.addEventListener("load", function () {
         var clickedTab = tabClickEvent.currentTarget;
         clickedTab.classList.add("active");
         tabClickEvent.preventDefault();
-        var myContentPanes = document.querySelectorAll(".content-tab-pane");
+        var myContentPanes = document.querySelectorAll(".settings-tab-pane");
         for (i = 0; i < myContentPanes.length; i++) {
             myContentPanes[i].classList.remove("active");
         }

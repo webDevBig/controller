@@ -2,10 +2,10 @@
   float: left;
   width: 100%;
 }
-.tab-content > .content-tab-pane {
+.tab-content > .content-tab-pane, .tab-content > .settings-tab-pane {
   display: none;
 }
-.tab-content > .content-tab-pane.active {
+.tab-content > .content-tab-pane.active, .tab-content > .settings-tab-pane.active {
   display: block;
 }
 .tab-content > .active {
