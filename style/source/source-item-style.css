@@ -15,57 +15,11 @@
   font-size: 20px;
   line-height: 24px;
 }
-.source-item .icon {
-  width: 48px;
-  height: 48px;
-  display: inline-block;
-  -webkit-mask: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/heart.svg) no-repeat 50% 50%;
-  mask: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/heart.svg) no-repeat 50% 50%;
-  -webkit-mask-size: 24px;
-  mask-size: 24px;
-}
-.source-item .icon-red {
-  background-color: red;
-}
-.source-item .icon-orange {
-  background-color: orange;
-}
-.source-item .icon-yellow {
-  background-color: yellow;
-}
 .source-item .source-icon {
   width: 72px;
   height: 72px;
   margin: 0 0 48px;
   background-color: #52525A;
-  -webkit-mask-size: cover;
-  mask-size: cover;
-}
-.source-item .source-icon.dcp-icon {
-  -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
-  mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
-  -webkit-mask-size: 24px;
-  mask-size: 24px;
-}
-.source-item .source-icon.source-bluray {
-  -webkit-mask: url(../../img/source-icon/bluray.svg) no-repeat center;
-  mask: url(../../img/source-icon/bluray.svg) no-repeat center;
-}
-.source-item .source-icon.source-apple {
-  -webkit-mask: url(../../img/source-icon/Icon-Mac.svg) no-repeat center;
-  mask: url(../../img/source-icon/Icon-Mac.svg) no-repeat center;
-}
-.source-item .source-icon.source-xbox {
-  -webkit-mask: url(../../img/source-icon/microsoft-xbox.svg) no-repeat center;
-  mask: url(../../img/source-icon/microsoft-xbox.svg) no-repeat center;
-}
-.source-item .source-icon.source-nintendo {
-  -webkit-mask: url(../../img/source-icon/nintendo-switch.svg) no-repeat center;
-  mask: url(../../img/source-icon/nintendo-switch.svg) no-repeat center;
-}
-.source-item .source-icon.source-ps {
-  -webkit-mask: url(../../img/source-icon/sony-playstation.svg) no-repeat center;
-  mask: url(../../img/source-icon/sony-playstation.svg) no-repeat center;
 }
 .source-item.active {
   background: linear-gradient(130.35deg, #313538 -8.16%, rgba(49, 53, 56, 0) 135.93%);

@@ -30,7 +30,8 @@ $font-size-small: 12px;
     i {
         width: 24px;
         height: 24px;
-        background-color: red;
+        -webkit-mask-size: 24px;
+        mask-size: 24px;
     }
 
     &.active {
@@ -52,6 +53,9 @@ $font-size-small: 12px;
             left: 0;
             top: 0;
             border-radius: 16px;
+        }
+        i {
+            background-color: $active-color
         }
 
 

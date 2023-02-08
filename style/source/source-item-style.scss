@@ -29,61 +29,12 @@ $font-size-small: 12px;
         font-size: 20px;
         line-height: 24px;
     }
-    .icon {
-        width: 48px;
-        height: 48px;
-        display: inline-block;
-        
-        -webkit-mask: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/heart.svg) no-repeat 50% 50%;
-        mask: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/heart.svg) no-repeat 50% 50%;
-        -webkit-mask-size: 24px;
-        mask-size:24px;
-      }
-      
-      .icon-red { background-color: red; }
-      .icon-orange { background-color: orange; }
-      .icon-yellow { background-color: yellow; }
+    
     .source-icon {
         width: 72px;
         height: 72px;
         margin: 0 0 48px;
         background-color: $icon-color;
-        -webkit-mask-size: cover;
-        mask-size: cover;
-
-        &.dcp-icon {
-            -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
-            mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
-            -webkit-mask-size: 24px;
-            mask-size: 24px;
-
-        }
-
-        &.source-bluray {
-            -webkit-mask: url(../../img/source-icon/bluray.svg) no-repeat center;
-            mask: url(../../img/source-icon/bluray.svg) no-repeat center;
-        }
-
-        &.source-apple {
-            -webkit-mask: url(../../img/source-icon/Icon-Mac.svg) no-repeat center;
-            mask: url(../../img/source-icon/Icon-Mac.svg) no-repeat center;
-        }
-
-        &.source-xbox {
-            -webkit-mask: url(../../img/source-icon/microsoft-xbox.svg) no-repeat center;
-            mask: url(../../img/source-icon/microsoft-xbox.svg) no-repeat center;
-        }
-
-        &.source-nintendo {
-            -webkit-mask: url(../../img/source-icon/nintendo-switch.svg) no-repeat center;
-            mask: url(../../img/source-icon/nintendo-switch.svg) no-repeat center;
-        }
-
-        &.source-ps {
-            -webkit-mask: url(../../img/source-icon/sony-playstation.svg) no-repeat center;
-            mask: url(../../img/source-icon/sony-playstation.svg) no-repeat center;
-        }
-
     }
 
     &.active {

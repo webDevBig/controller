@@ -14,7 +14,8 @@
 .rectangle-btn i {
   width: 24px;
   height: 24px;
-  background-color: red;
+  -webkit-mask-size: 24px;
+  mask-size: 24px;
 }
 .rectangle-btn.active {
   background: linear-gradient(130.35deg, #313538 -8.16%, rgba(49, 53, 56, 0) 135.93%);
@@ -33,4 +34,7 @@
   left: 0;
   top: 0;
   border-radius: 16px;
+}
+.rectangle-btn.active i {
+  background-color: #41FFB4;
 }/*# sourceMappingURL=rectangle-button-style.css.map */
