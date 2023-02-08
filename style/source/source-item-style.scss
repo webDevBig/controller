@@ -54,6 +54,8 @@ $font-size-small: 12px;
         &.dcp-icon {
             -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
             mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+            -webkit-mask-size: 24px;
+            mask-size: 24px;
 
         }
 

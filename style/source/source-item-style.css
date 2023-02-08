@@ -44,6 +44,8 @@
 .source-item .source-icon.dcp-icon {
   -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
   mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+  -webkit-mask-size: 24px;
+  mask-size: 24px;
 }
 .source-item .source-icon.source-bluray {
   -webkit-mask: url(../../img/source-icon/bluray.svg) no-repeat center;
