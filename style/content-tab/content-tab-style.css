@@ -19,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: -24px;
+  bottom: -28px;
 }
 .content-nav-tabs.hide {
   display: none;

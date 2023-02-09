@@ -1,0 +1,66 @@
+$main-bg-color:#1E1E20;
+
+$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
+$font-family-Medium: 'PlusJakartaSans-Medium';
+$font-family-Regular: 'PlusJakartaSans-Regular';
+
+$font-color: white;
+
+$icon-color:#52525A;
+$active-color:#41FFB4;
+$button-border-color:#313538;
+
+$climate-color1:#ADEBFF;
+$climate-color2:#FFADAD;
+
+$font-size-big: 24px;
+$font-size-regular: 14px;
+$font-size-small: 12px;
+
+
+.square-btn {
+    width: 104px;
+    height: 104px;
+    border: 1px solid $button-border-color;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+
+    i {
+        width: 24px;
+        height: 24px;
+        background-color: $icon-color;
+        -webkit-mask-size: 24px;
+        mask-size: 24px;
+        margin: 0 16px 0 0;
+
+        &.cooling {
+            -webkit-mask: url(../../img/climate-icon/cooling-icon.svg) no-repeat center;
+            mask: url(../../img/climate-icon/cooling-icon.svg) no-repeat center;
+        }
+        &.auto {
+            -webkit-mask: url(../../img/climate-icon/autobrightness-icon.svg) no-repeat center;
+            mask: url(../../img/climate-icon/autobrightness-icon.svg) no-repeat center;
+        }
+        &.heating {
+            -webkit-mask: url(../../img/climate-icon/heating-icon.svg) no-repeat center;
+            mask: url(../../img/climate-icon/heating-icon.svg) no-repeat center;
+        }
+        &.circulate {
+            -webkit-mask: url(../../img/climate-icon/circulate-icon.svg) no-repeat center;
+            mask: url(../../img/climate-icon/circulate-icon.svg) no-repeat center;
+        }
+    }
+
+    &.active {
+        background: linear-gradient(130.35deg, $button-border-color -8.16%, rgba(49, 53, 56, 0) 135.93%);
+        color: $active-color;
+
+        i {
+            background-color: $active-color
+        }
+    }
+}

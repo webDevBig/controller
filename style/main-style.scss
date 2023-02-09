@@ -8,6 +8,7 @@ $font-color: white;
 
 $icon-color:#52525A;
 $active-color:#41FFB4;
+$button-border-color:#313538;
 
 $climate-color1:#ADEBFF;
 $climate-color2:#FFADAD;
@@ -26,6 +27,7 @@ button
 {
     background-color: transparent;
     background: transparent;
+    border-color: #313538;
     border: none;
     cursor: pointer;
     color: $font-color;

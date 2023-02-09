@@ -8,6 +8,10 @@ $font-color: white;
 
 $icon-color:#52525A;
 $active-color:#41FFB4;
+$button-border-color:#313538;
+
+$climate-color1:#ADEBFF;
+$climate-color2:#FFADAD;
 
 $font-size-big: 24px;
 $font-size-regular: 14px;
@@ -36,7 +40,7 @@ $font-size-small: 12px;
     }
 
     &.active {
-        background: linear-gradient(130.35deg, #313538 -8.16%, rgba(49, 53, 56, 0) 135.93%);
+        background: linear-gradient(130.35deg, $button-border-color -8.16%, rgba(49, 53, 56, 0) 135.93%);
         color: $active-color;
 
         &::before {

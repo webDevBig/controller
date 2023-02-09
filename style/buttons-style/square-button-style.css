@@ -1,0 +1,42 @@
+.square-btn {
+  width: 104px;
+  height: 104px;
+  border: 1px solid #313538;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.square-btn i {
+  width: 24px;
+  height: 24px;
+  background-color: #52525A;
+  -webkit-mask-size: 24px;
+  mask-size: 24px;
+  margin: 0 16px 0 0;
+}
+.square-btn i.cooling {
+  -webkit-mask: url(../../img/climate-icon/cooling-icon.svg) no-repeat center;
+  mask: url(../../img/climate-icon/cooling-icon.svg) no-repeat center;
+}
+.square-btn i.auto {
+  -webkit-mask: url(../../img/climate-icon/autobrightness-icon.svg) no-repeat center;
+  mask: url(../../img/climate-icon/autobrightness-icon.svg) no-repeat center;
+}
+.square-btn i.heating {
+  -webkit-mask: url(../../img/climate-icon/heating-icon.svg) no-repeat center;
+  mask: url(../../img/climate-icon/heating-icon.svg) no-repeat center;
+}
+.square-btn i.circulate {
+  -webkit-mask: url(../../img/climate-icon/circulate-icon.svg) no-repeat center;
+  mask: url(../../img/climate-icon/circulate-icon.svg) no-repeat center;
+}
+.square-btn.active {
+  background: linear-gradient(130.35deg, #313538 -8.16%, rgba(49, 53, 56, 0) 135.93%);
+  color: #41FFB4;
+}
+.square-btn.active i {
+  background-color: #41FFB4;
+}/*# sourceMappingURL=square-button-style.css.map */

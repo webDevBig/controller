@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="style/buttons-style/oval-button-style.css">
     <link rel="stylesheet" href="style/buttons-style/rectangle-button-style.css">
     <link rel="stylesheet" href="style/buttons-style/circle-button-style.css">
+    <link rel="stylesheet" href="style/buttons-style/square-button-style.css">
 
     <link rel="stylesheet" href="style/icons/icons-style.css">
 
@@ -41,12 +42,12 @@
         <!-- left side menu -->
         <nav class="nav-bar">
             <ul class="nav nav-tabs">
-                <li class="menu-item active current-menu-item logo-item"><a href="#tab-source"
-                        class="tab-source logo"></a></li>
+                <li class="menu-item active  current-menu-item logo-item"><a href="#tab-source"
+                        class="tab-source logo dcp-icon"></a></li>
                 <li class="menu-item"><a href="#tab-1" class="tab1"></a></li>
                 <li class="menu-item"><a href="#tab-2" class="tab2"></a></li>
                 <li class="menu-item"><a href="#tab-3" class="tab3"></a></li>
-                <li class="menu-item"><a href="#tab-4" class="tab4"></a></li>
+                <li class="menu-item "><a href="#tab-4" class="tab4"></a></li>
                 <li class="menu-item"><a href="#tab-5" class="tab5"></a></li>
                 <div id="marker-menu" class="tab-indicator"></div>
             </ul>
@@ -121,7 +122,7 @@
                     </div>
                 </div>
 
-                <!-- dashboard tab -->
+                <!-- dashboard tab DONE -->
                 <div id="tab-1" class="tab-pane">
                     <div class="dashboard-content">
                         <div class="dashboard-clm">
@@ -171,7 +172,7 @@
                     </div>
                 </div>
 
-                <!-- all sources tab -->
+                <!-- all sources tab  DONE-->
                 <div id="tab-2" class="tab-pane">
                     <div class="source-box">
                         <div class="source-item active">
@@ -210,7 +211,7 @@
                     </span>
                 </div>
 
-                <!-- climate tab -->
+                <!-- climate tab DONE-->
                 <div id="tab-4" class="tab-pane">
                     <div class="climate-content">
                         <div class="temp-item">
@@ -221,6 +222,29 @@
                                     Setpoint</p>
                             </div>
                             <button class="down-temp  circle-btn"></button>
+                        </div>
+                        <div class="box">
+                            <div class="block current-temp">
+                                <div class="box"><button class="circle-btn circle-bg-btn">
+                                        <p class="number"><span>24</span> <sup>°c</sup></p>
+                                        <p class="title">current<br>
+                                            temperature</p>
+                                    </button></div>
+                                <svg class="svg">
+                                    <linearGradient id="gradientStyle" x1="20%" y1="40%" x2="100%" y2="20%"
+                                        gradientTransform="rotate(10)">
+                                        <stop offset="50%" class="stop1"></stop>
+                                        <stop offset="100%" class="stop2"></stop>
+                                    </linearGradient>
+                                    <circle class="circle circle-container__progress" cx="135" cy="135" r="115.1" />
+                                </svg>
+                            </div>
+                            <div class="btn-box">
+                                <button class="square-btn active climate-btn"><i class="cooling"></i>Cooling</button>
+                                <button class="square-btn climate-btn"><i class="auto"></i>Auto</button>
+                                <button class="square-btn climate-btn"><i class="heating"></i>Heating</button>
+                                <button class="square-btn climate-btn"><i class="circulate"></i>Circulate</button>
+                            </div>
                         </div>
                         <div class="temp-item">
                             <button class="up-temp circle-btn"></button>
