@@ -104,11 +104,21 @@
                 <div id="tab-source" class="tab-pane active">
                     <div class="tab-content">
                         <div id="content-tab-1" class="content-tab-pane active">
-                            <span
-                                class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
-                            <span class="col-md-10">
-                                <h3>Feature 1</h3>
-                            </span>
+                            Available Macros
+                            <div class="available-macros-slider swiper" id="available-macros-swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="slide"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide"></div>
+                                    </div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
                         </div>
                         <div id="content-tab-2" class="content-tab-pane">
                         </div>
@@ -209,10 +219,10 @@
                     </div>
                 </div>
 
-                <!-- lightings tab -->
+                <!-- lightings tab  DONE-->
                 <div id="tab-3" class="tab-pane">
                     <div class="lightings-content">
-                        <div class="lightings-slider swiper" id="lighting_controls_swiper">
+                        <div class="lightings-slider swiper" id="lighting-controls-swiper">
 
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
@@ -221,7 +231,7 @@
                                     <div class="slide">
                                         <div class="lightings-item">
                                             <p class="lightings-item-title">Console</p>
-                                            <p class="lightings-perc" id="floor_field">10%</p>
+                                            <p class="lightings-perc">10%</p>
                                             <div class="lightings-bar">
                                                 <div class="lightings">
                                                     <input type="range" value="70" min="0" max="100" step="1">
@@ -244,7 +254,7 @@
                                         </div>
                                         <div class="lightings-item">
                                             <p class="lightings-item-title">Sconse</p>
-                                            <p class="lightings-perc" id="floor_field">0%</p>
+                                            <p class="lightings-perc">0%</p>
                                             <div class="lightings-bar">
                                                 <div class="lightings">
                                                     <input type="range" value="0" min="0" max="100" step="1">
@@ -255,7 +265,7 @@
                                         </div>
                                         <div class="lightings-item">
                                             <p class="lightings-item-title">Work Lights</p>
-                                            <p class="lightings-perc" id="floor_field">10%</p>
+                                            <p class="lightings-perc">10%</p>
                                             <div class="lightings-bar">
                                                 <div class="lightings">
                                                     <input type="range" value="70" min="0" max="100" step="1">
@@ -266,7 +276,7 @@
                                         </div>
                                         <div class="lightings-item">
                                             <p class="lightings-item-title">Front Spot</p>
-                                            <p class="lightings-perc" id="floor_field">10%</p>
+                                            <p class="lightings-perc">10%</p>
                                             <div class="lightings-bar">
                                                 <div class="lightings">
                                                     <input type="range" value="10" min="0" max="100" step="1">
@@ -352,19 +362,25 @@
                 <!-- settings tab -->
                 <div id="tab-5" class="tab-pane">
                     <div class="tab-content">
-                        <div id="content-tab-6" class="active settings-tab-pane">
-                            <span
-                                class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-                            <span class="col-md-10">
-                                <h3>Feature 6</h3>
-                            </span>
-                        </div>
+                        <div id="content-tab-6" class="active settings-tab-pane"></div>
                         <div id="content-tab-7" class="settings-tab-pane">
-                            <span
-                                class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-                            <span class="col-md-10">
-                                <h3>Feature 7</h3>
-                            </span>
+                            <div class="power-resets-content">
+                                <div class="power-resets-slider swiper" id="power-resets-swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="slide"></div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide"></div>
+                                        </div>
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+
+                            </div>
                         </div>
                         <div id="content-tab-8" class="settings-tab-pane">
                             <span
@@ -427,9 +443,34 @@
     <script src="script/lightings-functional/lightings.js"></script>
     <script src="script/lightings-item-functional/lightings-item-script.js"></script>
 
- 
+
     <script>
-        const lighting_controls_swiper = new Swiper('#lighting_controls_swiper', {
+        const lighting_controls_swiper = new Swiper('#lighting-controls-swiper', {
+            // Optional parameters
+            loop: false,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // Navigation arrows
+            navigation: false
+        });
+
+        const power_resets_swiper = new Swiper('#power-resets-swiper', {
+            // Optional parameters
+            loop: false,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // Navigation arrows
+            navigation: false
+        });
+        
+
+        const available_macros_swiper = new Swiper('#available-macros-swiper', {
             // Optional parameters
             loop: false,
             // If we need pagination
