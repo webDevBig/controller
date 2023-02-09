@@ -1,0 +1,59 @@
+$main-bg-color:#1E1E20;
+
+$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
+$font-family-Medium: 'PlusJakartaSans-Medium';
+$font-family-Regular: 'PlusJakartaSans-Regular';
+
+$font-color: white;
+
+$icon-color:#52525A;
+$active-color:#41FFB4;
+$button-border-color:#313538;
+
+$climate-color1:#ADEBFF;
+$climate-color2:#FFADAD;
+
+$font-size-big: 24px;
+$font-size-regular2: 16px;
+$font-size-regular: 14px;
+$font-size-small: 12px;
+
+
+
+
+.lightings-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .lightings-clm {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background: #232326;
+        border-radius: 16px;
+        padding: 16px;
+
+        .rectangle-btn {
+            width: 216px;
+            font-size: $font-size-regular2;
+            color: $icon-color;
+
+            &.active {
+                color: $active-color;
+            }
+        }
+    }
+
+    .lightings-title {
+        font-weight: 600;
+        font-size: $font-size-regular2;
+        line-height: 24px;
+        color: $font-color;
+        margin: 0 0 16px;
+    }
+}

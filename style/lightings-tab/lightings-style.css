@@ -1,0 +1,32 @@
+.lightings-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.lightings-content .lightings-clm {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #232326;
+  border-radius: 16px;
+  padding: 16px;
+}
+.lightings-content .lightings-clm .rectangle-btn {
+  width: 216px;
+  font-size: 16px;
+  color: #52525A;
+}
+.lightings-content .lightings-clm .rectangle-btn.active {
+  color: #41FFB4;
+}
+.lightings-content .lightings-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  margin: 0 0 16px;
+}/*# sourceMappingURL=lightings-style.css.map */

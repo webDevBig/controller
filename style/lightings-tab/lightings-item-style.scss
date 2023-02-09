@@ -1,0 +1,110 @@
+$main-bg-color:#1E1E20;
+
+$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
+$font-family-Medium: 'PlusJakartaSans-Medium';
+$font-family-Regular: 'PlusJakartaSans-Regular';
+
+$font-color: white;
+
+$icon-color:#52525A;
+$active-color:#41FFB4;
+$button-border-color:#313538;
+
+$climate-color1:#ADEBFF;
+$climate-color2:#FFADAD;
+
+$font-size-big: 24px;
+$font-size-regular2: 16px;
+$font-size-regular: 14px;
+$font-size-small: 12px;
+
+$volume-bar-color:#313538;
+$volume-bar-active-color: linear-gradient(270deg, #41FFB4 9.76%, rgba(65, 255, 180, 0) 108.54%);
+$volume-thumb-color:#41FFB4;
+
+
+.lightings-item {
+    width: 138px;
+    height: 548px;
+    background: #232326;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 24px 21px;
+    color: $font-color;
+    line-height: 24px;
+    font-weight: 400;
+
+    .lightings-item-title {
+        font-size: $font-size-regular;
+        text-align: center;
+        opacity: 0.3;
+    }
+
+    .lightings-perc {
+        font-weight: 600;
+        font-size: $font-size-small;
+        letter-spacing: -0.02em;
+    }
+
+
+    .lightings-bar {
+        width: 100%;
+        height: 324px;
+        margin: 48px 0;
+
+        .lightings {
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            input[type="range"] {
+                transform: rotate(-90deg);
+                position: absolute;
+                -webkit-appearance: none;
+                width: 324px;
+                height: 4px;
+                right: -119%;
+                background: $volume-bar-color;
+                border-radius: 8px;
+                background-image: $volume-bar-active-color;
+                background-repeat: no-repeat;
+                margin: 0;
+
+
+                &::-webkit-slider-thumb {
+                    background: $volume-thumb-color;
+                }
+
+                &::-moz-range-thumb {
+                    background: $volume-thumb-color;
+                }
+
+                &::-ms-thumb {
+                    background: $volume-thumb-color;
+                }
+                &.empty::-webkit-slider-thumb
+                {
+                    opacity: 0;
+                }
+            }
+
+            /* Input Thumb */
+            input[type="range"]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+                background: $volume-thumb-color;
+                cursor: pointer;
+                border: none;
+            }
+
+        }
+
+    }
+}

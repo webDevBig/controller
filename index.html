@@ -28,11 +28,18 @@
     <link rel="stylesheet" href="style/content-tab/content-tab-style.css">
     <link rel="stylesheet" href="style/source/source-item-style.css">
 
-    <link rel="stylesheet" href="style/dashboard/dashboard-style.css">
-    <link rel="stylesheet" href="style/climate/climate-style.css">
-    <link rel="stylesheet" href="style/climate/climate-box-style.css">
+    <link rel="stylesheet" href="style/dashboard-tab/dashboard-style.css">
+    <link rel="stylesheet" href="style/climate-tab/climate-box-style.css">
+    <link rel="stylesheet" href="style/climate-tab/climate-style.css">
+
+    <link rel="stylesheet" href="style/lightings-tab/lightings-style.css">
+    <link rel="stylesheet" href="style/lightings-tab/lightings-item-style.css">
+    <link rel="stylesheet" href="style/slider-style/slider.css">
+    <link rel="stylesheet" href="style/checkbox-style/checkbox-style.css">
 
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -42,8 +49,8 @@
         <!-- left side menu -->
         <nav class="nav-bar">
             <ul class="nav nav-tabs">
-                <li class="menu-item active  current-menu-item logo-item"><a href="#tab-source"
-                        class="tab-source "><i class="dcp-icon logo "></i></a></li>
+                <li class="menu-item active  current-menu-item logo-item"><a href="#tab-source" class="tab-source "><i
+                            class="dcp-icon logo "></i></a></li>
                 <li class="menu-item"><a href="#tab-1" class="tab1"></a></li>
                 <li class="menu-item"><a href="#tab-2" class="tab2"></a></li>
                 <li class="menu-item"><a href="#tab-3" class="tab3"></a></li>
@@ -204,11 +211,93 @@
 
                 <!-- lightings tab -->
                 <div id="tab-3" class="tab-pane">
-                    <span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
-                    <span class="col-md-10">
-                        <h3>Feature 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </span>
+                    <div class="lightings-content">
+                        <div class="lightings-slider swiper" id="lighting_controls_swiper">
+
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="slide">
+                                        <div class="lightings-item">
+                                            <p class="lightings-item-title">Console</p>
+                                            <p class="lightings-perc" id="floor_field">10%</p>
+                                            <div class="lightings-bar">
+                                                <div class="lightings">
+                                                    <input type="range" value="70" min="0" max="100" step="1">
+                                                </div>
+                                            </div>
+                                            <input type="checkbox" id="switchConsole" class="switch" checked />
+                                            <label for="switchConsole" class="switchLabel"></label>
+                                        </div>
+                                        <div class="lightings-item">
+                                            <p class="lightings-item-title">Floor</p>
+                                            <p class="lightings-perc" id="floor_field">50%</p>
+                                            <div class="lightings-bar">
+                                                <div class="lightings">
+                                                    <input type="range" value="50" min="0" max="100" step="1">
+                                                </div>
+                                            </div>
+
+                                            <input type="checkbox" id="switchFloor" class="switch" checked />
+                                            <label for="switchFloor" class="switchLabel"></label>
+                                        </div>
+                                        <div class="lightings-item">
+                                            <p class="lightings-item-title">Sconse</p>
+                                            <p class="lightings-perc" id="floor_field">0%</p>
+                                            <div class="lightings-bar">
+                                                <div class="lightings">
+                                                    <input type="range" value="0" min="0" max="100" step="1">
+                                                </div>
+                                            </div>
+                                            <input type="checkbox" id="switchSconse" class="switch" checked />
+                                            <label for="switchSconse" class="switchLabel"></label>
+                                        </div>
+                                        <div class="lightings-item">
+                                            <p class="lightings-item-title">Work Lights</p>
+                                            <p class="lightings-perc" id="floor_field">10%</p>
+                                            <div class="lightings-bar">
+                                                <div class="lightings">
+                                                    <input type="range" value="70" min="0" max="100" step="1">
+                                                </div>
+                                            </div>
+                                            <input type="checkbox" id="switchWorkLights" class="switch" checked />
+                                            <label for="switchWorkLights" class="switchLabel"></label>
+                                        </div>
+                                        <div class="lightings-item">
+                                            <p class="lightings-item-title">Front Spot</p>
+                                            <p class="lightings-perc" id="floor_field">10%</p>
+                                            <div class="lightings-bar">
+                                                <div class="lightings">
+                                                    <input type="range" value="10" min="0" max="100" step="1">
+                                                </div>
+                                            </div>
+                                            <input type="checkbox" id="switchFrontSpot" class="switch" checked />
+                                            <label for="switchFrontSpot" class="switchLabel"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide"></div>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+
+
+                        </div>
+                        <div class="lightings-clm">
+                            <p class="lightings-title">Scene List</p>
+                            <button class="rectangle-btn active scene-btn">Scene1</button>
+                            <button class="rectangle-btn scene-btn">Scene2</button>
+                            <button class="rectangle-btn scene-btn">Scene3</button>
+                            <button class="rectangle-btn scene-btn">Scene4</button>
+                            <button class="rectangle-btn scene-btn">Scene5</button>
+                            <button class="rectangle-btn scene-btn">Scene6</button>
+                            <button class="rectangle-btn scene-btn">Scene7</button>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- climate tab DONE-->
@@ -334,6 +423,24 @@
     <script src="script/item-functional/item-script.js"></script>
     <script src="script/dashboard-functional/btn-active.js"></script>
     <script src="script/climate-functional/climate.js"></script>
+    <script src="script/lightings-functional/lightings.js"></script>
+    <script src="script/lightings-functional/lightings.js"></script>
+    <script src="script/lightings-item-functional/lightings-item-script.js"></script>
+
+ 
+    <script>
+        const lighting_controls_swiper = new Swiper('#lighting_controls_swiper', {
+            // Optional parameters
+            loop: false,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // Navigation arrows
+            navigation: false
+        });
+    </script>
 
 </body>
 

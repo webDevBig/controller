@@ -1,0 +1,62 @@
+$main-bg-color:#1E1E20;
+
+$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
+$font-family-Medium: 'PlusJakartaSans-Medium';
+$font-family-Regular: 'PlusJakartaSans-Regular';
+
+$font-color: white;
+
+$icon-color:#52525A;
+$active-color:#41FFB4;
+$button-border-color:#313538;
+
+$climate-color1:#ADEBFF;
+$climate-color2:#FFADAD;
+
+$font-size-big: 24px;
+$font-size-regular2: 16px;
+$font-size-regular: 14px;
+$font-size-small: 12px;
+
+
+.switch[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.switchLabel {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 28px;
+    background: #30303B;
+    border-radius: 28px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 24px;
+        height: 24px;
+        background: $font-color;
+        box-shadow: 0px 17px 22px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+}
+
+.switch:checked+.switchLabel {
+    background: $active-color;
+}
+
+.switch:checked+.switchLabel:after {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+    background: conic-gradient(from 21.45deg at 50.26% 50.26%, #2D3134 -54.74deg, #1E1E20 0.33deg, #3C3E44 65.93deg, #1E1E20 124.22deg, #2E2F33 179.4deg, #1E1E20 236.11deg, #2D3134 305.26deg, #1E1E20 360.33deg);
+    
+}
