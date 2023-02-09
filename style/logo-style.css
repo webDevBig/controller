@@ -1,16 +1,15 @@
-.logo {
+.logo-item .logo {
   height: 24px;
   width: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-  /* background: url(../img/source-icon/Digital-Cinema-white.svg) no-repeat center; */
   -webkit-mask-size: 24px;
   mask-size: 24px;
 }
-
-.active .logo {
+.logo-item.active .logo {
   background-color: #41FFB4;
-  /* background-image: url(../img/source-icon/Digital-Cinema-active.svg); */
+  -webkit-mask-size: 24px;
+  mask-size: 24px;
 }/*# sourceMappingURL=logo-style.css.map */

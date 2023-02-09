@@ -25,6 +25,9 @@
   margin: 0 0 8px;
   background-color: white;
 }
+.climate-content .btn-box .square-btn.active i {
+  background-color: #41FFB4;
+}
 
 .block {
   position: relative;

@@ -17,21 +17,24 @@ $font-size-big: 24px;
 $font-size-regular: 14px;
 $font-size-small: 12px;
 
-.logo {
-    height: 24px;
-    width: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $font-color;
-    /* background: url(../img/source-icon/Digital-Cinema-white.svg) no-repeat center; */
-    -webkit-mask-size: 24px;
-    mask-size: 24px;
-   
-}
-.active .logo{
-    background-color: $active-color;
-    
-    
-   /* background-image: url(../img/source-icon/Digital-Cinema-active.svg); */
+.logo-item {
+    .logo {
+        height: 24px;
+        width: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $font-color;
+        -webkit-mask-size: 24px;
+        mask-size: 24px;
+
+    }
+
+    &.active {
+        .logo {
+            background-color: $active-color;
+            -webkit-mask-size: 24px;
+            mask-size: 24px;
+        }
+    }
 }
