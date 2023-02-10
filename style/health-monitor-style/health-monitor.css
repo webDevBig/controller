@@ -56,7 +56,9 @@
   margin: 12px 0 0;
   padding: 0 13px 0 0;
 }
-.health-monitor-content .box .current-temp {
+.health-monitor-content .box .health-current-temp {
+  width: 270px;
+  height: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +70,7 @@
   position: relative;
   margin: 70px 0 48px;
 }
-.health-monitor-content .box .current-temp::before {
+.health-monitor-content .box .health-current-temp::before {
   content: "";
   position: absolute;
   width: calc(100% - 2px);

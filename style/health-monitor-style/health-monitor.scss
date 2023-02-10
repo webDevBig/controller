@@ -84,7 +84,9 @@ $font-size-small: 12px;
             }
         }
 
-        .current-temp {
+        .health-current-temp {
+            width: 270px;
+            height: 270px;
             display: flex;
             justify-content: center;
             align-items: center;

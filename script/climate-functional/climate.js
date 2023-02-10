@@ -49,8 +49,6 @@ window.addEventListener('load', function () {
     block.forEach(item => {
         let numElement = item.querySelector('.current');
         let num = parseInt(numElement.innerText);
-        console.log(num)
-        // let num = numElement.innerText;
         let count = 0;
         let time = 2000 / num;
         setInterval(() => {

@@ -58,8 +58,8 @@ $font-size-small: 12px;
         .power-resets-icon {
             width: 24px;
             height: 24px;
-            -webkit-mask: url(../../img/power-resets-.svg.svg) no-repeat center;
-            mask: url(../../img/power-resets.svg.svg) no-repeat center;
+            -webkit-mask: url(../../img/power-resets.svg) no-repeat center;
+            mask: url(../../img/power-resets.svg) no-repeat center;
             background-color: $climate-color2;
             margin: 0 16px 0 0;
         }
