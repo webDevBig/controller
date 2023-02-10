@@ -38,20 +38,20 @@ $font-size-small: 12px;
         margin: 0 16px 0 0;
 
         &.cooling {
-            -webkit-mask: url(../../img/climate-icon/cooling-icon.svg) no-repeat center;
-            mask: url(../../img/climate-icon/cooling-icon.svg) no-repeat center;
+            -webkit-mask: url(../../img/climate-icon/cooling.svg) no-repeat center;
+            mask: url(../../img/climate-icon/cooling.svg) no-repeat center;
         }
         &.auto {
-            -webkit-mask: url(../../img/climate-icon/autobrightness-icon.svg) no-repeat center;
-            mask: url(../../img/climate-icon/autobrightness-icon.svg) no-repeat center;
+            -webkit-mask: url(../../img/climate-icon/autobrightness.svg) no-repeat center;
+            mask: url(../../img/climate-icon/autobrightness.svg) no-repeat center;
         }
         &.heating {
-            -webkit-mask: url(../../img/climate-icon/heating-icon.svg) no-repeat center;
-            mask: url(../../img/climate-icon/heating-icon.svg) no-repeat center;
+            -webkit-mask: url(../../img/climate-icon/heating.svg) no-repeat center;
+            mask: url(../../img/climate-icon/heating.svg) no-repeat center;
         }
         &.circulate {
-            -webkit-mask: url(../../img/climate-icon/circulate-icon.svg) no-repeat center;
-            mask: url(../../img/climate-icon/circulate-icon.svg) no-repeat center;
+            -webkit-mask: url(../../img/climate-icon/circulate.svg) no-repeat center;
+            mask: url(../../img/climate-icon/circulate.svg) no-repeat center;
         }
     }
 

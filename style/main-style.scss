@@ -24,11 +24,11 @@ $font-size-small: 12px;
     box-sizing: border-box;
     // font-family: 'Plus Jakarta Sans', sans-serif;
 }
-button
-{
+
+button {
     background-color: transparent;
     background: transparent;
-    border-color: #313538;
+    border-color: $button-border-color;
     border: none;
     cursor: pointer;
     color: $font-color;
@@ -38,6 +38,12 @@ body {
     padding: 20px;
     font-family: $font-family-Medium;
     color: $font-color;
+}
+
+.title {
+    font-weight: 600;
+    font-size: $font-size-regular2;
+    line-height: 24px;
 }
 
 .controller {
@@ -81,8 +87,8 @@ body {
         display: block;
     }
 }
-.source-box
-{
+
+.source-box {
     width: 100%;
     height: 100%;
     display: flex;

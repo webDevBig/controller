@@ -1,0 +1,177 @@
+.health-monitor-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.health-monitor-content hr {
+  width: 1px;
+  height: 100%;
+  border: none;
+  background-color: #30303B;
+}
+.health-monitor-content .box {
+  padding: 48px 0 0;
+  width: calc(50% - 24px);
+  height: 100%;
+  background: #232326;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.health-monitor-content .box .health-monitor-subtitle {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.48);
+}
+.health-monitor-content .box .circle-btn {
+  width: 190px;
+  height: 190px;
+  padding: 0 0 0 13px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.health-monitor-content .box .circle-btn .temperature-number {
+  font-size: 48px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.health-monitor-content .box .circle-btn sup {
+  opacity: 0.14;
+  font-size: 14px;
+}
+.health-monitor-content .box .circle-btn .message {
+  font-size: 14px;
+  color: #FF7070;
+  font-weight: 700;
+  line-height: 18px;
+  margin: 12px 0 0;
+  padding: 0 13px 0 0;
+}
+.health-monitor-content .box .current-temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-image: url("../../img/both-temp-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  margin: 70px 0 48px;
+}
+.health-monitor-content .box .current-temp::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  border: 2px solid transparent;
+  background: linear-gradient(192deg, rgba(255, 255, 255, 0.28) 20%, rgba(255, 255, 255, 0) 48%) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+.health-monitor-content .box .needle {
+  width: 50%;
+  height: 20px;
+  position: absolute;
+  left: 0px;
+  transform-origin: 100% 11px;
+  transform: rotate(0deg);
+  animation: fourspeed3 2s 1 both;
+  animation-delay: 1s;
+  display: block;
+  z-index: 0;
+}
+.health-monitor-content .box .needle::after {
+  content: "";
+  position: absolute;
+  background: #1E1E20;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  transform: rotate(45deg);
+  top: 0;
+  left: 30px;
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+@keyframes fourspeed3 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(115deg);
+  }
+}
+.items-box {
+  width: calc(50% - 24px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.items-box .status-box {
+  width: 100%;
+  background: #232326;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 0 0 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.items-box .status-item {
+  margin: 8px 0;
+  width: 100%;
+  background: #232326;
+  border-radius: 12px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+.items-box .status-item img {
+  width: 24px;
+  margin: 0 16px 0 0;
+}
+.items-box .status-item .status {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 0 0 0 auto;
+}
+.items-box .status-item .status span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  outline-width: 6px;
+  outline-style: solid;
+  margin: 0 14px 0 0;
+}
+.items-box .status-item .status.online span {
+  background: #41FFB4;
+  outline-color: rgba(65, 255, 180, 0.24);
+}
+.items-box .status-item .status.offline span {
+  background: #FF7070;
+  outline-color: rgba(255, 112, 112, 0.24);
+}/*# sourceMappingURL=health-monitor.css.map */

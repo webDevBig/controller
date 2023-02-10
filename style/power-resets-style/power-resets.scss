@@ -1,0 +1,96 @@
+$main-bg-color:#1E1E20;
+
+$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
+$font-family-Medium: 'PlusJakartaSans-Medium';
+$font-family-Regular: 'PlusJakartaSans-Regular';
+
+$font-color: white;
+
+$icon-color:#52525A;
+$active-color:#41FFB4;
+$button-border-color:#313538;
+
+$climate-color1:#ADEBFF;
+$climate-color2:#FFADAD;
+
+$reset-color:#FFF7AD;
+
+$font-size-big: 24px;
+$font-size-regular2: 16px;
+$font-size-regular: 14px;
+$font-size-small: 12px;
+
+
+
+
+.power-resets-content {
+    width: 100%;
+    height: 100%;
+
+    .swiper {
+        .slide {
+            padding: 0;
+        }
+    }
+
+    .power-resets-clm {
+        width: calc(50% - 12px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .title {
+            margin: 0 0 20px;
+        }
+    }
+
+    .power-resets-item {
+        width: 100%;
+        margin: 4px 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background: #232326;
+        border-radius: 12px;
+        padding: 8px;
+
+        .power-resets-icon {
+            width: 24px;
+            height: 24px;
+            -webkit-mask: url(../../img/power-resets-.svg.svg) no-repeat center;
+            mask: url(../../img/power-resets.svg.svg) no-repeat center;
+            background-color: $climate-color2;
+            margin: 0 16px 0 0;
+        }
+
+        &.active {
+            .power-resets-icon {
+                background-color: $active-color;
+            }
+
+        }
+
+        &.power-resets-item-reset {
+            .power-resets-icon {
+                -webkit-mask: url(../../img/refresh.svg) no-repeat center;
+                mask: url(../../img/refresh.svg) no-repeat center;
+                background-color: $reset-color;
+            }
+        }
+
+        .power-resets-name {
+            font-weight: 600;
+            font-size: $font-size-regular;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .oval-btn {
+            width: 103px;
+            padding: 7px 0;
+            margin: 0 0 0 auto;
+            background: #1E1E20;
+        }
+    }
+}

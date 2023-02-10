@@ -1,0 +1,226 @@
+$main-bg-color:#1E1E20;
+
+$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
+$font-family-Medium: 'PlusJakartaSans-Medium';
+$font-family-Regular: 'PlusJakartaSans-Regular';
+
+$font-color: white;
+$font-color-alert:#FF7070;
+
+$icon-color:#52525A;
+$active-color:#41FFB4;
+$button-border-color:#313538;
+
+$climate-color1:#ADEBFF;
+$climate-color2:#FFADAD;
+
+$font-size-big2: 48px;
+$font-size-big: 24px;
+$font-size-regular2: 16px;
+$font-size-regular: 14px;
+$font-size-small: 12px;
+
+.health-monitor-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    hr {
+        width: 1px;
+        height: 100%;
+        border: none;
+        background-color: #30303B;
+    }
+
+    .box {
+        padding: 48px 0 0;
+        width: calc(50% - 24px);
+        height: 100%;
+        background: #232326;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        .health-monitor-subtitle {
+            font-size: $font-size-regular;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            color: rgba($font-color, 0.48);
+        }
+
+        .circle-btn {
+            width: 190px;
+            height: 190px;
+            padding: 0 0 0 13px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .temperature-number {
+                font-size: $font-size-big2;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            sup {
+                opacity: 0.14;
+                font-size: $font-size-regular;
+            }
+
+            .message {
+                font-size: $font-size-regular;
+                color: $font-color-alert;
+                font-weight: 700;
+                line-height: 18px;
+                margin: 12px 0 0;
+                padding: 0 13px 0 0;
+            }
+        }
+
+        .current-temp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-image: url('../../img/both-temp-bg.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: relative;
+            margin: 70px 0 48px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: calc(100% - 2px);
+                height: calc(100% - 2px);
+                border: 2px solid transparent;
+                background: linear-gradient(192deg, rgba(255, 255, 255, 0.28) 20%, rgba(255, 255, 255, 0) 48%) border-box;
+                -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                left: 0;
+                top: 0;
+                border-radius: 50%;
+            }
+
+        }
+
+        .needle {
+            width: 50%;
+            height: 20px;
+            position: absolute;
+            left: 0px;
+            transform-origin: 100% 11px;
+            transform: rotate(0deg);
+            animation: fourspeed3 2s 1 both;
+            animation-delay: 1s;
+            display: block;
+            z-index: 0;
+
+            &::after {
+                content: '';
+                position: absolute;
+                background: #1E1E20;
+                width: 22px;
+                height: 22px;
+                border-radius: 4px;
+                transform: rotate(45deg);
+                top: 0;
+                left: 30px;
+                border-left: 1px solid rgba($font-color, 0.06);
+                border-bottom: 1px solid rgba($font-color, 0.06);
+            }
+        }
+
+    }
+}
+
+@keyframes fourspeed3 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(115deg);
+    }
+}
+
+.items-box {
+    width: calc(50% - 24px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .status-box {
+        width: 100%;
+        background: #232326;
+        border-radius: 16px;
+        padding: 24px;
+        margin: 0 0 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .status-item {
+        margin: 8px 0;
+        width: 100%;
+        background: #232326;
+        border-radius: 12px;
+        padding: 20px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-weight: 600;
+        font-size: $font-size-regular;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+
+        img {
+            width: 24px;
+            margin: 0 16px 0 0;
+        }
+
+        .status {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 50%;
+            margin: 0 0 0 auto;
+
+            span {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                outline-width: 6px;
+                outline-style: solid;
+                margin: 0 14px 0 0;
+            }
+
+            &.online {
+                span {
+                    background: $active-color;
+                    outline-color: rgba($active-color, 0.24);
+                }
+            }
+
+            &.offline {
+                span {
+                    background: $font-color-alert;
+                    outline-color: rgba($font-color-alert, 0.24);
+                }
+            }
+        }
+    }
+
+}

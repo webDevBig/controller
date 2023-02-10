@@ -9,7 +9,7 @@ window.addEventListener("load", function () {
     var source_name = document.querySelector('.source-name'),
         source_subtitle = document.querySelector('.source-subtitle');
     var name = ['DCP', 'Dashboard', 'Sources', 'Lighting', 'Climate', 'Settings']
-    var subtitle = ['current source', 'Controls', 'Control', 'Control', 'Control', '']
+    var subtitle = ['current source', 'Controls', 'Control', 'Control', 'Control', 'Seating Controls']
 
 
     function myTabClicks(tabClickEvent) {

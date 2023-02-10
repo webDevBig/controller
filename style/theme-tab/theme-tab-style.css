@@ -1,0 +1,123 @@
+.theme-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: auto;
+}
+.theme-content ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #313538;
+}
+.theme-content ::-webkit-scrollbar {
+  width: 4px;
+  background-color: #313538;
+}
+.theme-content ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #52525A;
+}
+
+.theme-item {
+  border-radius: 20px;
+  width: 235px;
+  height: 232px;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #181818;
+  border: 1px solid #313538;
+  position: relative;
+  padding: 24px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.theme-item.active {
+  background: linear-gradient(130.35deg, #313538 -8.16%, rgba(49, 53, 56, 0) 135.93%);
+  border-color: transparent;
+}
+.theme-item.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  background: linear-gradient(133deg, rgba(255, 255, 255, 0.28) 35%, rgba(255, 255, 255, 0) 80%) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  left: -1px;
+  top: -1px;
+  border-radius: 20px;
+}
+.theme-item span {
+  background: #232326;
+  height: 20px;
+  width: 100%;
+}
+.theme-item span:last-of-type {
+  width: 40%;
+  margin-top: 8px;
+}
+.theme-item .bg-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  margin: 24px 0 24px auto;
+}
+
+.theme-item1 .bg-box {
+  background: #41FFB4;
+}
+
+.theme-item2 .bg-box {
+  background: #5DBADC;
+}
+
+.theme-item3 .bg-box {
+  background: #5BACED;
+}
+
+.theme-item4 .bg-box {
+  background: #7197FB;
+}
+
+.theme-item5 .bg-box {
+  background: #89D9D6;
+}
+
+.theme-item6 {
+  background: #08090C;
+}
+.theme-item6 .bg-box {
+  background: #8998F9;
+}
+
+.theme-item7 {
+  background: #101119;
+}
+.theme-item7 .bg-box {
+  background: #8998F9;
+}
+
+.theme-item8 .bg-box {
+  background: #F272AF;
+}
+
+.theme-item9 .bg-box {
+  background: #98C966;
+}
+
+.theme-item10 .bg-box {
+  background: #A985E0;
+}
+
+.theme-item11 .bg-box {
+  background: #DEA768;
+}/*# sourceMappingURL=theme-tab-style.css.map */

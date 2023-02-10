@@ -76,6 +76,7 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
+  font-family: "PlusJakartaSans-Regular";
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -87,7 +88,10 @@
 }
 .block .box .circle-btn .title {
   opacity: 0.14;
-  max-width: 12px 0 0;
+  margin: 12px 0 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
 }
 .block .stop1 {
   stop-color: #41FFB4;

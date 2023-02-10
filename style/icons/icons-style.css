@@ -1,6 +1,6 @@
 .dcp-icon {
-  -webkit-mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
-  mask: url(../../img/source-icon/Digital-Cinema.svg) no-repeat center;
+  -webkit-mask: url(../../img/source-icon/digital-cinema.svg) no-repeat center;
+  mask: url(../../img/source-icon/digital-cinema.svg) no-repeat center;
 }
 
 .bluray-icon {
@@ -9,8 +9,8 @@
 }
 
 .apple-icon {
-  -webkit-mask: url(../../img/source-icon/Icon-Mac.svg) no-repeat center;
-  mask: url(../../img/source-icon/Icon-Mac.svg) no-repeat center;
+  -webkit-mask: url(../../img/source-icon/icon-mac.svg) no-repeat center;
+  mask: url(../../img/source-icon/icon-mac.svg) no-repeat center;
 }
 
 .xbox-icon {

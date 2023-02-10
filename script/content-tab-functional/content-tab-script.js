@@ -35,7 +35,7 @@ window.addEventListener("load", function () {
             let parentPos = document.querySelector('.devise-nav-tabs').getBoundingClientRect();
 
             _class("marker-devise")[0].style.left = `calc(${coords.left}px - ${parentPos.left}px)`;
-          
+
 
         });
     }
@@ -45,7 +45,11 @@ window.addEventListener("load", function () {
 window.addEventListener("load", function () {
     // store tabs variable
 
-    var myTabs = document.querySelectorAll("ul.settings-nav-tabs > li");
+    var myTabs = document.querySelectorAll("ul.settings-nav-tabs > li"),
+        source_subtitle = document.querySelector('.source-subtitle');
+    var subtitleSettings = ['Seating Controls', 'Power Resets', 'Control', 'Health Monitor', 'Control', 'Themes']
+
+
 
     function myTabClicks(tabClickEvent) {
         for (var i = 0; i < myTabs.length; i++) {
@@ -80,7 +84,9 @@ window.addEventListener("load", function () {
             let parentPos = document.querySelector('.settings-nav-tabs').getBoundingClientRect();
 
             _class("marker-settings")[0].style.left = `calc(${coords.left}px - ${parentPos.left}px)`;
-         
+
+            source_subtitle.innerHTML = subtitleSettings[i];
+
 
         });
     }

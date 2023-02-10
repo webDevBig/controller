@@ -37,6 +37,10 @@
     <link rel="stylesheet" href="style/slider-style/slider.css">
     <link rel="stylesheet" href="style/checkbox-style/checkbox-style.css">
 
+    <link rel="stylesheet" href="style/power-resets-style/power-resets.css">
+    <link rel="stylesheet" href="style/health-monitor-style/health-monitor.css">
+    <link rel="stylesheet" href="style/theme-tab/theme-tab-style.css">
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -93,7 +97,7 @@
                     <button class="circle-btn notification-btn active"><img alt="notification"
                             src="img/button-icon/notification.svg" /></button>
                     <button class="circle-btn circle-bg-btn"><img alt="power"
-                            src="img/button-icon/Power.svg" /></button>
+                            src="img/button-icon/power.svg" /></button>
                 </div>
             </header>
 
@@ -143,7 +147,7 @@
                 <div id="tab-1" class="tab-pane">
                     <div class="dashboard-content">
                         <div class="dashboard-clm">
-                            <p class="dashboard-title">Sources</p>
+                            <p class="title">Sources</p>
                             <button class="rectangle-btn active sources-btn"> <i class="dcp-icon"></i>DCP</button>
                             <button class="rectangle-btn sources-btn"><i class="bluray-icon"></i>Blu-ray</button>
                             <button class="rectangle-btn sources-btn"><i class="apple-icon"></i>Apple TV</button>
@@ -152,7 +156,7 @@
                             <button class="rectangle-btn sources-btn"><i class="ps-icon"></i>PS 5</button>
                         </div>
                         <div class="dashboard-clm">
-                            <p class="dashboard-title">Lighting</p>
+                            <p class="title">Lighting</p>
                             <button class="rectangle-btn active lighting-btn">Scene1</button>
                             <button class="rectangle-btn lighting-btn">Scene2</button>
                             <button class="rectangle-btn lighting-btn">Scene3</button>
@@ -161,8 +165,7 @@
                             <button class="rectangle-btn lighting-btn">Scene6</button>
                         </div>
                         <div class="dashboard-clm">
-                            <p class="dashboard-title">Climate</p>
-
+                            <p class="title">Climate</p>
                             <div class="temp-box">
                                 <div class="temp-item">
                                     <button class="up-temp circle-btn"></button>
@@ -298,7 +301,7 @@
 
                         </div>
                         <div class="lightings-clm">
-                            <p class="lightings-title">Scene List</p>
+                            <p class="title">Scene List</p>
                             <button class="rectangle-btn active scene-btn">Scene1</button>
                             <button class="rectangle-btn scene-btn">Scene2</button>
                             <button class="rectangle-btn scene-btn">Scene3</button>
@@ -325,7 +328,7 @@
                         <div class="box">
                             <div class="block current-temp">
                                 <div class="box"><button class="circle-btn circle-bg-btn">
-                                        <p class="number"><span>24</span> <sup>°c</sup></p>
+                                        <p class="number"><span class="current">24</span> <sup>°c</sup></p>
                                         <p class="title">current<br>
                                             temperature</p>
                                     </button></div>
@@ -363,6 +366,8 @@
                 <div id="tab-5" class="tab-pane">
                     <div class="tab-content">
                         <div id="content-tab-6" class="active settings-tab-pane"></div>
+
+                        <!-- settings tab Power Resets  DONE  -->
                         <div id="content-tab-7" class="settings-tab-pane">
                             <div class="power-resets-content">
                                 <div class="power-resets-slider swiper" id="power-resets-swiper">
@@ -370,7 +375,110 @@
                                     <div class="swiper-wrapper">
                                         <!-- Slides -->
                                         <div class="swiper-slide">
-                                            <div class="slide"></div>
+                                            <div class="slide">
+                                                <div class="power-resets-clm">
+                                                    <p class="title">Rack 1</p>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 1</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 2</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item power-resets-item-reset">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 3</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 4</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 5</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 6</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 7</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 8</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                </div>
+                                                <div class="power-resets-clm">
+                                                    <p class="title">Rack 2</p>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 1</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 2</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item power-resets-item-reset">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 3</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 4</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 5</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 6</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 7</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 8</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="slide"></div>
@@ -382,26 +490,130 @@
 
                             </div>
                         </div>
-                        <div id="content-tab-8" class="settings-tab-pane">
-                            <span
-                                class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-                            <span class="col-md-10">
-                                <h3>Feature 8</h3>
-                            </span>
-                        </div>
+                        <div id="content-tab-8" class="settings-tab-pane"></div>
+
+                        <!-- settings tab Health Monitor  -->
                         <div id="content-tab-9" class="settings-tab-pane">
-                            <span
-                                class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-                            <span class="col-md-10">
-                                <h3>Feature 9</h3>
-                            </span>
+                            <div class="health-monitor-content">
+                                <div class="box">
+                                    <p class="title">Booth Temperature</p>
+                                    <div class="block current-temp">
+                                        <div class="needle"></div>
+                                        <button class="circle-btn circle-bg-btn">
+                                            <p class="temperature-number"><span>23</span> <sup>°c</sup></p>
+                                            <p class="message">Alert!</p>
+                                        </button>
+                                    </div>
+                                    <p class="health-monitor-subtitle">The booth temp should have a range, ie 20c - 22c
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="items-box">
+                                    <div class="status-box"></div>
+                                    <div class="status-item">
+                                        <img src="img/health-icon/projector.svg" />
+                                        <p class="status-name">Projector</p>
+                                        <p class="status online"><span></span>Online</p>
+                                    </div>
+                                    <div class="status-item">
+                                        <img src="img/health-icon/masking.svg" />
+                                        <p class="status-name">Masking</p>
+                                        <p class="status offline"><span></span>Offline</p>
+                                    </div>
+                                    <div class="status-item">
+                                        <img src="img/health-icon/equalizer.svg" />
+                                        <p class="status-name">Equalizer</p>
+                                        <p class="status online"><span></span>Online</p>
+                                    </div>
+                                    <div class="status-item">
+                                        <img src="img/health-icon/receiver.svg" />
+                                        <p class="status-name">Receiver</p>
+                                        <p class="status offline"><span></span>Offline</p>
+                                    </div>
+                                    <div class="status-item">
+                                        <img src="img/health-icon/video-processor.svg" />
+                                        <p class="status-name">Video Processor</p>
+                                        <p class="status online"><span></span>Online</p>
+                                    </div>
+                                    <div class="status-item">
+                                        <img src="img/health-icon/pdu.svg" />
+                                        <p class="status-name">PDU</p>
+                                        <p class="status online"><span></span>Online</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- settings tab theme DONE -->
                         <div id="content-tab-10" class="settings-tab-pane">
-                            <span
-                                class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-                            <span class="col-md-10">
-                                <h3>Feature 10</h3>
-                            </span>
+                            <div class="theme-content">
+                                <div class="theme-item active theme-item1">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item2">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item3">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item4">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item5">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item6">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item7">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item8">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item9">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item10">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item11">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -438,10 +650,12 @@
     <script src="script/nav-functional/nav-script.js"></script>
     <script src="script/item-functional/item-script.js"></script>
     <script src="script/dashboard-functional/btn-active.js"></script>
-    <script src="script/climate-functional/climate.js"></script>
+
     <script src="script/lightings-functional/lightings.js"></script>
     <script src="script/lightings-functional/lightings.js"></script>
     <script src="script/lightings-item-functional/lightings-item-script.js"></script>
+
+    <script src="script/theme-functional/theme-script.js"></script>
 
 
     <script>
@@ -468,7 +682,7 @@
             // Navigation arrows
             navigation: false
         });
-        
+
 
         const available_macros_swiper = new Swiper('#available-macros-swiper', {
             // Optional parameters
@@ -482,6 +696,9 @@
             navigation: false
         });
     </script>
+
+
+    <script defer src="script/climate-functional/climate.js"></script>
 
 </body>
 
