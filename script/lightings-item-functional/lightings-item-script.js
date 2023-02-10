@@ -4,7 +4,6 @@ const lightingsValue = document.querySelectorAll('.lightings-perc');
 
 
 const lightingsrangeInputs = document.querySelectorAll('.lightings input[type="range"]');
-const lightingsrangeThumb = document.querySelectorAll('.lightings input[type=range]::-webkit-slider-thumb');
 
 
 
