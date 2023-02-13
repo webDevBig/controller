@@ -1,0 +1,42 @@
+.status-item {
+  margin: 8px 0;
+  width: 100%;
+  background: #232326;
+  border-radius: 12px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+.status-item img {
+  width: 24px;
+  margin: 0 16px 0 0;
+}
+
+.status {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 0 0 0 auto;
+}
+.status span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  outline-width: 6px;
+  outline-style: solid;
+  margin: 0 14px 0 0;
+}
+.status.online span {
+  background: #41FFB4;
+  outline-color: rgba(65, 255, 180, 0.24);
+}
+.status.offline span {
+  background: #FF7070;
+  outline-color: rgba(255, 112, 112, 0.24);
+}/*# sourceMappingURL=status-item-style.css.map */

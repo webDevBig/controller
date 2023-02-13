@@ -136,44 +136,19 @@
   align-items: center;
   justify-content: flex-start;
 }
-.items-box .status-item {
-  margin: 8px 0;
+.items-box .status-bar {
   width: 100%;
-  background: #232326;
-  border-radius: 12px;
-  padding: 20px 24px;
+  height: 8px;
+  background: linear-gradient(90deg, #41FFB4 53%, #FF7070 47%);
+}
+.items-box .status-row {
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.02em;
+  margin-top: 24px;
 }
-.items-box .status-item img {
-  width: 24px;
-  margin: 0 16px 0 0;
-}
-.items-box .status-item .status {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 50%;
-  margin: 0 0 0 auto;
-}
-.items-box .status-item .status span {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  outline-width: 6px;
-  outline-style: solid;
-  margin: 0 14px 0 0;
-}
-.items-box .status-item .status.online span {
-  background: #41FFB4;
-  outline-color: rgba(65, 255, 180, 0.24);
-}
-.items-box .status-item .status.offline span {
-  background: #FF7070;
-  outline-color: rgba(255, 112, 112, 0.24);
+.items-box .status-row .status {
+  margin: 0 24px;
+  width: auto;
 }/*# sourceMappingURL=health-monitor.css.map */

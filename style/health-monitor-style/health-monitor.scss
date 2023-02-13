@@ -5,10 +5,9 @@ $font-family-Medium: 'PlusJakartaSans-Medium';
 $font-family-Regular: 'PlusJakartaSans-Regular';
 
 $font-color: white;
-$font-color-alert:#FF7070;
-
 $icon-color:#52525A;
 $active-color:#41FFB4;
+$font-color-alert:#FF7070;
 $button-border-color:#313538;
 
 $climate-color1:#ADEBFF;
@@ -174,55 +173,26 @@ $font-size-small: 12px;
         justify-content: flex-start;
     }
 
-    .status-item {
-        margin: 8px 0;
+    .status-bar
+    {
         width: 100%;
-        background: #232326;
-        border-radius: 12px;
-        padding: 20px 24px;
+        height: 8px;
+        background: linear-gradient(90deg, $active-color 53%, $font-color-alert 47%);
+    }
+    .status-row
+    {
+        width: 100%;
         display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: flex-start;
-        font-weight: 600;
-        font-size: $font-size-regular;
-        line-height: 24px;
-        letter-spacing: -0.02em;
+        margin-top: 24px;
 
-        img {
-            width: 24px;
-            margin: 0 16px 0 0;
-        }
-
-        .status {
-            position: relative;
-            display: flex;
-            align-items: center;
-            width: 50%;
-            margin: 0 0 0 auto;
-
-            span {
-                width: 6px;
-                height: 6px;
-                border-radius: 50%;
-                outline-width: 6px;
-                outline-style: solid;
-                margin: 0 14px 0 0;
-            }
-
-            &.online {
-                span {
-                    background: $active-color;
-                    outline-color: rgba($active-color, 0.24);
-                }
-            }
-
-            &.offline {
-                span {
-                    background: $font-color-alert;
-                    outline-color: rgba($font-color-alert, 0.24);
-                }
-            }
+        .status
+        {
+            margin: 0 24px;
+            width: auto;
         }
     }
 
 }
+
