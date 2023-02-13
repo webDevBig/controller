@@ -9,6 +9,7 @@
   border-radius: 20px;
   margin: 24px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .source-item .source-name {
   font-family: "PlusJakartaSans-Regular";

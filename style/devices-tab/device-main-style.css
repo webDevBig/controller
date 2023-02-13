@@ -1,0 +1,6 @@
+.device-main-content {
+  display: none;
+}
+.device-main-content.active {
+  display: flex;
+}/*# sourceMappingURL=device-main-style.css.map */

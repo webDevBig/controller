@@ -1,0 +1,32 @@
+.audio-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.audio-content .btn-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 24px 0;
+}
+
+.audio-btn {
+  width: 247px;
+  border: 1px solid #313538;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.audio-btn.active {
+  border-color: transparent;
+}
+.audio-btn.active::before {
+  left: -1px;
+  top: -1px;
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=audio-style.css.map */

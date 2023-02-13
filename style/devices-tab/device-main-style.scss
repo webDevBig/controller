@@ -1,0 +1,9 @@
+.device-main-content
+{
+    display: none;
+
+    &.active
+    {
+        display: flex;
+    }
+}

@@ -35,7 +35,6 @@
   align-items: stretch;
   width: 100%;
   flex-wrap: wrap;
-  padding: 0 26px 0 0;
 }
 .swiper .swiper-android .swiper-slide,
 .swiper .swiper-wrapper {
@@ -61,6 +60,7 @@
   border-radius: 19px;
   margin: 0 2px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 16px;

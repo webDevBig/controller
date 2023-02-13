@@ -15,6 +15,7 @@ $climate-color2:#FFADAD;
 
 $font-size-big2: 48px;
 $font-size-big: 24px;
+$font-size-regular3: 18px;
 $font-size-regular2: 16px;
 $font-size-regular: 14px;
 $font-size-small: 12px;
@@ -56,8 +57,14 @@ body {
 }
 
 .title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: $font-size-regular2;
+    line-height: 24px;
+}
+.devise-title
+{
+    font-weight: 500;
+    font-size: $font-size-regular3;
     line-height: 24px;
 }
 

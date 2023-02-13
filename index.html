@@ -43,6 +43,12 @@
     <link rel="stylesheet" href="style/health-monitor-style/status-item-style.css">
     <link rel="stylesheet" href="style/theme-tab/theme-tab-style.css">
 
+    <link rel="stylesheet" href="style/audio-tab/audio-style.css">
+
+    <link rel="stylesheet" href="style/projector-tab/projector-style.css">
+
+    <link rel="stylesheet" href="style/devices-tab/device-main-style.css">
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -55,10 +61,8 @@
         <!-- left side menu -->
         <nav class="nav-bar">
             <ul class="nav nav-tabs">
-                <li class="menu-item active current-menu-item logo-item"><a href="#tab-source" class="tab-source dcp-icon logo">
-                    <!-- <i
-                            class="dcp-icon logo "></i> -->
-                        </a></li>
+                <li class="menu-item active current-menu-item logo-item"><a href="#tab-source"
+                        class="tab-source dcp-icon logo"></a></li>
                 <li class="menu-item"><a href="#tab-1" class="tab1"></a></li>
                 <li class="menu-item"><a href="#tab-2" class="tab2"></a></li>
                 <li class="menu-item"><a href="#tab-3" class="tab3"></a></li>
@@ -108,35 +112,341 @@
 
                 <!-- source tab -->
                 <div id="tab-source" class="tab-pane active">
-                    <!-- <div id="content-tab-main" class="content-tab-pane active"> -->
+                    <div class="device-main-content active">
                         Main
-                    <!-- </div> -->
+                    </div>
                     <div class="tab-content">
                         <div id="content-tab-1" class="content-tab-pane ">
-                            Available Macros
-                            <div class="available-macros-slider swiper" id="available-macros-swiper">
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper">
-                                    <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <div class="slide"></div>
+                            <div class="progector-content">
+                                <div class="projector-header">
+                                    <div class="projector-header-item active">
+                                        <div class="functional-box">
+                                            <div class="functional-icon lamp-icon"></div>
+                                            <p class="title">Lamp <br><span class="active">ON</span></p>
+                                        </div>
+                                        <input type="checkbox" id="switchLamp" class="switch" checked="">
+                                        <label for="switchLamp" class="switchLabel"></label>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="slide"></div>
+                                    <div class="projector-header-item">
+                                        <div class="functional-box">
+                                            <div class="functional-icon dowser-icon"></div>
+                                            <p class="title">Dowser<br><span class="anactive">CLOSED</span></p>
+                                        </div>
+                                        <input type="checkbox" id="switchDowser" class="switch">
+                                        <label for="switchDowser" class="switchLabel"></label>
+                                    </div>
+                                    <div class="projector-header-item">
+                                        <div class="functional-box">
+                                            <div class="functional-icon storage-icon"></div>
+                                            <p class="title">Storage<br><span
+                                                    class="storage">35.24GB</span><span>/128GB</span></p>
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- If we need pagination -->
-                                <div class="swiper-pagination"></div>
+
+                                <div class="available-macros-slider swiper" id="available-macros-swiper">
+                                    Available Macros
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="slide">
+                                                <div class="rectangle-btn active macros-btn">
+                                                    <p class="title">Flat 2k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        2.35:1
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 2020
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 4k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 4K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 2k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        2.35:1
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 2020
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 4k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide">
+                                                <div class="rectangle-btn active macros-btn">
+                                                    <p class="title">Flat 2k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        2.35:1
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 2020
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 4k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 4K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 2k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        2.35:1
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 2020
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 4k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide">
+                                                <div class="rectangle-btn active macros-btn">
+                                                    <p class="title">Flat 2k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        2.35:1
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 2020
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 4k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 4K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 2k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        2.35:1
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 2020
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 4k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
                             </div>
                         </div>
                         <div id="content-tab-2" class="content-tab-pane">
                         </div>
+
+                        <!-- audio tab DONE -->
                         <div id="content-tab-3" class="content-tab-pane">
-                            <span
-                                class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-                            <span class="col-md-10">
-                                <h3>Feature 3</h3>
-                            </span>
+                            <div class="audio-content">
+                                <p class="devise-title">Consumer Surround Mode</p>
+                                <div class="btn-box">
+                                    <button class="rectangle-btn active audio-btn">Stereo</button>
+                                    <button class="rectangle-btn audio-btn">7.1</button>
+                                    <button class="rectangle-btn audio-btn">Atmos</button>
+                                    <button class="rectangle-btn audio-btn">All Channel Stereo</button>
+                                </div>
+                            </div>
+
+
                         </div>
                         <div id="content-tab-4" class="content-tab-pane">
                             <span
@@ -504,10 +814,10 @@
                                     <p class="title">Booth Temperature</p>
                                     <div class=" health-current-temp">
                                         <div class="needle"></div>
-                                         <button class="circle-btn circle-bg-btn">
+                                        <button class="circle-btn circle-bg-btn">
                                             <p class="temperature-number"><span>23</span> <sup>°c</sup></p>
                                             <p class="message">Alert!</p>
-                                        </button> 
+                                        </button>
                                     </div>
                                     <p class="health-monitor-subtitle">The booth temp should have a range, ie 20c - 22c
                                     </p>
@@ -666,6 +976,8 @@
     <script src="script/lightings-item-functional/lightings-item-script.js"></script>
 
     <script src="script/theme-functional/theme-script.js"></script>
+    <script src="script/audio-functional/audio-script.js"></script>
+    <script src="script/projector-functional/projector-script.js"></script>
 
 
     <script>

@@ -1,0 +1,162 @@
+$main-bg-color:#1E1E20;
+
+$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
+$font-family-Medium: 'PlusJakartaSans-Medium';
+$font-family-Regular: 'PlusJakartaSans-Regular';
+
+$font-color: white;
+$icon-color:#52525A;
+$active-color:#41FFB4;
+$font-color-alert:#FF7070;
+$button-border-color:#313538;
+
+$climate-color1:#ADEBFF;
+$climate-color2:#FFADAD;
+
+$font-size-big2: 48px;
+$font-size-big: 24px;
+$font-size-regular3: 18px;
+$font-size-regular2: 16px;
+$font-size-regular: 14px;
+$font-size-small: 12px;
+
+
+
+.progector-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .projector-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 24px;
+        border-bottom: 1px solid #30303B;
+        margin-bottom: 24px;
+    }
+
+    .projector-header-item {
+        width: 337px;
+        background: #232326;
+        border-radius: 16px;
+        padding: 32px 48px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .functional-box {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .functional-icon {
+            width: 24px;
+            height: 24px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 0 24px 0 0;
+
+            &.dowser-icon {
+                background-image: url(../../img/tab-icons/projector.svg);
+
+            }
+
+            &.storage-icon {
+                background-image: url(../../img/projector-icons/storage.svg);
+            }
+
+            &.lamp-icon {
+                background-image: url(../../img/projector-icons/lamp.svg);
+            }
+        }
+
+        &.active {
+            .dowser-icon {
+                background-image: url(../../img/tab-icons/progector-active.svg);
+            }
+
+            .lamp-icon {
+                background-image: url(../../img/projector-icons/lamp-active.svg);
+            }
+
+            span {
+                color: $active-color;
+            }
+        }
+
+        .title {
+            min-width: 115px;
+            text-align: left;
+
+            span {
+                font-size: 14px;
+                line-height: 20px;
+                color: $icon-color;
+
+                &.storage {
+                    color: $active-color;
+                }
+
+                &.anactive {
+                    color: $font-color-alert;
+                }
+
+            }
+        }
+    }
+
+    .swiper {
+        height: calc(100% - 164px);
+
+        .swiper-wrapper {
+            margin-top: 12px;
+        }
+
+    }
+
+    .macros-btn {
+        padding: 24px 45px;
+        width: 247px;
+        height: 152px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        border: 1px solid #313538;
+        margin: 12px 0;
+        cursor: pointer;
+
+
+        &.active {
+            border-color: transparent;
+
+            &::before {
+                left: -1px;
+                top: -1px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+
+
+        .functional-title {
+            font-size: 16px;
+            line-height: 24px;
+            color: #52525A;
+            display: flex;
+            align-items: center;
+
+            img {
+                max-width: 24px;
+                margin: 0 8px 0 0;
+            }
+        }
+    }
+}

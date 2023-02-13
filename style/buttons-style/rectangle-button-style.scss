@@ -40,8 +40,9 @@ $font-size-small: 12px;
     }
 
     &.active {
-        background: linear-gradient(130.35deg, $button-border-color -8.16%, rgba(49, 53, 56, 0) 135.93%);
+        background: linear-gradient(130.35deg, #313538 -8.16%, rgba(49, 53, 56, 0) 135.93%);
         color: $active-color;
+
 
         &::before {
             content: '';
@@ -63,7 +64,6 @@ $font-size-small: 12px;
         i {
             background-color: $active-color
         }
-
 
     }
 }
