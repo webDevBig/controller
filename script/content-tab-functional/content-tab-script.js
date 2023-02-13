@@ -1,11 +1,22 @@
 window.addEventListener("load", function () {
     // store tabs variable
 
+    // devise tabs
+
+    // var logo_item = document.querySelector('.logo-item');
+    // [].forEach.call(logo_item, function (el) {
+    //     el.onclick = function (e) {
+    //         console.log('h')
+    //         document.querySelector('.marker-devise').classList.add('hide')
+    //     }
+    // });
+
     var myTabs = document.querySelectorAll("ul.devise-nav-tabs > li");
 
     function myTabClicks(tabClickEvent) {
         for (var i = 0; i < myTabs.length; i++) {
             myTabs[i].classList.remove("active");
+            document.querySelector('.marker-devise').classList.remove('hide')
         }
         var clickedTab = tabClickEvent.currentTarget;
         clickedTab.classList.add("active");

@@ -55,8 +55,10 @@
         <!-- left side menu -->
         <nav class="nav-bar">
             <ul class="nav nav-tabs">
-                <li class="menu-item active  current-menu-item logo-item"><a href="#tab-source" class="tab-source "><i
-                            class="dcp-icon logo "></i></a></li>
+                <li class="menu-item active current-menu-item logo-item"><a href="#tab-source" class="tab-source dcp-icon logo">
+                    <!-- <i
+                            class="dcp-icon logo "></i> -->
+                        </a></li>
                 <li class="menu-item"><a href="#tab-1" class="tab1"></a></li>
                 <li class="menu-item"><a href="#tab-2" class="tab2"></a></li>
                 <li class="menu-item"><a href="#tab-3" class="tab3"></a></li>
@@ -69,23 +71,21 @@
         <!-- content -->
         <div class="content">
 
-            <!-- content header -->
-
+            <!-- content header DONE -->
             <header>
                 <div class="title-box">
                     <p class="source-name">DCP</p>
                     <p class="source-subtitle">current source</p>
                 </div>
-
                 <!-- tabs for sources -->
                 <ul class="content-nav content-nav-tabs devise-nav-tabs">
-                    <li class="active"><a href="#content-tab-1" class="content-tab-1"></a></li>
+                    <!-- <li class="active"><a href="#content-tab-main" class="content-tab-main"></a></li> -->
+                    <li class=""><a href="#content-tab-1" class="content-tab-1"></a></li>
                     <li class=""><a href="#content-tab-2" class="content-tab-2"></a></li>
                     <li class=""><a href="#content-tab-3" class="content-tab-3"></a></li>
                     <li class=""><a href="#content-tab-4" class="content-tab-4"></a></li>
-                    <div id="marker-content" class="content-tab-indicator marker-devise"></div>
+                    <div id="marker-content" class="content-tab-indicator marker-devise hide"></div>
                 </ul>
-
                 <!-- tabs for settings -->
                 <ul class="content-nav content-nav-tabs settings-nav-tabs hide">
                     <li class="active"><a href="#content-tab-6" class="content-tab-6"></a></li>
@@ -108,8 +108,11 @@
 
                 <!-- source tab -->
                 <div id="tab-source" class="tab-pane active">
+                    <!-- <div id="content-tab-main" class="content-tab-pane active"> -->
+                        Main
+                    <!-- </div> -->
                     <div class="tab-content">
-                        <div id="content-tab-1" class="content-tab-pane active">
+                        <div id="content-tab-1" class="content-tab-pane ">
                             Available Macros
                             <div class="available-macros-slider swiper" id="available-macros-swiper">
                                 <!-- Additional required wrapper -->
@@ -364,7 +367,7 @@
 
                 </div>
 
-                <!-- settings tab -->
+                <!-- settings tab  DONE-->
                 <div id="tab-5" class="tab-pane">
                     <div class="tab-content">
                         <div id="content-tab-6" class="active settings-tab-pane"></div>
@@ -494,7 +497,7 @@
                         </div>
                         <div id="content-tab-8" class="settings-tab-pane"></div>
 
-                        <!-- settings tab Health Monitor  -->
+                        <!-- settings tab Health Monitor  DONE -->
                         <div id="content-tab-9" class="settings-tab-pane">
                             <div class="health-monitor-content">
                                 <div class="box">
@@ -628,6 +631,8 @@
             </div>
 
 
+
+            <!-- footer DONE -->
             <footer>
                 <button class="oval-btn mute-btn"><img alt="mute" src="img/button-icon/volume-slash.svg" />
                     Mute</button>
@@ -647,9 +652,6 @@
                 <button class="oval-btn"><img alt="reference" src="img/button-icon/refrence.svg" /> Reference</button>
             </footer>
         </div>
-
-
-
 
     </div>
 

@@ -63,21 +63,3 @@ window.addEventListener('load', function () {
 
     })
 });
-
-// [].forEach.call(circle, function (el) {
-//     el.onclick = function (e) {
-//         var value = el.parentElement.querySelector('.value span');
-//         const oldValue = parseFloat(el.parentElement.querySelector('.value span').textContent);
-
-//         let newVal;
-//         newVal = oldValue - 1;
-//         if (newVal <= 0) {
-//             value.innerHTML = 0;
-//         } else {
-//             value.innerHTML = newVal;
-//         }
-//         let numElement = document.querySelector('.number span');
-//         numElement.innerText = newVal;
-//         circle.style.strokeDashoffset = 723 - (723 * (newVal / 100));
-//     }
-// });
