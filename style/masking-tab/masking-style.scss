@@ -55,11 +55,15 @@ $font-size-small: 12px;
 
     .rectangle-btn {
         border: 1px solid #313538;
-        background-color: $icon-color;
+
 
         &.active {
             background: transparent;
-            background-color: $active-color;
+
+            i {
+                background-color: $active-color;
+            }
+
         }
 
         &::before {
@@ -68,6 +72,7 @@ $font-size-small: 12px;
 
         i {
             margin: 0;
+            background-color: $icon-color;
         }
 
     }
@@ -78,6 +83,7 @@ $font-size-small: 12px;
         -webkit-mask-size: 24px;
         mask-size: 24px;
     }
+
     .smaller {
         -webkit-mask: url(../../img/masking-icon/pharagraphspacing-2.svg) no-repeat center;
         mask: url(../../img/masking-icon/pharagraphspacing-2.svg) no-repeat center;

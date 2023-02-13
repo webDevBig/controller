@@ -31,10 +31,11 @@
 }
 .masking-box .rectangle-btn {
   border: 1px solid #313538;
-  background-color: #52525A;
 }
 .masking-box .rectangle-btn.active {
   background: transparent;
+}
+.masking-box .rectangle-btn.active i {
   background-color: #41FFB4;
 }
 .masking-box .rectangle-btn::before {
@@ -42,6 +43,7 @@
 }
 .masking-box .rectangle-btn i {
   margin: 0;
+  background-color: #52525A;
 }
 .masking-box .bigger {
   -webkit-mask: url(../../img/masking-icon/pharagraphspacing.svg) no-repeat center;
