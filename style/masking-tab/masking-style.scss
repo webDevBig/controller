@@ -1,0 +1,127 @@
+$main-bg-color:#1E1E20;
+
+$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
+$font-family-Medium: 'PlusJakartaSans-Medium';
+$font-family-Regular: 'PlusJakartaSans-Regular';
+
+$font-color: white;
+$icon-color:#52525A;
+$active-color:#41FFB4;
+$font-color-alert:#FF7070;
+$button-border-color:#313538;
+
+$climate-color1:#ADEBFF;
+$climate-color2:#FFADAD;
+
+$font-size-big2: 48px;
+$font-size-big: 24px;
+$font-size-regular3: 18px;
+$font-size-regular2: 16px;
+$font-size-regular: 14px;
+$font-size-small: 12px;
+
+
+.masking-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.masking-clm {
+    width: 234px;
+    height: 100%;
+    border: 1px solid #30303B;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .title {
+        margin: 0 0 24px;
+    }
+}
+
+.masking-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .rectangle-btn {
+        border: 1px solid #313538;
+        background-color: $icon-color;
+
+        &.active {
+            background: transparent;
+            background-color: $active-color;
+        }
+
+        &::before {
+            display: none;
+        }
+
+        i {
+            margin: 0;
+        }
+
+    }
+
+    .bigger {
+        -webkit-mask: url(../../img/masking-icon/pharagraphspacing.svg) no-repeat center;
+        mask: url(../../img/masking-icon/pharagraphspacing.svg) no-repeat center;
+        -webkit-mask-size: 24px;
+        mask-size: 24px;
+    }
+    .smaller {
+        -webkit-mask: url(../../img/masking-icon/pharagraphspacing-2.svg) no-repeat center;
+        mask: url(../../img/masking-icon/pharagraphspacing-2.svg) no-repeat center;
+        -webkit-mask-size: 24px;
+        mask-size: 24px;
+    }
+
+    .height-btn-box {
+        height: calc(100% - 96px);
+        margin: 0 24px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .height-btn {
+            width: 72px;
+            height: 120px;
+            margin: 12px 0;
+        }
+    }
+
+    .masking {
+        width: 706px;
+        height: 484px;
+        background: #232326;
+        border-radius: 19px;
+    }
+
+    .width-btn-box {
+        width: 100%;
+        margin: 24px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0 96px;
+
+        .width-btn {
+            width: 120px;
+            height: 72px;
+            border: 1px solid #313538;
+            margin: 0 12px;
+            justify-content: center;
+        }
+    }
+
+}

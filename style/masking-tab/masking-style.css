@@ -1,0 +1,91 @@
+.masking-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.masking-clm {
+  width: 234px;
+  height: 100%;
+  border: 1px solid #30303B;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.masking-clm .title {
+  margin: 0 0 24px;
+}
+
+.masking-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.masking-box .rectangle-btn {
+  border: 1px solid #313538;
+  background-color: #52525A;
+}
+.masking-box .rectangle-btn.active {
+  background: transparent;
+  background-color: #41FFB4;
+}
+.masking-box .rectangle-btn::before {
+  display: none;
+}
+.masking-box .rectangle-btn i {
+  margin: 0;
+}
+.masking-box .bigger {
+  -webkit-mask: url(../../img/masking-icon/pharagraphspacing.svg) no-repeat center;
+  mask: url(../../img/masking-icon/pharagraphspacing.svg) no-repeat center;
+  -webkit-mask-size: 24px;
+  mask-size: 24px;
+}
+.masking-box .smaller {
+  -webkit-mask: url(../../img/masking-icon/pharagraphspacing-2.svg) no-repeat center;
+  mask: url(../../img/masking-icon/pharagraphspacing-2.svg) no-repeat center;
+  -webkit-mask-size: 24px;
+  mask-size: 24px;
+}
+.masking-box .height-btn-box {
+  height: calc(100% - 96px);
+  margin: 0 24px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.masking-box .height-btn-box .height-btn {
+  width: 72px;
+  height: 120px;
+  margin: 12px 0;
+}
+.masking-box .masking {
+  width: 706px;
+  height: 484px;
+  background: #232326;
+  border-radius: 19px;
+}
+.masking-box .width-btn-box {
+  width: 100%;
+  margin: 24px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 0 96px;
+}
+.masking-box .width-btn-box .width-btn {
+  width: 120px;
+  height: 72px;
+  border: 1px solid #313538;
+  margin: 0 12px;
+  justify-content: center;
+}/*# sourceMappingURL=masking-style.css.map */
