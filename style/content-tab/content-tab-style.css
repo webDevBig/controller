@@ -126,4 +126,13 @@
 }
 .content-tab-indicator.hide {
   opacity: 0;
+}
+
+@media all and (max-height: 800px) {
+  .content-nav-tabs {
+    bottom: -15px;
+  }
+  .content-nav-tabs li {
+    height: 46px;
+  }
 }/*# sourceMappingURL=content-tab-style.css.map */

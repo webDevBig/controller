@@ -117,6 +117,7 @@ $font-size-small: 12px;
             width: 72px;
             height: 120px;
             margin: 12px 0;
+            padding: 0;
         }
     }
 
@@ -134,6 +135,7 @@ $font-size-small: 12px;
             border: 1px solid #313538;
             margin: 0 12px;
             justify-content: center;
+            padding: 0;
 
             i {
                 transform: rotate(90deg);
@@ -144,8 +146,8 @@ $font-size-small: 12px;
 }
 
 .masking {
-    width: 706px;
-    height: 484px;
+    width: calc(100% - 120px);
+    height: calc(100% - 96px);
     background: #232326;
     border-radius: 19px;
     padding: 12px;
@@ -162,14 +164,65 @@ $font-size-small: 12px;
         width: 388px;
         aspect-ratio: auto 1 / 1;
 
+        .masking-view-value {
+            font-weight: 500;
+            font-size: $font-size-big;
+            line-height: 28px;
+        }
+
         &.height-change {
             height: 100%;
-            max-height: 460px;
         }
 
         &.width-change {
             width: 100%;
-            max-width: 682px;
+        }
+    }
+}
+
+@media all and (max-width:1000px) {
+    .masking-content {
+        .rectangle-btn {
+            width: 155px;
+        }
+    }
+}
+
+@media all and (max-height:750px) {
+    .masking-box {
+        .width-btn-box {
+            margin: 15px 0 0;
+
+            .width-btn {
+                height: 65px;
+
+                i {
+                    max-width: 20px;
+                }
+            }
+        }
+
+        .height-btn-box {
+            margin: 0 15px 0 0;
+
+            .height-btn {
+                width: 65px;
+
+                i {
+                    max-width: 20px;
+                }
+
+            }
+        }
+
+    }
+
+    .masking {
+        width: calc(100% - 95px);
+        height: calc(100% - 80px);
+
+        .masking-view {
+            width: 300px;
         }
     }
 }

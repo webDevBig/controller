@@ -40,7 +40,7 @@ $font-size-small: 12px;
 }
 
 .audio-btn {
-    width: 247px;
+    width: calc(25% - 24px);
     border: 1px solid #313538;
     font-size: $font-size-regular2;
     line-height: 24px;
@@ -55,6 +55,13 @@ $font-size-small: 12px;
             height: 100%;
         }
     }
-
     
+}
+@media all and (max-height:750px) {
+    .audio-content {
+    
+        .btn-box {
+            margin: 15px 0;
+        }
+    }
 }

@@ -18,7 +18,8 @@
      }
  });
 
- var aspect_btn = document.querySelectorAll('.aspect-btn');
+ var aspect_btn = document.querySelectorAll('.aspect-btn'),
+     masking_value = document.querySelector('.masking-view-value');
  [].forEach.call(aspect_btn, function (el) {
      el.onclick = function (e) {
          for (var i = 0; i < aspect_btn.length; i++) {
@@ -33,6 +34,7 @@
          masking_view.classList.remove('height-change')
          masking_view.classList.remove('width-change')
          el.classList.toggle('active');
+         masking_value.innerHTML = el.innerHTML;
      }
  });
  var masking_view = document.querySelector('.masking-view');

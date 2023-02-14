@@ -71,3 +71,11 @@ $font-size-small: 12px;
         }
     }
 }
+@media all and (max-height:800px) {
+   
+        .status-item {
+            padding: 12px 24px;
+            margin: 4px 0;
+        }
+    
+}

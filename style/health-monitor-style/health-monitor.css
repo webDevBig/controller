@@ -151,4 +151,18 @@
 .items-box .status-row .status {
   margin: 0 24px;
   width: auto;
+}
+
+@media all and (max-height: 800px) {
+  .items-box .status-box {
+    padding: 15px 24px;
+    margin: 0 0 4px;
+  }
+  .health-monitor-content .box {
+    padding: 30px 0;
+    justify-content: space-between;
+  }
+  .health-monitor-content .box .health-current-temp {
+    margin: 0;
+  }
 }/*# sourceMappingURL=health-monitor.css.map */

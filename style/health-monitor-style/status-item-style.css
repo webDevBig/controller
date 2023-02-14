@@ -39,4 +39,11 @@
 .status.offline span {
   background: #FF7070;
   outline-color: rgba(255, 112, 112, 0.24);
+}
+
+@media all and (max-height: 800px) {
+  .status-item {
+    padding: 12px 24px;
+    margin: 4px 0;
+  }
 }/*# sourceMappingURL=status-item-style.css.map */

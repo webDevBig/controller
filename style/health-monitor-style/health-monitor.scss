@@ -173,22 +173,20 @@ $font-size-small: 12px;
         justify-content: flex-start;
     }
 
-    .status-bar
-    {
+    .status-bar {
         width: 100%;
         height: 8px;
         background: linear-gradient(90deg, $active-color 53%, $font-color-alert 47%);
     }
-    .status-row
-    {
+
+    .status-row {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 24px;
 
-        .status
-        {
+        .status {
             margin: 0 24px;
             width: auto;
         }
@@ -196,3 +194,23 @@ $font-size-small: 12px;
 
 }
 
+@media all and (max-height:800px) {
+    .items-box {
+        .status-box {
+            padding: 15px 24px;
+            margin: 0 0 4px;
+        }
+    }
+
+    .health-monitor-content {
+        .box {
+            padding: 30px 0;
+            justify-content: space-between;
+
+            .health-current-temp {
+                margin: 0;
+            }
+        }
+
+    }
+}

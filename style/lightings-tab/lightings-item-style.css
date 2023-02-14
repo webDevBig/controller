@@ -68,4 +68,29 @@
   background: #41FFB4;
   cursor: pointer;
   border: none;
+}
+
+@media all and (max-width: 1100px) {
+  .lightings-item {
+    width: 110px;
+    padding: 24px 0;
+  }
+  .lightings-item .lightings-bar .lightings input[type=range] {
+    right: -99%;
+  }
+}
+@media all and (max-height: 750px) {
+  .lightings-item {
+    height: 400px;
+    padding: 15px 0;
+  }
+  .lightings-item .lightings-bar {
+    width: 100%;
+    height: 260px;
+    margin: 15px 0;
+  }
+  .lightings-item .lightings-bar .lightings input[type=range] {
+    width: 260px;
+    right: -69%;
+  }
 }/*# sourceMappingURL=lightings-item-style.css.map */

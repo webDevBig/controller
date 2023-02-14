@@ -24,6 +24,7 @@ $font-size-small: 12px;
 
 .progector-content {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -40,13 +41,17 @@ $font-size-small: 12px;
     }
 
     .projector-header-item {
-        width: 337px;
+        width: calc(33% - 12px);
         background: #232326;
         border-radius: 16px;
         padding: 32px 48px;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
+
+        .switchLabel {
+            margin: 0;
+        }
 
         .functional-box {
             display: flex;
@@ -91,7 +96,6 @@ $font-size-small: 12px;
         }
 
         .title {
-            min-width: 115px;
             text-align: left;
 
             span {
@@ -116,21 +120,26 @@ $font-size-small: 12px;
 
         .swiper-wrapper {
             margin-top: 12px;
+            height: calc(100% - 60px);
         }
 
     }
 
     .macros-btn {
         padding: 24px 45px;
-        width: 247px;
+        width: calc(25% - 18px);
         height: 152px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
         border: 1px solid #313538;
-        margin: 12px 0;
+        margin: 12px 24px 12px 0;
         cursor: pointer;
+
+        &:nth-child(4n) {
+            margin: 12px 0;
+        }
 
 
         &.active {
@@ -158,5 +167,60 @@ $font-size-small: 12px;
                 margin: 0 8px 0 0;
             }
         }
+    }
+}
+
+@media all and (max-width:1000px) {
+    .progector-content {
+        .projector-header-item {
+            padding: 32px 30px;
+        }
+
+        .macros-btn {
+            padding: 24px 30px;
+        }
+    }
+}
+
+@media all and (max-height:750px) {
+    .progector-content {
+        .swiper {
+            height: calc(100% - 80px);
+            .swiper-wrapper {
+                margin: 5px 0 0;
+                height: calc(100% - 50px);
+            }
+            .swiper-pagination
+            {
+                margin: 10px 0 0;
+            }
+        }
+        .projector-header {
+            padding: 0 0 15px;
+            margin-bottom: 15px;
+        }
+
+        .projector-header-item {
+            padding: 15px 30px;
+
+        }
+
+        .macros-btn {
+            height: 120px;
+            margin: 6px 24px 10px 0;
+            padding: 15px 30px;
+
+            .functional-title {
+                font-size: $font-size-regular;
+                line-height: 1;
+            }
+        }
+
+        .swiper {
+            .swiper-wrapper {
+                margin-top: 10px;
+            }
+        }
+
     }
 }

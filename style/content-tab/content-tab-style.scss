@@ -179,3 +179,14 @@ $font-size-small: 12px;
         opacity: 0;
     }
 }
+
+
+@media all and (max-height:800px) {
+    .content-nav-tabs {
+        bottom: -15px;
+
+        li {
+            height: 46px;
+        }
+    }
+}

@@ -52,4 +52,28 @@
   padding: 7px 0;
   margin: 0 0 0 auto;
   background: #1E1E20;
+}
+
+@media all and (max-height: 800px) {
+  .power-resets-content .power-resets-clm .title {
+    font-size: 12px;
+    margin: 0 0 8px;
+  }
+  .power-resets-content .power-resets-item {
+    padding: 6px 8px;
+  }
+  .power-resets-content .power-resets-item .power-resets-icon {
+    max-width: 20px;
+  }
+  .power-resets-content .power-resets-item .power-resets-name {
+    font-size: 12px;
+    line-height: 1;
+  }
+  .power-resets-content .power-resets-item .oval-btn {
+    font-size: 10px;
+    padding: 5px 0;
+  }
+  .power-resets-content .power-resets-item .oval-btn img {
+    max-width: 16px;
+  }
 }/*# sourceMappingURL=power-resets.css.map */

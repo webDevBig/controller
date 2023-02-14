@@ -36,3 +36,16 @@ $font-size-small: 12px;
         margin: 0 8px 0 0;
     }
 }
+@media all and (max-height:800px) {
+    .oval-btn {
+        width: 135px;
+        padding: 10px 0px;
+        font-size: $font-size-small;
+        line-height: 1;
+    
+        img {
+            max-width: 20px;
+            margin: 0 8px 0 0;
+        }
+    }
+}

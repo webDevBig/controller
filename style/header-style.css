@@ -46,4 +46,22 @@ header .circle-btn.power-btn {
   opacity: 0.3;
   font-size: 14px;
   margin-top: 4px;
+}
+
+@media all and (max-height: 800px) {
+  header {
+    padding: 15px 24px;
+  }
+  header .circle-btn,
+  header .circle-btn.notification-btn {
+    width: 46px;
+    height: 46px;
+  }
+  header img {
+    max-width: 20px;
+  }
+  .title-box .source-subtitle {
+    line-height: 1;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=header-style.css.map */

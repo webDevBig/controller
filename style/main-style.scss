@@ -13,8 +13,9 @@ $button-border-color:#313538;
 $climate-color1:#ADEBFF;
 $climate-color2:#FFADAD;
 
-$font-size-big2: 48px;
-$font-size-big: 24px;
+$font-size-big3: 48px;
+$font-size-big2: 24px;
+$font-size-big1: 20px;
 $font-size-regular3: 18px;
 $font-size-regular2: 16px;
 $font-size-regular: 14px;
@@ -53,6 +54,8 @@ button {
 body {
     font-family: $font-family-Medium;
     color: $font-color;
+    width: 100vw;
+    height: 100vh;
 }
 
 .title {
@@ -60,16 +63,18 @@ body {
     font-size: $font-size-regular2;
     line-height: 24px;
 }
-.devise-title
-{
+
+.devise-title {
     font-weight: 500;
     font-size: $font-size-regular3;
     line-height: 24px;
 }
 
 .controller {
-    width: 1180px;
-    height: 820px;
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    max-height: 1024px;
     background-color: $main-bg-color;
     border-radius: 24px;
     display: flex;
@@ -109,12 +114,57 @@ body {
     }
 }
 
-.source-box {
+.sources-content {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 2px 0;
+
+    .source-box {
+        display: grid;
+        grid-template-columns: 240px 240px 240px;
+        grid-template-rows: 240px 240px;
+        grid-column-gap: 48px;
+        grid-row-gap: 48px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2px 0;
+    }
+}
+
+@media all and (max-width:1000px)
+{
+    .sources-content {
+        .source-box {
+            grid-column-gap: 24px;
+            grid-row-gap: 24px;
+        }
+    }
+}
+@media all and (max-height:800px) {
+    .menu-tab-content {
+        padding: 15px 24px;
+        height: calc(100% - 148px);
+    }
+
+    .title {
+        font-size: $font-size-regular;
+        line-height: 1;
+    }
+    .sources-content {
+        .source-box {
+            grid-column-gap: 24px;
+            grid-row-gap: 24px;
+        }
+    }
+}
+@media all and (max-height:700px) {
+    .sources-content {
+        .source-box {
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 200px 200px;
+        }
+    }
 }

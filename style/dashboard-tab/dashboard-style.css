@@ -10,7 +10,7 @@
   height: 130px;
   font-size: 14px;
   line-height: 24px;
-  margin: 0 35px 0 0;
+  margin: 0 35px;
 }
 
 .dashboard-clm {
@@ -22,6 +22,7 @@
   align-items: center;
   padding: 48px 24px 0;
   height: 100%;
+  min-width: calc(28% - 48px);
 }
 .dashboard-clm .rectangle-btn {
   font-size: 20px;
@@ -30,4 +31,45 @@
 }
 .dashboard-clm .rectangle-btn:first-of-type {
   margin-top: 24px;
+}
+
+@media all and (max-width: 1100px) {
+  .dashboard-content .dashboard-clm {
+    padding: 48px 20px 0;
+  }
+  .dashboard-content .circle-bg-btn {
+    margin: 0 20px;
+  }
+  .dashboard-content .rectangle-btn {
+    font-size: 18px;
+    width: 141px;
+    padding: 0 15px;
+  }
+  .dashboard-content .rectangle-btn i {
+    max-width: 20px;
+  }
+}
+@media all and (max-width: 1000px) {
+  .dashboard-content .dashboard-clm {
+    padding: 48px 15px 0;
+  }
+  .dashboard-content .circle-bg-btn {
+    margin: 0 15px;
+    width: 120px;
+    height: 120px;
+  }
+}
+@media all and (max-height: 750px) {
+  .dashboard-content .dashboard-clm {
+    padding: 24px 15px 0;
+  }
+  .dashboard-content .dashboard-clm .rectangle-btn {
+    height: 55px;
+  }
+  .dashboard-content .dashboard-clm .rectangle-btn :first-of-type {
+    margin-top: 15px;
+  }
+  .dashboard-content .dashboard-clm .temp-value {
+    margin: 30px 0;
+  }
 }/*# sourceMappingURL=dashboard-style.css.map */

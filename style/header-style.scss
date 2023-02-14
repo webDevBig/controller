@@ -19,11 +19,11 @@ header {
     .circle-btn {
         width: 56px;
         height: 56px;
-    
+
         &.notification-btn {
             position: relative;
             margin: 0 16px 0 0;
-    
+
             &::after {
                 content: '';
                 border-radius: 50%;
@@ -35,7 +35,7 @@ header {
                 right: 15px;
             }
         }
-    
+
         &.power-btn {
             background: conic-gradient(from 21.45deg at 50.26% 50.26%, #2D3134 -54.74deg, #1E1E20 0.33deg, #3C3E44 65.93deg, #1E1E20 124.22deg, #2E2F33 179.4deg, #1E1E20 236.11deg, #2D3134 305.26deg, #1E1E20 360.33deg);
             box-shadow: 0px 7px 24px rgba(8, 8, 9, 0.25);
@@ -65,3 +65,26 @@ header {
     }
 }
 
+@media all and (max-height:800px) {
+    header {
+        padding: 15px 24px;
+
+        .circle-btn,
+        .circle-btn.notification-btn {
+            width: 46px;
+            height: 46px;
+        }
+
+        img {
+            max-width: 20px;
+        }
+
+    }
+
+    .title-box {
+        .source-subtitle {
+            line-height: 1;
+            font-size: $font-size-small;
+        }
+    }
+}

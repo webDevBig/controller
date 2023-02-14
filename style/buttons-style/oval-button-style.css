@@ -14,4 +14,17 @@
 .oval-btn img {
   max-width: 24px;
   margin: 0 8px 0 0;
+}
+
+@media all and (max-height: 800px) {
+  .oval-btn {
+    width: 135px;
+    padding: 10px 0px;
+    font-size: 12px;
+    line-height: 1;
+  }
+  .oval-btn img {
+    max-width: 20px;
+    margin: 0 8px 0 0;
+  }
 }/*# sourceMappingURL=oval-button-style.css.map */
