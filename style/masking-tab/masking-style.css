@@ -20,6 +20,16 @@
 .masking-clm .title {
   margin: 0 0 24px;
 }
+.masking-clm i {
+  background-color: #52525A;
+  -webkit-mask: url(../../img/projector-icons/maximize.svg) no-repeat center;
+  mask: url(../../img/projector-icons/maximize.svg) no-repeat center;
+  -webkit-mask-size: 24px;
+  mask-size: 24px;
+}
+.masking-clm .aspect-btn.active i {
+  background-color: #41FFB4;
+}
 
 .masking-box {
   width: 100%;
@@ -70,12 +80,6 @@
   height: 120px;
   margin: 12px 0;
 }
-.masking-box .masking {
-  width: 706px;
-  height: 484px;
-  background: #232326;
-  border-radius: 19px;
-}
 .masking-box .width-btn-box {
   width: 100%;
   margin: 24px 0 0;
@@ -90,4 +94,32 @@
   border: 1px solid #313538;
   margin: 0 12px;
   justify-content: center;
+}
+
+.masking {
+  width: 706px;
+  height: 484px;
+  background: #232326;
+  border-radius: 19px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.masking .masking-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #313538;
+  border-radius: 8px;
+  width: 388px;
+  aspect-ratio: auto 1/1;
+}
+.masking .masking-view.height-change {
+  height: 100%;
+  max-height: 460px;
+}
+.masking .masking-view.width-change {
+  width: 100%;
+  max-width: 682px;
 }/*# sourceMappingURL=masking-style.css.map */
