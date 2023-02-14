@@ -24,6 +24,12 @@
          for (var i = 0; i < aspect_btn.length; i++) {
              aspect_btn[i].classList.remove('active');
          }
+         for (var i = 0; i < height_btn.length; i++) {
+             height_btn[i].classList.remove('active');
+         }
+         for (var i = 0; i < width_btn.length; i++) {
+             width_btn[i].classList.remove('active');
+         }
          masking_view.classList.remove('height-change')
          masking_view.classList.remove('width-change')
          el.classList.toggle('active');
@@ -37,7 +43,7 @@
  aspect_btn1.addEventListener("click", aspect_btn1Click, false);
 
  function aspect_btn1Click() {
-    
+
      masking_view.style.aspectRatio = 'auto 1 / 1';
  }
 
@@ -84,10 +90,10 @@
  height_def.addEventListener("click", height_defClick, false);
 
  function height_defClick() {
-    for (var i = 0; i < aspect_btn.length; i++) {
-        aspect_btn[i].classList.remove('active');
-    }
-    masking_view.classList.remove('height-change')
+     for (var i = 0; i < aspect_btn.length; i++) {
+         aspect_btn[i].classList.remove('active');
+     }
+     masking_view.classList.remove('height-change')
  }
 
  //  full width
@@ -96,10 +102,10 @@
 
  function width_fullClick() {
 
-    for (var i = 0; i < aspect_btn.length; i++) {
-        aspect_btn[i].classList.remove('active');
-    }
-    masking_view.classList.add('width-change')
+     for (var i = 0; i < aspect_btn.length; i++) {
+         aspect_btn[i].classList.remove('active');
+     }
+     masking_view.classList.add('width-change')
  }
 
  //  default width
@@ -108,8 +114,8 @@
 
  function width_defClick() {
 
-    for (var i = 0; i < aspect_btn.length; i++) {
-        aspect_btn[i].classList.remove('active');
-    }
-    masking_view.classList.remove('width-change')
+     for (var i = 0; i < aspect_btn.length; i++) {
+         aspect_btn[i].classList.remove('active');
+     }
+     masking_view.classList.remove('width-change')
  }
