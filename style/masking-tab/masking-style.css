@@ -95,6 +95,9 @@
   margin: 0 12px;
   justify-content: center;
 }
+.masking-box .width-btn-box .width-btn i {
+  transform: rotate(90deg);
+}
 
 .masking {
   width: 706px;

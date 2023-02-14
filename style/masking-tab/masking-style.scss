@@ -134,6 +134,10 @@ $font-size-small: 12px;
             border: 1px solid #313538;
             margin: 0 12px;
             justify-content: center;
+
+            i {
+                transform: rotate(90deg);
+            }
         }
     }
 
@@ -158,13 +162,12 @@ $font-size-small: 12px;
         width: 388px;
         aspect-ratio: auto 1 / 1;
 
-        &.height-change
-        {
+        &.height-change {
             height: 100%;
             max-height: 460px;
         }
-        &.width-change
-        {
+
+        &.width-change {
             width: 100%;
             max-width: 682px;
         }
