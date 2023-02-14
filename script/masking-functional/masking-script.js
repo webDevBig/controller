@@ -81,7 +81,8 @@
      for (var i = 0; i < aspect_btn.length; i++) {
          aspect_btn[i].classList.remove('active');
      }
-     masking_view.classList.add('height-change')
+     masking_view.classList.add('height-change');
+     masking_view.style.aspectRatio = 'auto 16 / 9'
  }
 
 
@@ -105,7 +106,8 @@
      for (var i = 0; i < aspect_btn.length; i++) {
          aspect_btn[i].classList.remove('active');
      }
-     masking_view.classList.add('width-change')
+     masking_view.classList.add('width-change');
+     masking_view.style.aspectRatio = 'auto 16 / 9'
  }
 
  //  default width
