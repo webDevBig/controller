@@ -41,6 +41,7 @@
 }
 .masking-box .rectangle-btn {
   border: 1px solid #313538;
+  justify-content: center;
 }
 .masking-box .rectangle-btn.active {
   background: transparent;
