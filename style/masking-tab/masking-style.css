@@ -118,7 +118,7 @@
   background: #313538;
   border-radius: 8px;
   width: 388px;
-  aspect-ratio: auto 1/1;
+  height: 388px;
 }
 .masking .masking-view .masking-view-value {
   font-weight: 500;
@@ -130,6 +130,22 @@
 }
 .masking .masking-view.width-change {
   width: 100%;
+}
+.masking .masking-view.aspect-ratio1 {
+  aspect-ratio: auto 1/1;
+  height: auto;
+}
+.masking .masking-view.aspect-ratio2 {
+  aspect-ratio: auto 4/3;
+  height: auto;
+}
+.masking .masking-view.aspect-ratio3 {
+  aspect-ratio: auto 16/9;
+  height: auto;
+}
+.masking .masking-view.aspect-ratio4 {
+  aspect-ratio: auto 2.35/1;
+  height: auto;
 }
 
 @media all and (max-width: 1000px) {
@@ -162,5 +178,6 @@
   }
   .masking .masking-view {
     width: 300px;
+    height: 300px;
   }
 }/*# sourceMappingURL=masking-style.css.map */

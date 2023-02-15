@@ -162,7 +162,8 @@ $font-size-small: 12px;
         background: #313538;
         border-radius: 8px;
         width: 388px;
-        aspect-ratio: auto 1 / 1;
+        height: 388px;
+        // aspect-ratio: auto 1 / 1;
 
         .masking-view-value {
             font-weight: 500;
@@ -176,6 +177,25 @@ $font-size-small: 12px;
 
         &.width-change {
             width: 100%;
+        }
+
+        &.aspect-ratio1 {
+            aspect-ratio: auto 1 / 1;
+            height: auto;
+        }
+
+        &.aspect-ratio2 {
+            aspect-ratio: auto 4 / 3;
+            height: auto;
+        }
+        &.aspect-ratio3 {
+            aspect-ratio: auto 16 / 9;
+            height: auto;
+        }
+
+        &.aspect-ratio4 {
+            aspect-ratio: auto 2.35 / 1;
+            height: auto;
         }
     }
 }
@@ -223,6 +243,7 @@ $font-size-small: 12px;
 
         .masking-view {
             width: 300px;
+            height: 300px;
         }
     }
 }

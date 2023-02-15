@@ -24,6 +24,7 @@
      el.onclick = function (e) {
          for (var i = 0; i < aspect_btn.length; i++) {
              aspect_btn[i].classList.remove('active');
+             masking_view.classList.remove('aspect-ratio' + (i+1));
          }
          for (var i = 0; i < height_btn.length; i++) {
              height_btn[i].classList.remove('active');
@@ -31,49 +32,18 @@
          for (var i = 0; i < width_btn.length; i++) {
              width_btn[i].classList.remove('active');
          }
+
          masking_view.classList.remove('height-change')
          masking_view.classList.remove('width-change')
+
          el.classList.toggle('active');
+         console.log(el.value)
+
+         masking_view.classList.add('aspect-ratio' + el.value);
          masking_value.innerHTML = el.innerHTML;
      }
  });
  var masking_view = document.querySelector('.masking-view');
-
- // 1:1
-
- var aspect_btn1 = document.querySelector('.aspect-btn1');
- aspect_btn1.addEventListener("click", aspect_btn1Click, false);
-
- function aspect_btn1Click() {
-
-     masking_view.style.aspectRatio = 'auto 1 / 1';
- }
-
- //  4:3
- var aspect_btn4 = document.querySelector('.aspect-btn4');
- aspect_btn4.addEventListener("click", aspect_btn4Click, false);
-
- function aspect_btn4Click() {
-     masking_view.style.aspectRatio = 'auto 4 / 3'
- }
-
- //  16:9
- var aspect_btn16 = document.querySelector('.aspect-btn16');
- aspect_btn16.addEventListener("click", aspect_btn16Click, false);
-
- function aspect_btn16Click() {
-     masking_view.style.aspectRatio = 'auto 16 / 9'
- }
-
- //  2.35:1
- var aspect_btn2 = document.querySelector('.aspect-btn2');
- aspect_btn2.addEventListener("click", aspect_btn2Click, false);
-
- function aspect_btn2Click() {
-     masking_view.style.aspectRatio = 'auto 2.35 / 1'
- }
-
-
 
  //  full height
  var height_full = document.querySelector('.height-full');
@@ -82,9 +52,10 @@
  function height_fullClick() {
      for (var i = 0; i < aspect_btn.length; i++) {
          aspect_btn[i].classList.remove('active');
+         masking_view.classList.remove('aspect-ratio' + (i + 1));
      }
+
      masking_view.classList.add('height-change');
-     masking_view.style.aspectRatio = 'auto 16 / 9'
  }
 
 
@@ -95,7 +66,9 @@
  function height_defClick() {
      for (var i = 0; i < aspect_btn.length; i++) {
          aspect_btn[i].classList.remove('active');
+         masking_view.classList.remove('aspect-ratio' + (i + 1));
      }
+
      masking_view.classList.remove('height-change')
  }
 
@@ -107,9 +80,10 @@
 
      for (var i = 0; i < aspect_btn.length; i++) {
          aspect_btn[i].classList.remove('active');
+         masking_view.classList.remove('aspect-ratio' + (i + 1));
      }
+
      masking_view.classList.add('width-change');
-     masking_view.style.aspectRatio = 'auto 16 / 9'
  }
 
  //  default width
@@ -120,6 +94,8 @@
 
      for (var i = 0; i < aspect_btn.length; i++) {
          aspect_btn[i].classList.remove('active');
+         masking_view.classList.remove('aspect-ratio' + (i + 1));
      }
+
      masking_view.classList.remove('width-change')
  }
