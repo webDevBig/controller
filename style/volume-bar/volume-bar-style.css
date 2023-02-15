@@ -68,4 +68,10 @@
   letter-spacing: -0.02em;
   min-width: 33px;
   text-align: center;
+}
+
+@media all and (max-width: 1000px) {
+  .volume-bar .volume input[type=range] {
+    width: 335px;
+  }
 }/*# sourceMappingURL=volume-bar-style.css.map */

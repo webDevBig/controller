@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style/font.css">
+
+    <link rel="stylesheet" href="style/main-style.css">
+    <link rel="stylesheet" href="style/logo-style.css">
+    <link rel="stylesheet" href="style/footer-style.css">
+    <link rel="stylesheet" href="style/header-style.css">
+
+    <link rel="stylesheet" href="style/buttons-style/oval-button-style.css">
+    <link rel="stylesheet" href="style/buttons-style/rectangle-button-style.css">
+    <link rel="stylesheet" href="style/buttons-style/circle-button-style.css">
+    <link rel="stylesheet" href="style/buttons-style/square-button-style.css">
+
+    <link rel="stylesheet" href="style/icons/icons-style.css">
+
+    <link rel="stylesheet" href="style/nav-style/nav-main-style.css">
+    <link rel="stylesheet" href="style/nav-style/nav-item.css">
+
+    <link rel="stylesheet" href="style/volume-bar/volume-bar-style.css">
+
+    <link rel="stylesheet" href="style/content-tab/content-tab-style.css">
+    <link rel="stylesheet" href="style/source/source-item-style.css">
+
+    <link rel="stylesheet" href="style/dashboard-tab/dashboard-style.css">
+    <link rel="stylesheet" href="style/climate-tab/climate-box-style.css">
+    <link rel="stylesheet" href="style/climate-tab/climate-style.css">
+
+    <link rel="stylesheet" href="style/lightings-tab/lightings-style.css">
+    <link rel="stylesheet" href="style/lightings-tab/lightings-item-style.css">
+    <link rel="stylesheet" href="style/slider-style/slider.css">
+    <link rel="stylesheet" href="style/checkbox-style/checkbox-style.css">
+
+    <link rel="stylesheet" href="style/power-resets-style/power-resets.css">
+    <link rel="stylesheet" href="style/health-monitor-style/health-monitor.css">
+    <link rel="stylesheet" href="style/health-monitor-style/status-item-style.css">
+    <link rel="stylesheet" href="style/theme-tab/theme-tab-style.css">
+
+    <link rel="stylesheet" href="style/audio-tab/audio-style.css">
+    <link rel="stylesheet" href="style/projector-tab/projector-style.css">
+    <link rel="stylesheet" href="style/masking-tab/masking-style.css">
+
+
+    <link rel="stylesheet" href="style/devices-tab/device-main-style.css">
+    <link rel="stylesheet" href="style/modal-style/modal.css">
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="controller">
+
+        <!-- left side menu -->
+        <nav class="nav-bar">
+            <ul class="nav nav-tabs">
+                <li class="menu-item active current-menu-item logo-item"><a href="#tab-source"
+                        class="tab-source bluray-icon logo"></a></li>
+                <li class="menu-item"><a href="#tab-1" class="tab1"></a></li>
+                <li class="menu-item"><a href="#tab-2" class="tab2"></a></li>
+                <li class="menu-item"><a href="#tab-3" class="tab3"></a></li>
+                <li class="menu-item "><a href="#tab-4" class="tab4"></a></li>
+                <li class="menu-item"><a href="#tab-5" class="tab5"></a></li>
+                <div id="marker-menu" class="tab-indicator"></div>
+            </ul>
+        </nav>
+
+        <!-- content -->
+        <div class="content">
+
+            <!-- content header DONE -->
+            <header>
+                <div class="title-box">
+                    <p class="source-name">Blu-ray</p>
+                    <p class="source-subtitle">current source</p>
+                </div>
+                <!-- tabs for sources -->
+                <ul class="content-nav content-nav-tabs devise-nav-tabs">
+                    <!-- <li class="active"><a href="#content-tab-main" class="content-tab-main"></a></li> -->
+                    <li class=""><a href="#content-tab-1" class="content-tab-1"></a></li>
+                    <li class=""><a href="#content-tab-2" class="content-tab-2"></a></li>
+                    <li class=""><a href="#content-tab-3" class="content-tab-3"></a></li>
+                    <li class=""><a href="#content-tab-4" class="content-tab-4"></a></li>
+                    <div id="marker-content" class="content-tab-indicator marker-devise hide"></div>
+                </ul>
+                <!-- tabs for settings -->
+                <ul class="content-nav content-nav-tabs settings-nav-tabs hide">
+                    <li class="active"><a href="#content-tab-6" class="content-tab-6"></a></li>
+                    <li class=""><a href="#content-tab-7" class="content-tab-7"></a></li>
+                    <li class=""><a href="#content-tab-8" class="content-tab-8"></a></li>
+                    <li class=""><a href="#content-tab-9" class="content-tab-9"></a></li>
+                    <li class=""><a href="#content-tab-10" class="content-tab-10"></a></li>
+                    <div id="marker-content" class="content-tab-indicator marker-settings"></div>
+                </ul>
+                <div class="btn-box">
+                    <button class="circle-btn notification-btn active"><img alt="notification"
+                            src="img/button-icon/notification.svg" /></button>
+                            <button class="circle-btn circle-bg-btn" id="shutdown"></button>
+                </div>
+            </header>
+
+            <!-- content for menu items -->
+            <div class="menu-tab-content">
+
+                <!-- source tab -->
+                <div id="tab-source" class="tab-pane active">
+                    <div class="device-main-content active">
+                        Main
+                    </div>
+                    <div class="tab-content">
+
+                        <!-- projector tab DONE -->
+                        <div id="content-tab-1" class="content-tab-pane ">
+                            <div class="progector-content">
+                                <div class="projector-header">
+                                    <div class="projector-header-item active">
+                                        <div class="functional-box">
+                                            <div class="functional-icon lamp-icon"></div>
+                                            <p class="title">Lamp <br><span class="active">ON</span></p>
+                                        </div>
+                                        <input type="checkbox" id="switchLamp" class="switch" checked="">
+                                        <label for="switchLamp" class="switchLabel"></label>
+                                    </div>
+                                    <div class="projector-header-item">
+                                        <div class="functional-box">
+                                            <div class="functional-icon dowser-icon"></div>
+                                            <p class="title">Dowser<br><span class="anactive">CLOSED</span></p>
+                                        </div>
+                                        <input type="checkbox" id="switchDowser" class="switch">
+                                        <label for="switchDowser" class="switchLabel"></label>
+                                    </div>
+                                    <div class="projector-header-item">
+                                        <div class="functional-box">
+                                            <div class="functional-icon storage-icon"></div>
+                                            <p class="title">Storage<br><span
+                                                    class="storage">35.24GB</span><span>/128GB</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="available-macros-slider swiper" id="available-macros-swiper">
+                                    Available Macros
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="slide">
+                                                <div class="rectangle-btn active macros-btn">
+                                                    <p class="title">Flat 2k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        2.35:1
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 2020
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 4k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 4K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 2k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        2.35:1
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 2020
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 4k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide">
+                                                <div class="rectangle-btn active macros-btn">
+                                                    <p class="title">Flat 2k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        2.35:1
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 2020
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 4k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 4K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 2k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        2.35:1
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 2020
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 4k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide">
+                                                <div class="rectangle-btn active macros-btn">
+                                                    <p class="title">Flat 2k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        2.35:1
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 2020
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 4k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 4K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 2k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Scope 2K</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        2.35:1
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 2020
+                                                    </p>
+                                                </div>
+                                                <div class="rectangle-btn macros-btn">
+                                                    <p class="title">Flat 4k</p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/maximize.svg" />
+                                                        4:3
+                                                    </p>
+                                                    <p class="functional-title">
+                                                        <img alt="" src="img/projector-icons/colorfilter.svg" />
+                                                        REC 709
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- masking tab  DONE-->
+                        <div id="content-tab-2" class="content-tab-pane">
+                            <div class="masking-content">
+                                <div class="masking-box">
+                                    <div class="height-btn-box">
+                                        <button class="rectangle-btn height-btn height-def"><i
+                                                class="smaller"></i></button>
+                                        <button class="rectangle-btn height-btn height-full"><i
+                                                class="bigger"></i></button>
+                                    </div>
+                                    <div class="masking">
+                                        <div class="masking-view">
+                                            <p class="masking-view-value"></p>
+                                        </div>
+                                    </div>
+                                    <div class="width-btn-box">
+                                        <button class="rectangle-btn width-btn width-def"><i
+                                                class="smaller"></i></button>
+                                        <button class="rectangle-btn width-btn width-full"><i
+                                                class="bigger"></i></button>
+                                    </div>
+                                </div>
+                                <div class="masking-clm">
+                                    <p class="title">Aspect Ratio</p>
+                                    <button class="rectangle-btn aspect-btn aspect-btn1"><i></i>1:1</button>
+                                    <button class="rectangle-btn aspect-btn aspect-btn4"><i></i>4:3</button>
+                                    <button class="rectangle-btn aspect-btn aspect-btn16"><i></i>16:9</button>
+                                    <button class="rectangle-btn aspect-btn aspect-btn2"><i></i>2.35:1</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- audio tab DONE -->
+                        <div id="content-tab-3" class="content-tab-pane">
+                            <div class="audio-content">
+                                <p class="devise-title">Consumer Surround Mode</p>
+                                <div class="btn-box">
+                                    <button class="rectangle-btn active audio-btn">Stereo</button>
+                                    <button class="rectangle-btn audio-btn">7.1</button>
+                                    <button class="rectangle-btn audio-btn">Atmos</button>
+                                    <button class="rectangle-btn audio-btn">All Channel Stereo</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div id="content-tab-4" class="content-tab-pane">
+                            <span
+                                class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+                            <span class="col-md-10">
+                                <h3>Feature 4</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- dashboard tab DONE -->
+                <div id="tab-1" class="tab-pane">
+                    <div class="dashboard-content">
+                        <div class="dashboard-clm">
+                            <p class="title">Sources</p>
+                            <button class="rectangle-btn active sources-btn"> <i class="dcp-icon"></i>DCP</button>
+                            <button class="rectangle-btn sources-btn"><i class="bluray-icon"></i>Blu-ray</button>
+                            <button class="rectangle-btn sources-btn"><i class="apple-icon"></i>Apple TV</button>
+                            <button class="rectangle-btn sources-btn"><i class="xbox-icon"></i>Xbox</button>
+                            <button class="rectangle-btn sources-btn"><i class="nintendo-icon"></i>Nintendo</button>
+                            <button class="rectangle-btn sources-btn"><i class="ps-icon"></i>PS 5</button>
+                        </div>
+                        <div class="dashboard-clm">
+                            <p class="title">Lighting</p>
+                            <button class="rectangle-btn active lighting-btn">Scene1</button>
+                            <button class="rectangle-btn lighting-btn">Scene2</button>
+                            <button class="rectangle-btn lighting-btn">Scene3</button>
+                            <button class="rectangle-btn lighting-btn">Scene4</button>
+                            <button class="rectangle-btn lighting-btn">Scene5</button>
+                            <button class="rectangle-btn lighting-btn">Scene6</button>
+                        </div>
+                        <div class="dashboard-clm">
+                            <p class="title">Climate</p>
+                            <div class="temp-box">
+                                <div class="temp-item">
+                                    <button class="up-temp circle-btn"></button>
+                                    <div class="temp-value">
+                                        <p class="value cool"> <span>24</span> <sup>°c</sup></p>
+                                        <p class="value-text cool">Cooling<br>
+                                            Setpoint</p>
+                                    </div>
+                                    <button class="down-temp  circle-btn"></button>
+                                </div>
+                                <div class="temp-item">
+                                    <button class="up-temp circle-btn"></button>
+                                    <div class="temp-value">
+                                        <p class="value heat"><span>24</span><sup>°c</sup></p>
+                                        <p class="value-text heat">Heating<br>
+                                            Setpoint</p>
+                                    </div>
+                                    <button class="down-temp  circle-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="circle-btn circle-bg-btn">Start</button>
+
+                    </div>
+                </div>
+
+                <!-- all sources tab  DONE-->
+                <div id="tab-2" class="tab-pane">
+                    <div class="sources-content">
+                        <div class="source-box">
+                            <div class="source-item active">
+                                <div class="source-icon dcp-icon"></div>
+                                <p class="source-name">DCP</p>
+                            </div>
+                            <div class="source-item">
+                                <div class="source-icon bluray-icon"></div>
+                                <p class="source-name">Blu-ray</p>
+                            </div>
+                            <div class="source-item">
+                                <div class="source-icon apple-icon"></div>
+                                <p class="source-name">Apple TV</p>
+                            </div>
+                            <div class="source-item">
+                                <div class="source-icon xbox-icon"></div>
+                                <p class="source-name">Xbox</p>
+                            </div>
+                            <div class="source-item">
+                                <div class="source-icon nintendo-icon"></div>
+                                <p class="source-name">Nintendo</p>
+                            </div>
+                            <div class="source-item">
+                                <div class="source-icon ps-icon"></div>
+                                <p class="source-name">PS 5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- lightings tab  DONE-->
+                <div id="tab-3" class="tab-pane">
+                    <div class="lightings-content">
+                        <div class="lightings-slider swiper" id="lighting-controls-swiper">
+
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="slide">
+                                        <div class="lightings-item">
+                                            <p class="lightings-item-title">Console</p>
+                                            <p class="lightings-perc">10%</p>
+                                            <div class="lightings-bar">
+                                                <div class="lightings">
+                                                    <input type="range" value="70" min="0" max="100" step="1">
+                                                </div>
+                                            </div>
+                                            <input type="checkbox" id="switchConsole" class="switch" checked />
+                                            <label for="switchConsole" class="switchLabel"></label>
+                                        </div>
+                                        <div class="lightings-item">
+                                            <p class="lightings-item-title">Floor</p>
+                                            <p class="lightings-perc" id="floor_field">50%</p>
+                                            <div class="lightings-bar">
+                                                <div class="lightings">
+                                                    <input type="range" value="50" min="0" max="100" step="1">
+                                                </div>
+                                            </div>
+
+                                            <input type="checkbox" id="switchFloor" class="switch" checked />
+                                            <label for="switchFloor" class="switchLabel"></label>
+                                        </div>
+                                        <div class="lightings-item">
+                                            <p class="lightings-item-title">Sconse</p>
+                                            <p class="lightings-perc">0%</p>
+                                            <div class="lightings-bar">
+                                                <div class="lightings">
+                                                    <input type="range" value="0" min="0" max="100" step="1">
+                                                </div>
+                                            </div>
+                                            <input type="checkbox" id="switchSconse" class="switch" checked />
+                                            <label for="switchSconse" class="switchLabel"></label>
+                                        </div>
+                                        <div class="lightings-item">
+                                            <p class="lightings-item-title">Work Lights</p>
+                                            <p class="lightings-perc">10%</p>
+                                            <div class="lightings-bar">
+                                                <div class="lightings">
+                                                    <input type="range" value="70" min="0" max="100" step="1">
+                                                </div>
+                                            </div>
+                                            <input type="checkbox" id="switchWorkLights" class="switch" checked />
+                                            <label for="switchWorkLights" class="switchLabel"></label>
+                                        </div>
+                                        <div class="lightings-item">
+                                            <p class="lightings-item-title">Front Spot</p>
+                                            <p class="lightings-perc">10%</p>
+                                            <div class="lightings-bar">
+                                                <div class="lightings">
+                                                    <input type="range" value="10" min="0" max="100" step="1">
+                                                </div>
+                                            </div>
+                                            <input type="checkbox" id="switchFrontSpot" class="switch" checked />
+                                            <label for="switchFrontSpot" class="switchLabel"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide"></div>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+
+
+                        </div>
+                        <div class="lightings-clm">
+                            <p class="title">Scene List</p>
+                            <button class="rectangle-btn active scene-btn">Scene1</button>
+                            <button class="rectangle-btn scene-btn">Scene2</button>
+                            <button class="rectangle-btn scene-btn">Scene3</button>
+                            <button class="rectangle-btn scene-btn">Scene4</button>
+                            <button class="rectangle-btn scene-btn">Scene5</button>
+                            <button class="rectangle-btn scene-btn">Scene6</button>
+                            <button class="rectangle-btn scene-btn">Scene7</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- climate tab DONE-->
+                <div id="tab-4" class="tab-pane">
+                    <div class="climate-content">
+                        <div class="temp-item">
+                            <button class="up-temp circle-btn"></button>
+                            <div class="temp-value">
+                                <p class="value cool"> <span>24</span> <sup>°c</sup></p>
+                                <p class="value-text cool">Cooling<br>
+                                    Setpoint</p>
+                            </div>
+                            <button class="down-temp  circle-btn"></button>
+                        </div>
+                        <div class="box">
+                            <div class="block current-temp">
+                                <div class="box"><button class="circle-btn circle-bg-btn">
+                                        <p class="number"><span class="current">24</span> <sup>°c</sup></p>
+                                        <p class="title">current<br>
+                                            temperature</p>
+                                    </button></div>
+                                <svg class="svg">
+                                    <linearGradient id="gradientStyle" x1="0%" y1="27%" x2="100%" y2="23%" gradientTransform="rotate(0)">
+                                        <stop offset="50%" class="stop1"></stop>
+                                        <stop offset="100%" class="stop2"></stop>
+                                    </linearGradient>
+                                    
+                                    <circle class="circle circle-container__progress" cx="135" cy="135" r="115.1" />
+                                </svg>
+                            </div>
+                            <div class="btn-box">
+                                <button class="square-btn active climate-btn"><i class="cooling"></i>Cooling</button>
+                                <button class="square-btn climate-btn"><i class="auto"></i>Auto</button>
+                                <button class="square-btn climate-btn"><i class="heating"></i>Heating</button>
+                                <button class="square-btn climate-btn"><i class="circulate"></i>Circulate</button>
+                            </div>
+                        </div>
+                        <div class="temp-item">
+                            <button class="up-temp circle-btn"></button>
+                            <div class="temp-value">
+                                <p class="value heat"><span>24</span><sup>°c</sup></p>
+                                <p class="value-text heat">Heating<br>
+                                    Setpoint</p>
+                            </div>
+                            <button class="down-temp  circle-btn"></button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- settings tab  DONE-->
+                <div id="tab-5" class="tab-pane">
+                    <div class="tab-content">
+                        <div id="content-tab-6" class="active settings-tab-pane"></div>
+
+                        <!-- settings tab Power Resets  DONE  -->
+                        <div id="content-tab-7" class="settings-tab-pane">
+                            <div class="power-resets-content">
+                                <div class="power-resets-slider swiper" id="power-resets-swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="slide">
+                                                <div class="power-resets-clm">
+                                                    <p class="title">Rack 1</p>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 1</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 2</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item power-resets-item-reset">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 3</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 4</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 5</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 6</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 7</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 8</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                </div>
+                                                <div class="power-resets-clm">
+                                                    <p class="title">Rack 2</p>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 1</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 2</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item power-resets-item-reset">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 3</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 4</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 5</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 6</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 7</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 8</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide"></div>
+                                        </div>
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="content-tab-8" class="settings-tab-pane"></div>
+
+                        <!-- settings tab Health Monitor  DONE -->
+                        <div id="content-tab-9" class="settings-tab-pane">
+                            <div class="health-monitor-content">
+                                <div class="box">
+                                    <p class="title">Booth Temperature</p>
+                                    <div class=" health-current-temp">
+                                        <div class="needle"></div>
+                                        <button class="circle-btn circle-bg-btn">
+                                            <p class="temperature-number"><span>23</span> <sup>°c</sup></p>
+                                            <p class="message">Alert!</p>
+                                        </button>
+                                    </div>
+                                    <p class="health-monitor-subtitle">The booth temp should have a range, ie 20c - 22c
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="items-box">
+                                    <div class="status-box">
+                                        <div class="status-bar"></div>
+                                        <div class="status-row">
+                                            <p class="status online"><span></span>Online</p>
+                                            <p class="status offline"><span></span>Offline</p>
+                                        </div>
+                                    </div>
+                                    <div class="status-item">
+                                        <img src="img/health-icon/projector.svg" />
+                                        <p class="status-name">Projector</p>
+                                        <p class="status online"><span></span>Online</p>
+                                    </div>
+                                    <div class="status-item">
+                                        <img src="img/health-icon/masking.svg" />
+                                        <p class="status-name">Masking</p>
+                                        <p class="status offline"><span></span>Offline</p>
+                                    </div>
+                                    <div class="status-item">
+                                        <img src="img/health-icon/equalizer.svg" />
+                                        <p class="status-name">Equalizer</p>
+                                        <p class="status online"><span></span>Online</p>
+                                    </div>
+                                    <div class="status-item">
+                                        <img src="img/health-icon/receiver.svg" />
+                                        <p class="status-name">Receiver</p>
+                                        <p class="status offline"><span></span>Offline</p>
+                                    </div>
+                                    <div class="status-item">
+                                        <img src="img/health-icon/video-processor.svg" />
+                                        <p class="status-name">Video Processor</p>
+                                        <p class="status online"><span></span>Online</p>
+                                    </div>
+                                    <div class="status-item">
+                                        <img src="img/health-icon/pdu.svg" />
+                                        <p class="status-name">PDU</p>
+                                        <p class="status online"><span></span>Online</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- settings tab theme DONE -->
+                        <div id="content-tab-10" class="settings-tab-pane">
+                            <div class="theme-content">
+                                <div class="theme-item active theme-item1">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item2">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item3">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item4">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item5">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item6">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item7">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item8">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item9">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item10">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                                <div class="theme-item theme-item11">
+                                    <span></span>
+                                    <span></span>
+                                    <div class="bg-box"></div>
+                                    <p class="theme-name title">Dark Green</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- footer DONE -->
+            <footer>
+                <button class="oval-btn mute-btn"><img alt="mute" src="img/button-icon/volume-slash.svg" />
+                    Mute</button>
+                <div class="volume-bar-box">
+                    <img alt="mute" src="img/button-icon/volume-high.svg" />
+                    <div class="volume-bar">
+                        <div class="volume">
+                            <input type="range" value="70" min="0" max="100" step="1">
+                        </div>
+                    </div>
+                    <div class="volume-setings">
+                        <button class="btn-minus"><img alt="plus" src="img/button-icon/minus.svg" /></button>
+                        <p class="volume-value"></p>
+                        <button class="btn-plus"><img alt="minus" src="img/button-icon/add.svg" /></button>
+                    </div>
+                </div>
+                <button class="oval-btn"><img alt="reference" src="img/button-icon/refrence.svg" /> Reference</button>
+            </footer>
+        </div>
+
+    </div>
+
+    <div id="modal-source" class="modal-background">
+        <div id="modal">
+            <img />
+            <p>Warming Up & Loading <span>DCP</span></p>
+            <div class="spinner">
+                <svg class="svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <linearGradient id="gradientStyleS" x1="0%" y1="27%" x2="100%" y2="23%" gradientTransform="rotate(0)">
+                        <stop offset="50%" class="stop1"></stop>
+                        <stop offset="100%" class="stop2"></stop>
+                    </linearGradient>
+                    <circle class="circle circle-container__progress circle-source" cx="50" cy="50" r="44" />
+                </svg>
+            </div>
+           
+        </div>
+    </div>
+    <div id="modal-shutdown" class="modal-background">
+        <div id="modal">
+            <img  src="img/button-icon/power.svg"/>
+            <p>Shut down and Cooling down</p>
+            <div class="spinner">
+                <svg class="svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <linearGradient id="gradientStyleshutdown" x1="0%" y1="27%" x2="100%" y2="23%" gradientTransform="rotate(0)">
+                        <stop offset="50%" class="stop3"></stop>
+                        <stop offset="100%" class="stop2"></stop>
+                    </linearGradient>
+                    <circle class="circle circle-container__progress circle-shutdown" cx="50" cy="50" r="44" />
+                </svg>
+            </div>
+           
+        </div>
+    </div>
+
+
+
+    <script src="script/volume-bar-functional/volume-bar-script.js"></script>
+    <script src="script/content-tab-functional/content-tab-script.js"></script>
+    <script src="script/nav-functional/nav-script.js"></script>
+    <script src="script/item-functional/item-script.js"></script>
+    <script src="script/dashboard-functional/btn-active.js"></script>
+
+    <script src="script/lightings-functional/lightings.js"></script>
+    <script src="script/lightings-functional/lightings.js"></script>
+    <script src="script/lightings-item-functional/lightings-item-script.js"></script>
+
+    <script src="script/theme-functional/theme-script.js"></script>
+    <script src="script/audio-functional/audio-script.js"></script>
+    <script src="script/projector-functional/projector-script.js"></script>
+
+    <script src="script/masking-functional/masking-script.js"></script>
+
+
+    <script>
+        const lighting_controls_swiper = new Swiper('#lighting-controls-swiper', {
+            // Optional parameters
+            loop: false,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // Navigation arrows
+            navigation: false
+        });
+
+        const power_resets_swiper = new Swiper('#power-resets-swiper', {
+            // Optional parameters
+            loop: false,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // Navigation arrows
+            navigation: false
+        });
+
+
+        const available_macros_swiper = new Swiper('#available-macros-swiper', {
+            // Optional parameters
+            loop: false,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // breakpoints: {
+            //     // when window width is >= 640px
+            //     960: {
+            //         slidesPerView: 1
+            //     }
+            // },
+            // Navigation arrows
+            navigation: false
+        });
+    </script>
+
+
+    <script defer src="script/climate-functional/climate.js"></script>
+    <script defer src="script/modal-functional/modal-script.js"></script>
+
+</body>
+
+</html>

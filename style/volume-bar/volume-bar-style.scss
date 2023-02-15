@@ -90,3 +90,11 @@ $font-size-small: 12px;
         text-align: center;
     }
 }
+
+@media all and (max-width:1000px)
+{
+    .volume-bar .volume input[type=range]
+    {
+        width: 335px;
+    }
+}

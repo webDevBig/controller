@@ -16,6 +16,12 @@ header {
     align-items: center;
     padding: 24px;
 
+    .btn-box
+    {
+        display: flex;
+        align-items: center;
+    }
+
     .circle-btn {
         width: 56px;
         height: 56px;
@@ -63,6 +69,13 @@ header {
         font-size: $font-size-regular;
         margin-top: 4px;
     }
+}
+#shutdown
+{
+    background-image: url(../img/button-icon/power.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
 }
 
 @media all and (max-height:800px) {
