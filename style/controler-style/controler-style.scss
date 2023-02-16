@@ -32,10 +32,17 @@ $font-size-small: 12px;
     padding: 24px 0;
 
     .circle-btn {
-        border: none;
         width: 64px;
         height: 64px;
-        margin: 0 14px;
+        margin: 0 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.circle-bg-btn
+        {
+            margin: 0 24px;
+        }
 
         i {
             width: 24px;

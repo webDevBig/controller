@@ -7,3 +7,22 @@
     background: conic-gradient(from 21.45deg at 50.26% 50.26%, #2D3134 -54.74deg, #1E1E20 0.33deg, #3C3E44 65.93deg, #1E1E20 124.22deg, #2E2F33 179.4deg, #1E1E20 236.11deg, #2D3134 305.26deg, #1E1E20 360.33deg);
     box-shadow: 0px 7px 24px rgb(8 8 9 / 25%);
 }
+
+.circle-btn-no-border {
+    border: none;
+}
+
+.btn-container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-title {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 16px 0 0;
+}
