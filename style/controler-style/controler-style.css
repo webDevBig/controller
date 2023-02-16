@@ -1,0 +1,25 @@
+.player-controler {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #30303B;
+  border-radius: 16px;
+  padding: 24px 0;
+}
+.player-controler .circle-btn {
+  border: none;
+  width: 64px;
+  height: 64px;
+  margin: 0 14px;
+}
+.player-controler .circle-btn i {
+  width: 24px;
+  height: 24px;
+  -webkit-mask-size: 24px;
+  mask-size: 24px;
+  background-color: white;
+}
+.player-controler .circle-btn.active i {
+  background-color: #41FFB4;
+}/*# sourceMappingURL=controler-style.css.map */

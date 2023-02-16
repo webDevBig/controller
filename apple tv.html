@@ -52,6 +52,9 @@
     <link rel="stylesheet" href="style/modal-style/modal.css">
 
 
+    <link rel="stylesheet" href="style/controler-style/controler-style.css">
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>Document</title>
@@ -104,7 +107,7 @@
                 <div class="btn-box">
                     <button class="circle-btn notification-btn active"><img alt="notification"
                             src="img/button-icon/notification.svg" /></button>
-                            <button class="circle-btn circle-bg-btn" id="shutdown"></button>
+                    <button class="circle-btn circle-bg-btn" id="shutdown"></button>
                 </div>
             </header>
 
@@ -114,7 +117,18 @@
                 <!-- source tab -->
                 <div id="tab-source" class="tab-pane active">
                     <div class="device-main-content active">
-                        Main
+                        <div class="main-box">
+                            <div class="player-controler">
+                                <button class="circle-btn "><i class="previous-btn"></i></button>
+                                <button class="circle-btn"><i class="backward-btn"></i></button>
+                                <button class="circle-btn circle-bg-btn"><i class="play-btn"></i></button>
+                                <button class="circle-btn"><i class="forward-btn"></i></button>
+                                <button class="circle-btn"><i class="next-btn"></i></button>
+
+                            </div>
+                        </div>
+                        <div class="right-box"></div>
+
                     </div>
                     <div class="tab-content">
 
@@ -587,7 +601,12 @@
                                             <p class="lightings-perc">10%</p>
                                             <div class="lightings-bar">
                                                 <div class="lightings">
-                                                    <input type="range" value="70" min="0" max="100" step="1">
+                                                    <div class="range-slider">
+                                                        <input type="range" orient="vertical" min="0" max="100"
+                                                            value="70" />
+                                                        <div class="range-slider__bar"></div>
+                                                        <div class="range-slider__thumb"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <input type="checkbox" id="switchConsole" class="switch" checked />
@@ -595,10 +614,15 @@
                                         </div>
                                         <div class="lightings-item">
                                             <p class="lightings-item-title">Floor</p>
-                                            <p class="lightings-perc" id="floor_field">50%</p>
+                                            <p class="lightings-perc">50%</p>
                                             <div class="lightings-bar">
                                                 <div class="lightings">
-                                                    <input type="range" value="50" min="0" max="100" step="1">
+                                                    <div class="range-slider">
+                                                        <input type="range" orient="vertical" min="0" max="100"
+                                                            value="50" />
+                                                        <div class="range-slider__bar"></div>
+                                                        <div class="range-slider__thumb"></div>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -610,7 +634,12 @@
                                             <p class="lightings-perc">0%</p>
                                             <div class="lightings-bar">
                                                 <div class="lightings">
-                                                    <input type="range" value="0" min="0" max="100" step="1">
+                                                    <div class="range-slider">
+                                                        <input type="range" orient="vertical" min="0" max="100"
+                                                            value="0" />
+                                                        <div class="range-slider__bar"></div>
+                                                        <div class="range-slider__thumb"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <input type="checkbox" id="switchSconse" class="switch" checked />
@@ -621,7 +650,12 @@
                                             <p class="lightings-perc">10%</p>
                                             <div class="lightings-bar">
                                                 <div class="lightings">
-                                                    <input type="range" value="70" min="0" max="100" step="1">
+                                                    <div class="range-slider">
+                                                        <input type="range" orient="vertical" min="0" max="100"
+                                                            value="10" />
+                                                        <div class="range-slider__bar"></div>
+                                                        <div class="range-slider__thumb"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <input type="checkbox" id="switchWorkLights" class="switch" checked />
@@ -632,7 +666,12 @@
                                             <p class="lightings-perc">10%</p>
                                             <div class="lightings-bar">
                                                 <div class="lightings">
-                                                    <input type="range" value="10" min="0" max="100" step="1">
+                                                    <div class="range-slider">
+                                                        <input type="range" orient="vertical" min="0" max="100"
+                                                            value="10" />
+                                                        <div class="range-slider__bar"></div>
+                                                        <div class="range-slider__thumb"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <input type="checkbox" id="switchFrontSpot" class="switch" checked />
@@ -683,11 +722,12 @@
                                             temperature</p>
                                     </button></div>
                                 <svg class="svg">
-                                    <linearGradient id="gradientStyle" x1="0%" y1="27%" x2="100%" y2="23%" gradientTransform="rotate(0)">
+                                    <linearGradient id="gradientStyle" x1="0%" y1="27%" x2="100%" y2="23%"
+                                        gradientTransform="rotate(0)">
                                         <stop offset="50%" class="stop1"></stop>
                                         <stop offset="100%" class="stop2"></stop>
                                     </linearGradient>
-                                    
+
                                     <circle class="circle circle-container__progress" cx="135" cy="135" r="115.1" />
                                 </svg>
                             </div>
@@ -1006,30 +1046,32 @@
             <p>Warming Up & Loading <span>DCP</span></p>
             <div class="spinner">
                 <svg class="svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <linearGradient id="gradientStyleS" x1="0%" y1="27%" x2="100%" y2="23%" gradientTransform="rotate(0)">
+                    <linearGradient id="gradientStyleS" x1="0%" y1="27%" x2="100%" y2="23%"
+                        gradientTransform="rotate(0)">
                         <stop offset="50%" class="stop1"></stop>
                         <stop offset="100%" class="stop2"></stop>
                     </linearGradient>
                     <circle class="circle circle-container__progress circle-source" cx="50" cy="50" r="44" />
                 </svg>
             </div>
-           
+
         </div>
     </div>
     <div id="modal-shutdown" class="modal-background">
         <div id="modal">
-            <img  src="img/button-icon/power.svg"/>
+            <img src="img/button-icon/power.svg" />
             <p>Shut down and Cooling down</p>
             <div class="spinner">
                 <svg class="svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <linearGradient id="gradientStyleshutdown" x1="0%" y1="27%" x2="100%" y2="23%" gradientTransform="rotate(0)">
+                    <linearGradient id="gradientStyleshutdown" x1="0%" y1="27%" x2="100%" y2="23%"
+                        gradientTransform="rotate(0)">
                         <stop offset="50%" class="stop3"></stop>
                         <stop offset="100%" class="stop2"></stop>
                     </linearGradient>
                     <circle class="circle circle-container__progress circle-shutdown" cx="50" cy="50" r="44" />
                 </svg>
             </div>
-           
+
         </div>
     </div>
 
@@ -1042,8 +1084,7 @@
     <script src="script/dashboard-functional/btn-active.js"></script>
 
     <script src="script/lightings-functional/lightings.js"></script>
-    <script src="script/lightings-functional/lightings.js"></script>
-    <script src="script/lightings-item-functional/lightings-item-script.js"></script>
+    <script defer src="script/lighting-slider-functional/lighting-slider-script.js"></script>
 
     <script src="script/theme-functional/theme-script.js"></script>
     <script src="script/audio-functional/audio-script.js"></script>

@@ -1,9 +1,22 @@
-.device-main-content
-{
+.device-main-content {
     display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
 
-    &.active
-    {
+    &.active {
         display: flex;
+    }
+
+    .main-box {
+        width: calc(100% - 350px);
+    }
+
+    .right-box {
+        width: 336px;
+        height: 100%;
+        background: #232326;
+        border-radius: 16px;
     }
 }

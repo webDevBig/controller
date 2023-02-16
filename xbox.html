@@ -578,8 +578,8 @@
                     </div>
                 </div>
 
-                <!-- lightings tab  DONE-->
-                <div id="tab-3" class="tab-pane">
+                  <!-- lightings tab  DONE-->
+                  <div id="tab-3" class="tab-pane">
                     <div class="lightings-content">
                         <div class="lightings-slider swiper" id="lighting-controls-swiper">
 
@@ -593,7 +593,12 @@
                                             <p class="lightings-perc">10%</p>
                                             <div class="lightings-bar">
                                                 <div class="lightings">
-                                                    <input type="range" value="70" min="0" max="100" step="1">
+                                                    <div class="range-slider">
+                                                        <input type="range" orient="vertical" min="0" max="100"
+                                                            value="70" />
+                                                        <div class="range-slider__bar"></div>
+                                                        <div class="range-slider__thumb"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <input type="checkbox" id="switchConsole" class="switch" checked />
@@ -601,10 +606,14 @@
                                         </div>
                                         <div class="lightings-item">
                                             <p class="lightings-item-title">Floor</p>
-                                            <p class="lightings-perc" id="floor_field">50%</p>
+                                            <p class="lightings-perc">50%</p>
                                             <div class="lightings-bar">
                                                 <div class="lightings">
-                                                    <input type="range" value="50" min="0" max="100" step="1">
+                                                    <div class="range-slider">
+                                                        <input type="range" orient="vertical" min="0" max="100" value="50" />
+                                                        <div class="range-slider__bar"></div>
+                                                        <div class="range-slider__thumb"></div>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -616,7 +625,11 @@
                                             <p class="lightings-perc">0%</p>
                                             <div class="lightings-bar">
                                                 <div class="lightings">
-                                                    <input type="range" value="0" min="0" max="100" step="1">
+                                                    <div class="range-slider">
+                                                        <input type="range" orient="vertical" min="0" max="100" value="0" />
+                                                        <div class="range-slider__bar"></div>
+                                                        <div class="range-slider__thumb"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <input type="checkbox" id="switchSconse" class="switch" checked />
@@ -627,7 +640,11 @@
                                             <p class="lightings-perc">10%</p>
                                             <div class="lightings-bar">
                                                 <div class="lightings">
-                                                    <input type="range" value="70" min="0" max="100" step="1">
+                                                    <div class="range-slider">
+                                                        <input type="range" orient="vertical" min="0" max="100" value="10" />
+                                                        <div class="range-slider__bar"></div>
+                                                        <div class="range-slider__thumb"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <input type="checkbox" id="switchWorkLights" class="switch" checked />
@@ -638,7 +655,11 @@
                                             <p class="lightings-perc">10%</p>
                                             <div class="lightings-bar">
                                                 <div class="lightings">
-                                                    <input type="range" value="10" min="0" max="100" step="1">
+                                                    <div class="range-slider">
+                                                        <input type="range" orient="vertical" min="0" max="100" value="10" />
+                                                        <div class="range-slider__bar"></div>
+                                                        <div class="range-slider__thumb"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <input type="checkbox" id="switchFrontSpot" class="switch" checked />
@@ -1048,8 +1069,7 @@
     <script src="script/dashboard-functional/btn-active.js"></script>
 
     <script src="script/lightings-functional/lightings.js"></script>
-    <script src="script/lightings-functional/lightings.js"></script>
-    <script src="script/lightings-item-functional/lightings-item-script.js"></script>
+    <script defer src="script/lighting-slider-functional/lighting-slider-script.js"></script>
 
     <script src="script/theme-functional/theme-script.js"></script>
     <script src="script/audio-functional/audio-script.js"></script>

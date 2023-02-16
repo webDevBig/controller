@@ -1,6 +1,19 @@
 .device-main-content {
   display: none;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .device-main-content.active {
   display: flex;
+}
+.device-main-content .main-box {
+  width: calc(100% - 350px);
+}
+.device-main-content .right-box {
+  width: 336px;
+  height: 100%;
+  background: #232326;
+  border-radius: 16px;
 }/*# sourceMappingURL=device-main-style.css.map */
