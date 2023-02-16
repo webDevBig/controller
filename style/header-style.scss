@@ -16,8 +16,7 @@ header {
     align-items: center;
     padding: 24px;
 
-    .btn-box
-    {
+    .btn-box {
         display: flex;
         align-items: center;
     }
@@ -70,12 +69,18 @@ header {
         margin-top: 4px;
     }
 }
-#shutdown
-{
-    background-image: url(../img/button-icon/power.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 24px;
+
+#shutdown {
+    i {
+        width: 24px;
+        height: 24px;
+        background-image: url(../img/button-icon/power.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        background-color: transparent;
+    }
+
 }
 
 @media all and (max-height:800px) {
