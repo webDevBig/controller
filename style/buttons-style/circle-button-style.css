@@ -1,6 +1,9 @@
 .circle-btn {
   border-radius: 50%;
   border: 1px solid #313538;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .circle-btn.active i {
   background-color: #41FFB4;
