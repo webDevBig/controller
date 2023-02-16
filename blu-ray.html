@@ -106,7 +106,7 @@
                 <div class="btn-box">
                     <button class="circle-btn notification-btn active"><img alt="notification"
                             src="img/button-icon/notification.svg" /></button>
-                            <button class="circle-btn circle-bg-btn" id="shutdown"></button>
+                    <button class="circle-btn circle-bg-btn" id="shutdown"></button>
                 </div>
             </header>
 
@@ -118,13 +118,38 @@
                     <div class="device-main-content active">
                         <div class="main-box">
                             <div class="functional-box">
+                                <div class="btn-container"><button class="circle-btn"><i class="home-btn"></i></button>
+                                    <p class="btn-title">Home</p>
+                                </div>
+                                <div class="btn-container"><button class="circle-btn"><i class="menu-btn"></i></button>
+                                    <p class="btn-title">Menu</p>
+                                </div>
+                                <div class="btn-container"><button class="circle-btn"><i class="popup-btn"></i></button>
+                                    <p class="btn-title">Pop Up Menu</p>
+                                </div>
+                                <div class="btn-container"><button class="circle-btn"><i class="top-menu-btn"></i></button>
+                                    <p class="btn-title">Top Menu</p>
+                                </div>
+                                <div class="btn-container"><button class="circle-btn"><i class="return-btn"></i></button>
+                                    <p class="btn-title">Return</p>
+                                </div>
+                                <div class="btn-container"><button class="circle-btn"><i class="info-btn"></i></button>
+                                    <p class="btn-title">Info</p>
+                                </div>
+                                <div class="btn-container"><button class="circle-btn"><i class="audio-btn"></i></button>
+                                    <p class="btn-title">Audio</p>
+                                </div>
+                                <div class="btn-container"><button class="circle-btn"><i class="home-btn"></i></button>
+                                    <p class="btn-title">Subtitle</p>
+                                </div>
                             </div>
                             <div class="player-controler">
                                 <button class="circle-btn circle-btn-no-border controler-btn"><i
                                         class="previous-btn"></i></button>
                                 <button class="circle-btn circle-btn-no-border controler-btn"><i
                                         class="backward-btn"></i></button>
-                                        <button class="circle-btn circle-bg-btn controler-btn"><i class="pause-btn"></i></button>
+                                <button class="circle-btn circle-bg-btn controler-btn"><i
+                                        class="pause-btn"></i></button>
                                 <button class="circle-btn circle-bg-btn controler-btn"><i class="play-btn"></i></button>
                                 <button class="circle-btn circle-bg-btn controler-btn"><i class="stop-btn"></i></button>
                                 <button class="circle-btn circle-btn-no-border controler-btn"><i
@@ -592,8 +617,8 @@
                     </div>
                 </div>
 
-                  <!-- lightings tab  DONE-->
-                  <div id="tab-3" class="tab-pane">
+                <!-- lightings tab  DONE-->
+                <div id="tab-3" class="tab-pane">
                     <div class="lightings-content">
                         <div class="lightings-slider swiper" id="lighting-controls-swiper">
 
@@ -624,7 +649,8 @@
                                             <div class="lightings-bar">
                                                 <div class="lightings">
                                                     <div class="range-slider">
-                                                        <input type="range" orient="vertical" min="0" max="100" value="50" />
+                                                        <input type="range" orient="vertical" min="0" max="100"
+                                                            value="50" />
                                                         <div class="range-slider__bar"></div>
                                                         <div class="range-slider__thumb"></div>
                                                     </div>
@@ -640,7 +666,8 @@
                                             <div class="lightings-bar">
                                                 <div class="lightings">
                                                     <div class="range-slider">
-                                                        <input type="range" orient="vertical" min="0" max="100" value="0" />
+                                                        <input type="range" orient="vertical" min="0" max="100"
+                                                            value="0" />
                                                         <div class="range-slider__bar"></div>
                                                         <div class="range-slider__thumb"></div>
                                                     </div>
@@ -655,7 +682,8 @@
                                             <div class="lightings-bar">
                                                 <div class="lightings">
                                                     <div class="range-slider">
-                                                        <input type="range" orient="vertical" min="0" max="100" value="10" />
+                                                        <input type="range" orient="vertical" min="0" max="100"
+                                                            value="10" />
                                                         <div class="range-slider__bar"></div>
                                                         <div class="range-slider__thumb"></div>
                                                     </div>
@@ -670,7 +698,8 @@
                                             <div class="lightings-bar">
                                                 <div class="lightings">
                                                     <div class="range-slider">
-                                                        <input type="range" orient="vertical" min="0" max="100" value="10" />
+                                                        <input type="range" orient="vertical" min="0" max="100"
+                                                            value="10" />
                                                         <div class="range-slider__bar"></div>
                                                         <div class="range-slider__thumb"></div>
                                                     </div>
@@ -724,11 +753,12 @@
                                             temperature</p>
                                     </button></div>
                                 <svg class="svg">
-                                    <linearGradient id="gradientStyle" x1="0%" y1="27%" x2="100%" y2="23%" gradientTransform="rotate(0)">
+                                    <linearGradient id="gradientStyle" x1="0%" y1="27%" x2="100%" y2="23%"
+                                        gradientTransform="rotate(0)">
                                         <stop offset="50%" class="stop1"></stop>
                                         <stop offset="100%" class="stop2"></stop>
                                     </linearGradient>
-                                    
+
                                     <circle class="circle circle-container__progress" cx="135" cy="135" r="115.1" />
                                 </svg>
                             </div>
@@ -1047,30 +1077,32 @@
             <p>Warming Up & Loading <span>DCP</span></p>
             <div class="spinner">
                 <svg class="svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <linearGradient id="gradientStyleS" x1="0%" y1="27%" x2="100%" y2="23%" gradientTransform="rotate(0)">
+                    <linearGradient id="gradientStyleS" x1="0%" y1="27%" x2="100%" y2="23%"
+                        gradientTransform="rotate(0)">
                         <stop offset="50%" class="stop1"></stop>
                         <stop offset="100%" class="stop2"></stop>
                     </linearGradient>
                     <circle class="circle circle-container__progress circle-source" cx="50" cy="50" r="44" />
                 </svg>
             </div>
-           
+
         </div>
     </div>
     <div id="modal-shutdown" class="modal-background">
         <div id="modal">
-            <img  src="img/button-icon/power.svg"/>
+            <img src="img/button-icon/power.svg" />
             <p>Shut down and Cooling down</p>
             <div class="spinner">
                 <svg class="svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <linearGradient id="gradientStyleshutdown" x1="0%" y1="27%" x2="100%" y2="23%" gradientTransform="rotate(0)">
+                    <linearGradient id="gradientStyleshutdown" x1="0%" y1="27%" x2="100%" y2="23%"
+                        gradientTransform="rotate(0)">
                         <stop offset="50%" class="stop3"></stop>
                         <stop offset="100%" class="stop2"></stop>
                     </linearGradient>
                     <circle class="circle circle-container__progress circle-shutdown" cx="50" cy="50" r="44" />
                 </svg>
             </div>
-           
+
         </div>
     </div>
 
