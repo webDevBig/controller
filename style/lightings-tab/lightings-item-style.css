@@ -34,7 +34,7 @@
   height: 100%;
 }
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1120px) {
   .lightings-item {
     width: 110px;
     padding: 24px 0;

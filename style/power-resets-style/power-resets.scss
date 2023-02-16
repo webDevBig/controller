@@ -101,21 +101,29 @@ $font-size-small: 12px;
 
 @media all and (max-height:800px) {
     .power-resets-content {
-        .power-resets-clm{
-            .title{
+        .power-resets-clm {
+            .title {
                 font-size: $font-size-small;
                 margin: 0 0 8px;
             }
         }
-        
+
         .power-resets-item {
             padding: 6px 8px;
-            .power-resets-icon
-            {
+
+            &.power-resets-item-reset {
+                .power-resets-icon {
+                    -webkit-mask-size: 20px;
+                    mask-size: 20px;
+                }
+            }
+
+            .power-resets-icon {
                 max-width: 20px;
                 -webkit-mask-size: 20px;
                 mask-size: 20px;
             }
+
             .power-resets-name {
                 font-size: $font-size-small;
                 line-height: 1;
@@ -124,6 +132,7 @@ $font-size-small: 12px;
             .oval-btn {
                 font-size: 10px;
                 padding: 5px 0;
+
                 img {
                     max-width: 16px;
                 }

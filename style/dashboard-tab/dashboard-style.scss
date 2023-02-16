@@ -100,11 +100,11 @@ $font-size-small: 12px;
 @media all and (max-height:750px) {
     .dashboard-content {
         .dashboard-clm {
-            padding: 24px 15px 0;
+            padding: 24px 15px;
 
 
             .rectangle-btn {
-                height: 55px;
+                // height: 55px;
 
                 &:first-of-type {
                     margin-top: 15px;

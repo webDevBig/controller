@@ -24,6 +24,7 @@ $font-size-small: 12px;
 .status-item {
     margin: 8px 0;
     width: 100%;
+    height: calc(16% - 124px);
     background: #232326;
     border-radius: 12px;
     padding: 20px 24px;
@@ -86,7 +87,7 @@ $font-size-small: 12px;
     }
 }
 
-@media all and (max-height:800px) {
+@media all and (max-height:740px) {
 
     .status-item {
         padding: 12px 24px;

@@ -61,10 +61,7 @@
 }
 @media all and (max-height: 750px) {
   .dashboard-content .dashboard-clm {
-    padding: 24px 15px 0;
-  }
-  .dashboard-content .dashboard-clm .rectangle-btn {
-    height: 55px;
+    padding: 24px 15px;
   }
   .dashboard-content .dashboard-clm .rectangle-btn:first-of-type {
     margin-top: 15px;

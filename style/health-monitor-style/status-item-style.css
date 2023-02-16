@@ -1,6 +1,7 @@
 .status-item {
   margin: 8px 0;
   width: 100%;
+  height: calc(16% - 124px);
   background: #232326;
   border-radius: 12px;
   padding: 20px 24px;
@@ -53,7 +54,7 @@
   background: #FF7070;
 }
 
-@media all and (max-height: 800px) {
+@media all and (max-height: 740px) {
   .status-item {
     padding: 12px 24px;
     margin: 4px 0;
