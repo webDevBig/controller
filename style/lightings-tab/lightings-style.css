@@ -33,4 +33,9 @@
   .lightings-content .lightings-clm .rectangle-btn {
     width: 172px;
   }
+}
+@media all and (max-height: 750px) {
+  .lightings-content .swiper .swiper-slide .slide {
+    height: 100%;
+  }
 }/*# sourceMappingURL=lightings-style.css.map */

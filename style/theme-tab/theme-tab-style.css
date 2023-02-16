@@ -120,4 +120,10 @@
 
 .theme-item11 .bg-box {
   background: #DEA768;
+}
+
+@media all and (max-width: 1155px) {
+  .theme-item {
+    width: 210px;
+  }
 }/*# sourceMappingURL=theme-tab-style.css.map */

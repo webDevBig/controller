@@ -1,0 +1,85 @@
+.range-slider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  max-height: 100%;
+  background-image: url(../../img/lighting-slider-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 4px 100%;
+}
+.range-slider__thumb {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #41FFB4;
+  pointer-events: none;
+  cursor: pointer;
+}
+.range-slider__thumb.empty {
+  opacity: 0;
+}
+.range-slider__bar {
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(180deg, #41FFB4 9.76%, rgba(65, 255, 180, 0) 108.54%);
+  pointer-events: none;
+  width: 4px;
+  border-radius: 8px;
+}
+.range-slider input[type=range][orient=vertical] {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  width: 4px;
+  display: inline-block;
+  position: relative;
+  writing-mode: bt-lr;
+  -webkit-appearance: slider-vertical;
+  opacity: 0;
+}
+.range-slider input[type=range][orient=vertical]::-webkit-slider-runnable-track, .range-slider input[type=range][orient=vertical]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+.range-slider input[type=range][orient=vertical]::-webkit-slider-runnable-track {
+  border: none;
+  border-radius: 8px;
+  background: #232326;
+}
+.range-slider input[type=range][orient=vertical]::-moz-range-track {
+  border: none;
+  border-radius: 8px;
+  background: #232326;
+}
+.range-slider input[type=range][orient=vertical]::-ms-track {
+  border: none;
+  border-radius: 8px;
+  background: #232326;
+  color: transparent;
+  height: 100%;
+}
+.range-slider input[type=range][orient=vertical]::-ms-fill-lower, .range-slider input[type=range][orient=vertical]::-ms-fill-upper, .range-slider input[type=range][orient=vertical]::-ms-tooltip {
+  display: none;
+}
+.range-slider input[type=range][orient=vertical]::-webkit-slider-thumb {
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+  cursor: pointer;
+}
+.range-slider input[type=range][orient=vertical]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+  cursor: pointer;
+}
+.range-slider input[type=range][orient=vertical]::-ms-thumb {
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+  cursor: pointer;
+}/*# sourceMappingURL=lightings-slider-style.css.map */

@@ -4,9 +4,11 @@
 }
 .power-resets-content .swiper .slide {
   padding: 0;
+  height: 100%;
 }
 .power-resets-content .power-resets-clm {
   width: calc(50% - 12px);
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -17,6 +19,8 @@
 }
 .power-resets-content .power-resets-item {
   width: 100%;
+  height: calc(12.5% - 4px);
+  max-height: 56px;
   margin: 4px 0;
   display: flex;
   justify-content: flex-start;

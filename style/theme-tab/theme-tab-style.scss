@@ -128,28 +128,24 @@ $bg3-theme:#101119;
     .bg-box {
         background: $active-color-theme2;
     }
-
 }
 
 .theme-item3 {
     .bg-box {
         background: $active-color-theme3;
     }
-
 }
 
 .theme-item4 {
     .bg-box {
         background: $active-color-theme4;
     }
-
 }
 
 .theme-item5 {
     .bg-box {
         background: $active-color-theme5;
     }
-
 }
 
 .theme-item6 {
@@ -172,7 +168,6 @@ $bg3-theme:#101119;
     .bg-box {
         background: $active-color-theme8;
     }
-
 }
 
 .theme-item9 {
@@ -190,5 +185,12 @@ $bg3-theme:#101119;
 .theme-item11 {
     .bg-box {
         background: $active-color-theme11;
+    }
+}
+
+@media all and (max-width:1155px)
+{
+    .theme-item {
+        width: 210px;
     }
 }
