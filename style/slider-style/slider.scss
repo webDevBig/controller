@@ -78,6 +78,8 @@ $font-size-small: 12px;
     justify-content: center;
     align-items: center;
     margin: 20px 0 0;
+    position: absolute;
+    bottom: 0;
 
     .swiper-pagination-bullet {
         width: 8px;

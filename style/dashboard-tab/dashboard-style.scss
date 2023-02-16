@@ -106,7 +106,7 @@ $font-size-small: 12px;
             .rectangle-btn {
                 height: 55px;
 
-                :first-of-type {
+                &:first-of-type {
                     margin-top: 15px;
                 }
             }

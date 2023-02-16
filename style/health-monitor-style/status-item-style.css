@@ -25,20 +25,32 @@
   margin: 0 0 0 auto;
 }
 .status span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 14px 0 0;
+}
+.status span span {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  outline-width: 6px;
-  outline-style: solid;
-  margin: 0 14px 0 0;
+  display: block;
+  margin: 0;
 }
 .status.online span {
+  background: rgba(65, 255, 180, 0.24);
+}
+.status.online span span {
   background: #41FFB4;
-  outline-color: rgba(65, 255, 180, 0.24);
 }
 .status.offline span {
+  background: rgba(255, 112, 112, 0.24);
+}
+.status.offline span span {
   background: #FF7070;
-  outline-color: rgba(255, 112, 112, 0.24);
 }
 
 @media all and (max-height: 800px) {

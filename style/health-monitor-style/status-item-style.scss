@@ -39,8 +39,9 @@ $font-size-small: 12px;
         width: 24px;
         margin: 0 16px 0 0;
     }
-   
+
 }
+
 .status {
     position: relative;
     display: flex;
@@ -49,33 +50,47 @@ $font-size-small: 12px;
     margin: 0 0 0 auto;
 
     span {
-        width: 6px;
-        height: 6px;
+        width: 12px;
+        height: 12px;
         border-radius: 50%;
-        outline-width: 6px;
-        outline-style: solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0 14px 0 0;
+
+        span {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            display: block;
+            margin: 0;
+        }
     }
 
     &.online {
         span {
-            background: $active-color;
-            outline-color: rgba($active-color, 0.24);
+            background: rgba($active-color, 0.24);
+            span {
+                background: $active-color;
+            }
         }
     }
 
     &.offline {
         span {
-            background: $font-color-alert;
-            outline-color: rgba($font-color-alert, 0.24);
+            background: rgba($font-color-alert, 0.24);
+            span {
+                background: $font-color-alert;
+            }
         }
     }
 }
+
 @media all and (max-height:800px) {
-   
-        .status-item {
-            padding: 12px 24px;
-            margin: 4px 0;
-        }
-    
+
+    .status-item {
+        padding: 12px 24px;
+        margin: 4px 0;
+    }
+
 }

@@ -66,7 +66,7 @@
   .dashboard-content .dashboard-clm .rectangle-btn {
     height: 55px;
   }
-  .dashboard-content .dashboard-clm .rectangle-btn :first-of-type {
+  .dashboard-content .dashboard-clm .rectangle-btn:first-of-type {
     margin-top: 15px;
   }
   .dashboard-content .dashboard-clm .temp-value {
