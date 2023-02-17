@@ -1,0 +1,29 @@
+.device-main-content .functional-box {
+  border: 1px solid #30303B;
+}
+.device-main-content .btn-box {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 90px 90px 90px 90px;
+  grid-template-rows: 104px 104px;
+  grid-column-gap: 80px;
+  grid-row-gap: 46px;
+  margin: auto;
+}
+
+@media all and (max-width: 1120px) {
+  .device-main-content .btn-box {
+    grid-column-gap: 40px;
+  }
+}
+@media all and (max-width: 1000px) {
+  .device-main-content .btn-box {
+    grid-column-gap: 20px;
+  }
+}
+@media all and (max-height: 650px) {
+  .device-main-content .btn-box {
+    grid-row-gap: 30px;
+  }
+}/*# sourceMappingURL=blu-ray-style.css.map */

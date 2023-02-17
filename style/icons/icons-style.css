@@ -71,4 +71,34 @@
 .menu-btn {
   -webkit-mask: url(../../img/button-icon/menu.svg) no-repeat center;
   mask: url(../../img/button-icon/menu.svg) no-repeat center;
+}
+
+.popup-btn {
+  -webkit-mask: url(../../img/button-icon/pop-up-menu.svg) no-repeat center;
+  mask: url(../../img/button-icon/pop-up-menu.svg) no-repeat center;
+}
+
+.top-menu-btn {
+  -webkit-mask: url(../../img/button-icon/top-menu.svg) no-repeat center;
+  mask: url(../../img/button-icon/top-menu.svg) no-repeat center;
+}
+
+.return-btn {
+  -webkit-mask: url(../../img/button-icon/return.svg) no-repeat center;
+  mask: url(../../img/button-icon/return.svg) no-repeat center;
+}
+
+.info-btn {
+  -webkit-mask: url(../../img/button-icon/info.svg) no-repeat center;
+  mask: url(../../img/button-icon/info.svg) no-repeat center;
+}
+
+.audio-btn {
+  -webkit-mask: url(../../img/button-icon/audio.svg) no-repeat center;
+  mask: url(../../img/button-icon/audio.svg) no-repeat center;
+}
+
+.subtitle-btn {
+  -webkit-mask: url(../../img/button-icon/subtitle.svg) no-repeat center;
+  mask: url(../../img/button-icon/subtitle.svg) no-repeat center;
 }/*# sourceMappingURL=icons-style.css.map */
