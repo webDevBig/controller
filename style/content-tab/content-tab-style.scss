@@ -18,32 +18,39 @@ $font-size-regular: 14px;
 $font-size-small: 12px;
 
 
+.tab-content {
+    float: left;
+    width: 100%;
+    height: 100%;
 
-#tab-source{
-    .tab-content {
-        float: left;
-        width: 100%;
-        height: 100%;
+    &.active {
+        display: block;
+    }
+
+    >.content-tab-pane,
+    >.settings-tab-pane {
         display: none;
-        &.active{
-            display: block;
-        }
-    
-        >.content-tab-pane,
-        >.settings-tab-pane {
-            display: none;
-            height: 100%;
-    
-            &.active {
-                display: block;
-            }
-        }
-    
-        >.active {
+        height: 100%;
+
+        &.active {
             display: block;
         }
     }
-    
+
+    >.active {
+        display: block;
+    }
+}
+
+#tab-source {
+    .tab-content {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+
 }
 
 
