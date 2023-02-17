@@ -14,18 +14,18 @@
   align-items: center;
   margin: 0 12px;
 }
-
-.circle-btn {
+.temp-item .circle-btn {
   width: 64px;
   height: 64px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
+  margin: 0 17px 0 0;
 }
-.circle-btn.up-temp {
+.temp-item .circle-btn.up-temp {
   background-image: url(../../img/button-icon/add.svg);
 }
-.circle-btn.down-temp {
+.temp-item .circle-btn.down-temp {
   background-image: url(../../img/button-icon/minus.svg);
 }
 
@@ -59,6 +59,7 @@
   font-size: 16px;
   opacity: 0.14;
   text-align: center;
+  margin: 0 17px 0 0;
 }
 .temp-value .cool {
   color: #ADEBFF;

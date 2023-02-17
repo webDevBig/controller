@@ -104,6 +104,10 @@ $font-size-small: 12px;
             font-size: $font-size-regular;
             line-height: 18px;
             color: $font-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             .number {
                 font-weight: 700;
@@ -113,6 +117,7 @@ $font-size-small: 12px;
                 display: flex;
                 align-items: flex-start;
                 justify-content: center;
+                margin: 0 -17px 0 0;
 
                 sup {
                     opacity: 0.14;

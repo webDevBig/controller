@@ -26,6 +26,7 @@ header .circle-btn.notification-btn::after {
   height: 8px;
   position: absolute;
   right: 15px;
+  top: 12px;
 }
 header .circle-btn.power-btn {
   background: conic-gradient(from 21.45deg at 50.26% 50.26%, #2D3134 -54.74deg, #1E1E20 0.33deg, #3C3E44 65.93deg, #1E1E20 124.22deg, #2E2F33 179.4deg, #1E1E20 236.11deg, #2D3134 305.26deg, #1E1E20 360.33deg);

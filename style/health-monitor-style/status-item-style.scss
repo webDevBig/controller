@@ -88,10 +88,19 @@ $font-size-small: 12px;
 }
 
 @media all and (max-height:740px) {
+    .items-box .status-row {
+        margin-top: 15px;
+    }
+    .status-item {
+        padding: 15px 24px;
+        // padding: 12px 24px;
+        margin: 4px 0;
+    }
 
+}
+@media all and (max-height:650px) {
     .status-item {
         padding: 12px 24px;
-        margin: 4px 0;
     }
 
 }

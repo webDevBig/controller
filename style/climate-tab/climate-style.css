@@ -71,6 +71,10 @@
   font-size: 14px;
   line-height: 18px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .block .box .circle-btn .number {
   font-weight: 700;
@@ -80,6 +84,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  margin: 0 -17px 0 0;
 }
 .block .box .circle-btn .number sup {
   opacity: 0.14;

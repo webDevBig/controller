@@ -33,24 +33,26 @@ $font-size-small: 12px;
         justify-content: center;
         align-items: center;
         margin: 0 12px;
-    }
-
-    .circle-btn {
-        width: 64px;
-        height: 64px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: auto;
-
-        &.up-temp {
-            background-image: url(../../img/button-icon/add.svg);
-        }
+        .circle-btn {
+            width: 64px;
+            height: 64px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
+            margin: 0 17px 0 0;
     
-        &.down-temp {
-            background-image: url(../../img/button-icon/minus.svg);
-           
+            &.up-temp {
+                background-image: url(../../img/button-icon/add.svg);
+            }
+        
+            &.down-temp {
+                background-image: url(../../img/button-icon/minus.svg);
+               
+            }
         }
     }
+
+    
    
 
     .temp-value {
@@ -86,6 +88,7 @@ $font-size-small: 12px;
             font-size: 16px;
             opacity: 0.14;
             text-align: center;
+            margin: 0 17px 0 0;
         }
 
         .cool {
