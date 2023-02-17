@@ -1,18 +1,22 @@
-.tab-content {
+#tab-source .tab-content {
   float: left;
   width: 100%;
   height: 100%;
+  display: none;
 }
-.tab-content > .content-tab-pane,
-.tab-content > .settings-tab-pane {
+#tab-source .tab-content.active {
+  display: block;
+}
+#tab-source .tab-content > .content-tab-pane,
+#tab-source .tab-content > .settings-tab-pane {
   display: none;
   height: 100%;
 }
-.tab-content > .content-tab-pane.active,
-.tab-content > .settings-tab-pane.active {
+#tab-source .tab-content > .content-tab-pane.active,
+#tab-source .tab-content > .settings-tab-pane.active {
   display: block;
 }
-.tab-content > .active {
+#tab-source .tab-content > .active {
   display: block;
 }
 

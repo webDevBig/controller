@@ -19,27 +19,33 @@ $font-size-small: 12px;
 
 
 
-
-
-.tab-content {
-    float: left;
-    width: 100%;
-    height: 100%;
-
-    >.content-tab-pane,
-    >.settings-tab-pane {
-        display: none;
+#tab-source{
+    .tab-content {
+        float: left;
+        width: 100%;
         height: 100%;
-
-        &.active {
+        display: none;
+        &.active{
+            display: block;
+        }
+    
+        >.content-tab-pane,
+        >.settings-tab-pane {
+            display: none;
+            height: 100%;
+    
+            &.active {
+                display: block;
+            }
+        }
+    
+        >.active {
             display: block;
         }
     }
-
-    >.active {
-        display: block;
-    }
+    
 }
+
 
 
 .content-nav-tabs {

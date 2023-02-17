@@ -23,6 +23,8 @@ window.addEventListener("load", function () {
         var activePaneId = anchorReference.getAttribute("href");
         var activePane = document.querySelector(activePaneId);
         activePane.classList.add("active");
+        console.log(  activePane.parentElement)
+        activePane.parentElement.classList.add('active')
     }
     for (i = 0; i < myTabs.length; i++) {
         myTabs[i].addEventListener("click", myTabClicks)
@@ -37,7 +39,9 @@ window.addEventListener("load", function () {
         }
         for (i = 0; i < myContentPanes.length; i++) {
             myContentPanes[i].classList.remove("active");
+            myContentPanes[i].parentElement.classList.remove('active')
         }
+       
         document.querySelector('.marker-devise').classList.add('hide');
         document.querySelector('.device-main-content').classList.add('active')
         
@@ -53,10 +57,7 @@ window.addEventListener("load", function () {
         myTabs[i].addEventListener("click", function () {
             let coords = this.getBoundingClientRect();
             let parentPos = document.querySelector('.devise-nav-tabs').getBoundingClientRect();
-
             _class("marker-devise")[0].style.left = `calc(${coords.left}px - ${parentPos.left}px)`;
-
-
         });
     }
 });
@@ -68,8 +69,6 @@ window.addEventListener("load", function () {
     var myTabs = document.querySelectorAll("ul.settings-nav-tabs > li"),
         source_subtitle = document.querySelector('.source-subtitle');
     var subtitleSettings = ['Seating Controls', 'Power Resets', 'Control', 'Health Monitor', 'Control', 'Themes']
-
-
 
     function myTabClicks(tabClickEvent) {
         for (var i = 0; i < myTabs.length; i++) {
