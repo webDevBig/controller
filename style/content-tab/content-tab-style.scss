@@ -42,19 +42,6 @@ $font-size-small: 12px;
     }
 }
 
-#tab-source {
-    .tab-content {
-        display: none;
-
-        &.active {
-            display: block;
-        }
-    }
-
-}
-
-
-
 .content-nav-tabs {
     width: auto;
     list-style-type: none;
@@ -69,7 +56,6 @@ $font-size-small: 12px;
     }
 
     li {
-
         width: 56px;
         height: 56px;
         margin: 0 16px;
@@ -89,9 +75,13 @@ $font-size-small: 12px;
             background-color: transparent;
             background-position: center 0%;
             background-repeat: no-repeat;
-            background-size: 24;
+            background-size: 24px;
             cursor: pointer;
             transition: all .3s linear;
+
+            &.content-tab-main {
+                background-image: url(../../img/source-icon/digital-cinema.svg);
+            }
 
             &.content-tab-1 {
                 background-image: url(../../img/tab-icons/projector.svg);
@@ -135,6 +125,11 @@ $font-size-small: 12px;
 
             a:hover,
             a {
+
+                &.content-tab-main {
+                    background-image: url(../../img/source-icon/digital-cinema-active.svg);
+                }
+
                 &.content-tab-1 {
                     background-image: url(../../img/tab-icons/progector-active.svg);
                 }

@@ -88,12 +88,12 @@
                 </div>
                 <!-- tabs for sources -->
                 <ul class="content-nav content-nav-tabs devise-nav-tabs">
-                    <!-- <li class="active"><a href="#content-tab-main" class="content-tab-main"></a></li> -->
+                    <li class="active"><a href="#content-tab-main" class="content-tab-main"></a></li>
                     <li class=""><a href="#content-tab-1" class="content-tab-1"></a></li>
                     <li class=""><a href="#content-tab-2" class="content-tab-2"></a></li>
                     <li class=""><a href="#content-tab-3" class="content-tab-3"></a></li>
                     <li class=""><a href="#content-tab-4" class="content-tab-4"></a></li>
-                    <div id="marker-content" class="content-tab-indicator marker-devise hide"></div>
+                    <div id="marker-content" class="content-tab-indicator marker-devise"></div>
                 </ul>
                 <!-- tabs for settings -->
                 <ul class="content-nav content-nav-tabs settings-nav-tabs hide">
@@ -116,29 +116,31 @@
 
                 <!-- source tab -->
                 <div id="tab-source" class="tab-pane active">
-                    <div class="device-main-content active">
-                        <div class="main-box">
-                            <div class="functional-box">
-                            </div>
-                            <div class="player-controler">
-                                <button class="circle-btn circle-btn-no-border controler-btn"><i
-                                        class="previous-btn"></i></button>
-                                <button class="circle-btn circle-btn-no-border controler-btn"><i
-                                        class="backward-btn"></i></button>
-                                        <button class="circle-btn circle-bg-btn controler-btn"><i
-                                            class="pause-btn"></i></button>
-                                    <button class="circle-btn circle-bg-btn controler-btn"><i class="play-btn"></i></button>
-                                    <button class="circle-btn circle-bg-btn controler-btn"><i class="stop-btn"></i></button>
-                                <button class="circle-btn circle-btn-no-border controler-btn"><i
-                                        class="forward-btn"></i></button>
-                                <button class="circle-btn circle-btn-no-border controler-btn"><i
-                                        class="next-btn"></i></button>
-
-                            </div>
-                        </div>
-                        <div class="right-box"></div>
-                    </div>
                     <div class="tab-content">
+                        <div class="active content-tab-pane" id="content-tab-main">
+                            <div class="source-page-content">
+                            <div class="main-box">
+                                <div class="functional-box">
+                                </div>
+                                <div class="player-controler">
+                                    <button class="circle-btn circle-btn-no-border controler-btn"><i
+                                            class="previous-btn"></i></button>
+                                    <button class="circle-btn circle-btn-no-border controler-btn"><i
+                                            class="backward-btn"></i></button>
+                                            <button class="circle-btn circle-bg-btn controler-btn"><i
+                                                class="pause-btn"></i></button>
+                                        <button class="circle-btn circle-bg-btn controler-btn"><i class="play-btn"></i></button>
+                                        <button class="circle-btn circle-bg-btn controler-btn"><i class="stop-btn"></i></button>
+                                    <button class="circle-btn circle-btn-no-border controler-btn"><i
+                                            class="forward-btn"></i></button>
+                                    <button class="circle-btn circle-btn-no-border controler-btn"><i
+                                            class="next-btn"></i></button>
+    
+                                </div>
+                            </div>
+                            <div class="right-box"></div>
+                        </div>
+                        </div>
                         <!-- projector tab DONE -->
                         <div id="content-tab-1" class="content-tab-pane ">
                             <div class="progector-content">
@@ -501,11 +503,125 @@
 
                         </div>
                         <div id="content-tab-4" class="content-tab-pane">
-                            <span
-                                class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
-                            <span class="col-md-10">
-                                <h3>Feature 4</h3>
-                            </span>
+                            <div class="power-resets-content">
+                                <div class="power-resets-slider swiper" id="power-resets-swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="slide">
+                                                <div class="power-resets-clm">
+                                                    <p class="title">Rack 1</p>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 1</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 2</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item power-resets-item-reset">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 3</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 4</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 5</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 6</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 7</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 8</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                </div>
+                                                <div class="power-resets-clm">
+                                                    <p class="title">Rack 2</p>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 1</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 2</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item power-resets-item-reset">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 3</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 4</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item active">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 5</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 6</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 7</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                    <div class="power-resets-item">
+                                                        <i class="power-resets-icon"></i>
+                                                        <p class="power-resets-name">Device Name 8</p>
+                                                        <button class="oval-btn"><img alt="reset"
+                                                                src="img/refresh.svg" /> Reset</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide"></div>
+                                        </div>
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,14 +1,10 @@
-.device-main-content {
-    display: none;
+.source-page-content {
+    display: flex;
     width: 100%;
     height: 100%;
     justify-content: space-between;
     align-items: flex-start;
-
-    &.active {
-        display: flex;
-    }
-
+    
     .main-box {
         width: calc(100% - 350px);
         height: 100%;

@@ -9,7 +9,7 @@ window.addEventListener("load", function () {
     function myTabClicks(tabClickEvent) {
         for (var i = 0; i < myTabs.length; i++) {
             myTabs[i].classList.remove("active");
-            document.querySelector('.device-main-content').classList.remove('active')
+            // document.querySelector('.device-main-content').classList.remove('active')
             document.querySelector('.marker-devise').classList.remove('hide')
         }
         var clickedTab = tabClickEvent.currentTarget;
@@ -29,23 +29,23 @@ window.addEventListener("load", function () {
     for (i = 0; i < myTabs.length; i++) {
         myTabs[i].addEventListener("click", myTabClicks)
     }
-    var logo_item = document.querySelector('.logo');
-    logo_item.addEventListener("click", logo_itemClick, false);
+    // var logo_item = document.querySelector('.logo');
+    // logo_item.addEventListener("click", logo_itemClick, false);
 
-    function logo_itemClick() {
+    // function logo_itemClick() {
        
-        for (var i = 0; i < myTabs.length; i++) {
-            myTabs[i].classList.remove("active");
-        }
-        for (i = 0; i < myContentPanes.length; i++) {
-            myContentPanes[i].classList.remove("active");
-            myContentPanes[i].parentElement.classList.remove('active')
-        }
+    //     for (var i = 0; i < myTabs.length; i++) {
+    //         myTabs[i].classList.remove("active");
+    //     }
+    //     for (i = 0; i < myContentPanes.length; i++) {
+    //         myContentPanes[i].classList.remove("active");
+    //         myContentPanes[i].parentElement.classList.remove('active')
+    //     }
        
-        document.querySelector('.marker-devise').classList.add('hide');
-        document.querySelector('.device-main-content').classList.add('active')
+    //     document.querySelector('.marker-devise').classList.add('hide');
+    //     document.querySelector('.device-main-content').classList.add('active')
         
-    }
+    // }
 
     //animation for tab line
 
