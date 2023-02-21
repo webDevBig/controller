@@ -1,7 +1,7 @@
-.device-main-content .functional-box {
+.source-page-content .functional-box {
   border: 1px solid #30303B;
 }
-.device-main-content .btn-box {
+.source-page-content .btn-box {
   width: auto;
   height: auto;
   display: grid;
@@ -11,19 +11,80 @@
   grid-row-gap: 46px;
   margin: auto;
 }
+.source-page-content .right-box {
+  padding: 48px 0;
+}
+.source-page-content .slide {
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+}
+.source-page-content .slide .numbers-box {
+  margin: auto;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 48px;
+}
+.source-page-content .slide .numbers-box .circle-btn {
+  width: 64px;
+  height: 64px;
+  margin: 12px 0;
+}
+.source-page-content .rgby-btn-box {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 48px;
+}
+.source-page-content .rgby-btn-box .circle-btn {
+  width: 48px;
+  height: 48px;
+  font-size: 14px;
+}
+.source-page-content .rgby-btn-box .circle-btn.r-btn {
+  color: #FFADAD;
+  border-color: #FFADAD;
+  background-color: rgba(255, 173, 173, 0.08);
+}
+.source-page-content .rgby-btn-box .circle-btn.g-btn {
+  color: #ADFFDF;
+  border-color: #ADFFDF;
+  background-color: rgba(173, 255, 223, 0.08);
+}
+.source-page-content .rgby-btn-box .circle-btn.b-btn {
+  color: #ADEBFF;
+  border-color: #ADEBFF;
+  background-color: rgba(173, 235, 255, 0.08);
+}
+.source-page-content .rgby-btn-box .circle-btn.y-btn {
+  color: #FFF7AD;
+  border-color: #FFF7AD;
+  background-color: rgba(255, 247, 173, 0.08);
+}
 
 @media all and (max-width: 1120px) {
-  .device-main-content .btn-box {
+  .source-page-content .btn-box {
     grid-column-gap: 40px;
   }
 }
 @media all and (max-width: 1000px) {
-  .device-main-content .btn-box {
+  .source-page-content .btn-box {
     grid-column-gap: 20px;
   }
 }
 @media all and (max-height: 650px) {
-  .device-main-content .btn-box {
+  .source-page-content .btn-box {
     grid-row-gap: 30px;
+  }
+  .source-page-content .right-box {
+    padding: 20px 0;
   }
 }/*# sourceMappingURL=blu-ray-style.css.map */

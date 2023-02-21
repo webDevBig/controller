@@ -1,0 +1,99 @@
+.round-controler {
+  border-radius: 50%;
+  background: conic-gradient(from 21.45deg at 50.26% 50.26%, #2D3134 -54.74deg, #1E1E20 0.33deg, #3C3E44 65.93deg, #1E1E20 124.22deg, #2E2F33 179.4deg, #1E1E20 236.11deg, #2D3134 305.26deg, #1E1E20 360.33deg);
+  box-shadow: 0px 7px 24px rgba(8, 8, 9, 0.25);
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+.round-controler::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+  border: 1px solid transparent;
+  background: linear-gradient(210deg, rgba(255, 255, 255, 0.28) 4%, rgba(255, 255, 255, 0) 45%) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  z-index: 0;
+}
+.round-controler .controler-panel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-45deg);
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.round-controler .controler-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.round-controler .controler-btn:active, .round-controler .controler-btn.active {
+  background-color: #1E1E20;
+  box-shadow: inset 4px 0px 16px rgba(0, 0, 0, 0.16);
+}
+.round-controler .controler-btn img {
+  width: 30px;
+}
+.round-controler .controler-btn.top-controler img {
+  transform: translate3d(14px, -10px, 0px);
+}
+.round-controler .controler-btn.bottom-controler img {
+  transform: rotate(180deg) translate3d(12px, -11px, 0px);
+}
+.round-controler .controler-btn.left-controler img {
+  transform: rotate(-90deg) translate3d(13px, -8px, 0px);
+}
+.round-controler .controler-btn.right-controler img {
+  transform: rotate(90deg) translate3d(10px, -10px, 0px);
+}
+.round-controler .circle-btn {
+  position: absolute;
+  background: #1E1E20;
+  box-shadow: 0px 7px 24px rgba(8, 8, 9, 0.25);
+  border-radius: 50%;
+  width: 144px;
+  height: 144px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  z-index: 1;
+}
+.round-controler .circle-btn::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+  border: 1px solid transparent;
+  background: linear-gradient(184deg, rgba(255, 255, 255, 0.1) 4%, rgba(255, 255, 255, 0) 16%) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}/*# sourceMappingURL=round-controler-style.css.map */

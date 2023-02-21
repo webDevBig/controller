@@ -1,4 +1,31 @@
-.device-main-content {
+$main-bg-color:#1E1E20;
+
+$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
+$font-family-Medium: 'PlusJakartaSans-Medium';
+$font-family-Regular: 'PlusJakartaSans-Regular';
+
+$font-color: white;
+$icon-color:#52525A;
+$active-color:#41FFB4;
+$font-color-alert:#FF7070;
+$button-border-color:#313538;
+
+$climate-color1:#ADEBFF;
+$climate-color2:#FFADAD;
+
+$font-size-big3: 48px;
+$font-size-big2: 24px;
+$font-size-big1: 20px;
+$font-size-regular3: 18px;
+$font-size-regular2: 16px;
+$font-size-regular: 14px;
+$font-size-small: 12px;
+
+
+
+
+
+.source-page-content {
     .functional-box {
         border: 1px solid #30303B;
     }
@@ -13,26 +40,104 @@
         grid-row-gap: 46px;
         margin: auto;
     }
+
+    .right-box {
+        padding: 48px 0;
+    }
+
+    .slide {
+        flex-wrap: wrap;
+        align-items: center;
+        height: 100%;
+
+        .numbers-box {
+            margin: auto;
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 48px;
+
+            .circle-btn {
+                width: 64px;
+                height: 64px;
+                margin: 12px 0;
+            }
+        }
+    }
+
+    .rgby-btn-box {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 48px;
+
+        .circle-btn {
+            width: 48px;
+            height: 48px;
+            font-size: $font-size-regular;
+
+            &.r-btn {
+                color: #FFADAD;
+                border-color: #FFADAD;
+                background-color: rgba(#FFADAD, 0.08);
+            }
+            &.g-btn {
+                color: #ADFFDF;
+                border-color: #ADFFDF;
+                background-color: rgba(#ADFFDF, 0.08);
+            }
+            &.b-btn {
+                color: #ADEBFF;
+                border-color: #ADEBFF;
+                background-color: rgba(#ADEBFF, 0.08);
+            }
+            &.y-btn {
+                color: #FFF7AD;
+                border-color: #FFF7AD;
+                background-color: rgba(#FFF7AD, 0.08);
+            }
+        }
+    }
 }
 
-@media all and (max-width:1120px){
-    .device-main-content {
+
+@media all and (max-width:1120px) {
+    .source-page-content {
         .btn-box {
             grid-column-gap: 40px;
         }
     }
 }
-@media all and (max-width:1000px){
-    .device-main-content {
+
+@media all and (max-width:1000px) {
+    .source-page-content {
         .btn-box {
             grid-column-gap: 20px;
         }
     }
 }
-@media all and (max-height:650px){
-    .device-main-content {
+
+// @media all and (max-height:750px) {
+//     .source-page-content {
+//         .rgby-btn-box {
+//             margin: 0 0 40px;
+//         }
+//     }
+// }
+
+@media all and (max-height:650px) {
+    .source-page-content {
         .btn-box {
             grid-row-gap: 30px;
+        }
+
+        .right-box {
+            padding: 20px 0;
         }
     }
 }

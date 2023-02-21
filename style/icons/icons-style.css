@@ -101,4 +101,9 @@
 .subtitle-btn {
   -webkit-mask: url(../../img/button-icon/subtitle.svg) no-repeat center;
   mask: url(../../img/button-icon/subtitle.svg) no-repeat center;
+}
+
+.eject-btn {
+  -webkit-mask: url(../../img/controler-icons/Eject.svg) no-repeat center;
+  mask: url(../../img/controler-icons/Eject.svg) no-repeat center;
 }/*# sourceMappingURL=icons-style.css.map */

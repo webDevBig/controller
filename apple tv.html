@@ -55,6 +55,7 @@
     <link rel="stylesheet" href="style/controler-style/controler-style.css">
 
     <link rel="stylesheet" href="style/apple-tv-style/apple-tv.css">
+    <link rel="stylesheet" href="style/round-controler/round-controler-style.css">
 
 
 
@@ -109,7 +110,7 @@
                 <div class="btn-box">
                     <button class="circle-btn notification-btn active"><img alt="notification"
                             src="img/button-icon/notification.svg" /></button>
-                            <button class="circle-btn circle-bg-btn" id="shutdown"><i class="shutdown-btn"></i></button>
+                    <button class="circle-btn circle-bg-btn" id="shutdown"><i class="shutdown-btn"></i></button>
                 </div>
             </header>
 
@@ -118,33 +119,47 @@
 
                 <!-- source tab -->
                 <div id="tab-source" class="tab-pane active">
-                    
+
                     <div class="tab-content">
                         <div class="active content-tab-pane" id="content-tab-main">
                             <div class="source-page-content">
-                            <div class="main-box">
-                                <div class="functional-box">
-                                    <div class="btn-container"><button class="circle-btn"><i
-                                                class="home-btn"></i></button>
-                                            <p class="btn-title">Home</p></div>
-                                    <div class="btn-container"><button class="circle-btn"><i
-                                                class="menu-btn"></i></button>
-                                                <p class="btn-title">Menu</p></div>
+                                <div class="main-box">
+                                    <div class="functional-box">
+                                        <div class="btn-container"><button class="circle-btn"><i
+                                                    class="home-btn"></i></button>
+                                            <p class="btn-title">Home</p>
+                                        </div>
+                                        <div class="btn-container"><button class="circle-btn"><i
+                                                    class="menu-btn"></i></button>
+                                            <p class="btn-title">Menu</p>
+                                        </div>
+                                    </div>
+                                    <div class="player-controler">
+                                        <button class="circle-btn circle-btn-no-border controler-btn"><i
+                                                class="previous-btn"></i></button>
+                                        <button class="circle-btn circle-btn-no-border controler-btn"><i
+                                                class="backward-btn"></i></button>
+                                        <button class="circle-btn circle-bg-btn controler-btn"><i
+                                                class="play-btn"></i></button>
+                                        <button class="circle-btn circle-btn-no-border controler-btn"><i
+                                                class="forward-btn"></i></button>
+                                        <button class="circle-btn circle-btn-no-border controler-btn"><i
+                                                class="next-btn"></i></button>
+
+                                    </div>
                                 </div>
-                                <div class="player-controler">
-                                    <button class="circle-btn circle-btn-no-border controler-btn"><i
-                                            class="previous-btn"></i></button>
-                                    <button class="circle-btn circle-btn-no-border controler-btn"><i
-                                            class="backward-btn"></i></button>
-                                    <button class="circle-btn circle-bg-btn controler-btn"><i class="play-btn"></i></button>
-                                    <button class="circle-btn circle-btn-no-border controler-btn"><i
-                                            class="forward-btn"></i></button>
-                                    <button class="circle-btn circle-btn-no-border controler-btn"><i
-                                            class="next-btn"></i></button>
-    
+                                <div class="right-box">
+                                    <div class="round-controler">
+                                        <div class="controler-panel">
+                                            <button class="controler-btn left-controler"><img alt="" src="img/arrow-left.svg" /></button>
+                                            <button class="controler-btn top-controler"><img alt="" src="img/arrow-left.svg" /></button>
+                                            <button class="controler-btn bottom-controler "><img alt="" src="img/arrow-left.svg" /></button>
+                                            <button class="controler-btn right-controler"><img alt="" src="img/arrow-left.svg" /></button>
+                                        </div>
+                                        <button class="circle-btn ok-btn">OK</button>
+                                    </div>
+
                                 </div>
-                            </div>
-                            <div class="right-box"></div>
                             </div>
                         </div>
                         <!-- projector tab DONE -->

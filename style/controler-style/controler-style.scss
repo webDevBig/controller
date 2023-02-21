@@ -30,6 +30,7 @@ $font-size-small: 12px;
     border: 1px solid #30303B;
     border-radius: 16px;
     padding: 24px 0;
+    position: relative;
 
     .circle-btn {
         width: 64px;
@@ -38,6 +39,13 @@ $font-size-small: 12px;
         display: flex;
         justify-content: center;
         align-items: center;
+        // background-color: red;
+
+        &.eject-controler {
+            position: absolute;
+            // background-color: red;
+            left: 0;
+        }
 
         &.circle-bg-btn {
             margin: 0 24px;
@@ -59,24 +67,24 @@ $font-size-small: 12px;
     }
 }
 
-// @media all and (max-width:1170px) {
-//     .player-controler {
-//         .circle-btn {
-//             width: 30px;
+@media all and (max-width:1220px) {
+    .player-controler {
+        .circle-btn {
+            width: 30px;
 
-//             &.circle-bg-btn {
-//                 width: 64px;
-//                 margin: 0 20px;
-//             }
-//         }
-//     }
-// }
-// @media all and (max-width:1000px) {
-//     .player-controler {
-//         .circle-btn {
-//             &.circle-bg-btn {
-//                 margin: 0 10px;
-//             }
-//         }
-//     }
-// }
+            &.circle-bg-btn {
+                width: 64px;
+                margin: 0 20px;
+            }
+        }
+    }
+}
+@media all and (max-width:1010px) {
+    .player-controler {
+        .circle-btn {
+            &.circle-bg-btn {
+                margin: 0 10px;
+            }
+        }
+    }
+}
