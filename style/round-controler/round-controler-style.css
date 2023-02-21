@@ -50,6 +50,7 @@
   align-items: center;
   position: relative;
   z-index: 1;
+  transition: all 0.3s;
 }
 .round-controler .controler-btn:active, .round-controler .controler-btn.active {
   background-color: #1E1E20;

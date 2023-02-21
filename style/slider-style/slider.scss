@@ -93,6 +93,20 @@ $font-size-small: 12px;
         &.swiper-pagination-bullet-active {
             width: 16px;
             background: $active-color;
+
+            &:active,
+            &:focus {
+                border: none;
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+        &:active,
+        &:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
         }
     }
 

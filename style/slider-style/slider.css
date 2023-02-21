@@ -67,4 +67,14 @@
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 16px;
   background: #41FFB4;
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:active, .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.swiper-pagination .swiper-pagination-bullet:active, .swiper-pagination .swiper-pagination-bullet:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
 }/*# sourceMappingURL=slider.css.map */
