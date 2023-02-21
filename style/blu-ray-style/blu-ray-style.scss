@@ -41,8 +41,12 @@ $font-size-small: 12px;
         margin: auto;
     }
 
-    .right-box {
-        padding: 48px 0;
+    .swiper {
+        padding: 32px 0;
+
+        .swiper-pagination {
+            bottom: 32px;
+        }
     }
 
     .slide {
@@ -58,12 +62,13 @@ $font-size-small: 12px;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            padding: 0 48px;
+            padding: 0 32px;
 
             .circle-btn {
                 width: 64px;
                 height: 64px;
                 margin: 12px 0;
+                font-size: $font-size-regular2;
             }
         }
     }
@@ -74,7 +79,7 @@ $font-size-small: 12px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 48px;
+        padding: 0 32px;
 
         .circle-btn {
             width: 48px;
@@ -86,16 +91,19 @@ $font-size-small: 12px;
                 border-color: #FFADAD;
                 background-color: rgba(#FFADAD, 0.08);
             }
+
             &.g-btn {
                 color: #ADFFDF;
                 border-color: #ADFFDF;
                 background-color: rgba(#ADFFDF, 0.08);
             }
+
             &.b-btn {
                 color: #ADEBFF;
                 border-color: #ADEBFF;
                 background-color: rgba(#ADEBFF, 0.08);
             }
+
             &.y-btn {
                 color: #FFF7AD;
                 border-color: #FFF7AD;
@@ -122,13 +130,6 @@ $font-size-small: 12px;
     }
 }
 
-// @media all and (max-height:750px) {
-//     .source-page-content {
-//         .rgby-btn-box {
-//             margin: 0 0 40px;
-//         }
-//     }
-// }
 
 @media all and (max-height:650px) {
     .source-page-content {

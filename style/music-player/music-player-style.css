@@ -1,0 +1,61 @@
+#player {
+  position: relative;
+  width: 455px;
+}
+#player #timeline,
+#player .flex-grow {
+  width: 100%;
+}
+#player input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  box-sizing: border-box;
+  display: block;
+  -webkit-user-modify: read-only !important;
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #41FFB4;
+  cursor: pointer;
+}
+#player #timeline {
+  height: 4px;
+  width: 100%;
+  background: #313538;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+}
+#player #timeline .narrativ-seek_slider {
+  -webkit-appearance: none;
+  height: 100%;
+  background: #313538;
+  border-radius: 16px;
+  background-image: linear-gradient(270deg, #41FFB4 9.76%, rgba(65, 255, 180, 0) 108.54%);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+#player span {
+  color: #7D7D8E;
+}
+#player #currentTime,
+#player #durationTime {
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+}
+#player #durationTime {
+  color: #7D7D8E;
+}
+#player .timelime-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=music-player-style.css.map */

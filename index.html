@@ -53,7 +53,11 @@
     <link rel="stylesheet" href="style/modal-style/modal.css">
 
     <link rel="stylesheet" href="style/controler-style/controler-style.css">
+    <link rel="stylesheet" href="style/round-controler/round-controler-style.css">
 
+    <link rel="stylesheet" href="style/dcp-style/dcp-style.css">
+    <link rel="stylesheet" href="style/dcp-style/shows-list-item-style.css">
+    <link rel="stylesheet" href="style/music-player/music-player-style.css">
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -121,24 +125,83 @@
                             <div class="source-page-content">
                             <div class="main-box">
                                 <div class="functional-box">
+                                    <div class="audio_player" id="player">
+                                        <audio src="music/Juice WRLD Ft Benny Blanco - Real Shit.mp3"></audio>
+                                        <div id="timeline">
+                                            <input class="narrativ-seek_slider" id="narrativ-buffered-amount" type="range" min="1"
+                                                max="100" value="0" step="0.001" style="background-size: 0% 100%; width: 100%;">
+                                        </div>
+                                        <div class="timelime-box">
+                                                <span id="currentTime">00:00:00</span>
+                                                <span id="durationTime">00:00:00</span>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="player-controler">
-                                    <button class="circle-btn circle-btn-no-border controler-btn"><i
+                                    <button class="circle-btn circle-btn-no-border controler-btn eject-controler"><i
+                                        class="eject-btn"></i></button>
+                                    <button class="circle-btn circle-btn-no-border controler-btn" id="prev"><i
                                             class="previous-btn"></i></button>
                                     <button class="circle-btn circle-btn-no-border controler-btn"><i
                                             class="backward-btn"></i></button>
-                                            <button class="circle-btn circle-bg-btn controler-btn"><i
-                                                class="pause-btn"></i></button>
-                                        <button class="circle-btn circle-bg-btn controler-btn"><i class="play-btn"></i></button>
-                                        <button class="circle-btn circle-bg-btn controler-btn"><i class="stop-btn"></i></button>
+                                    <button class="circle-btn circle-bg-btn controler-btn"><i
+                                            class="pause-btn" id="pause"></i></button>
+                                    <button class="circle-btn circle-bg-btn controler-btn" id="play"><i
+                                            class="play-btn"></i></button>
+                                    <button class="circle-btn circle-bg-btn controler-btn" id="stop"><i
+                                            class="stop-btn"></i></button>
                                     <button class="circle-btn circle-btn-no-border controler-btn"><i
                                             class="forward-btn"></i></button>
-                                    <button class="circle-btn circle-btn-no-border controler-btn"><i
+                                    <button class="circle-btn circle-btn-no-border controler-btn" id="next"><i
                                             class="next-btn"></i></button>
-    
+
                                 </div>
                             </div>
-                            <div class="right-box"></div>
+                            <div class="right-box">
+                                <p class="title">Shows List</p>
+                                <div class="shows-item active">
+                                    <div class="shows-status-icon"></div>
+                                    <div class="info-box">
+                                        <p class="item-name">Black Swan</p>
+                                        <p class="item-time">2h 26min</p>
+                                    </div>
+                                </div>
+                                <div class="shows-item lock">
+                                    <div class="shows-status-icon"></div>
+                                    <div class="info-box">
+                                        <p class="item-name">Better Call Saul</p>
+                                        <p class="item-time">2h 26min</p>
+                                    </div>
+                                </div>
+                                <div class="shows-item">
+                                    <div class="shows-status-icon"></div>
+                                    <div class="info-box">
+                                        <p class="item-name">Mother</p>
+                                        <p class="item-time">2h 26min</p>
+                                    </div>
+                                </div>
+                                <div class="shows-item">
+                                    <div class="shows-status-icon"></div>
+                                    <div class="info-box">
+                                        <p class="item-name">Person of Interset</p>
+                                        <p class="item-time">2h 26min</p>
+                                    </div>
+                                </div>
+                                <div class="shows-item">
+                                    <div class="shows-status-icon"></div>
+                                    <div class="info-box">
+                                        <p class="item-name">Anne with an E</p>
+                                        <p class="item-time">2h 26min</p>
+                                    </div>
+                                </div>
+                                <div class="shows-item">
+                                    <div class="shows-status-icon"></div>
+                                    <div class="info-box">
+                                        <p class="item-name">Mind Hunter</p>
+                                        <p class="item-time">2h 26min</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         </div>
                         <!-- projector tab DONE -->
@@ -1252,6 +1315,10 @@
     <script defer src="script/modal-functional/modal-script.js"></script>
 
     <script defer src="script/lighting-slider-functional/lighting-slider-script.js"></script>
+
+    <script defer src="script/controler-functional/controler-script.js"></script>
+    <script defer src="script/audio-player/player_script_2.js"></script>
+
 
 </body>
 

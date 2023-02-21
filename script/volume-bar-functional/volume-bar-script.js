@@ -59,11 +59,13 @@ function mute_btnClick() {
         volume_val.innerHTML = 0 + "%";
         muteState = 'mute';
         volumeChange.style.backgroundSize = "0% 100%";
+        audio.muted = true;
     } else {
         volumeChange.value = currentVolume;
         volume_val.innerHTML = currentVolume + "%"
         muteState = 'unmute';
         volumeChange.style.backgroundSize = ((currentVolume - min) * 100) / (max - min) + "% 100%";
+        audio.muted = false;
     }
 }
 
@@ -80,7 +82,9 @@ function handleInputChange(e) {
     const val = target.value;
 
     target.style.backgroundSize = ((val - min) * 100) / (max - min) + "% 100%";
-    volume_val.innerHTML = val + "%"
+    volume_val.innerHTML = val + "%";
+    audio.volume = val / 100;
+	audio.muted = false;
 }
 
 rangeInputs.addEventListener("input", handleInputChange);
