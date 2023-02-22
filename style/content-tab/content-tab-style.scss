@@ -84,45 +84,55 @@ $font-size-small: 12px;
 
             &.content-tab-main {
                 -webkit-mask: url(../../img/tab-icons/source.svg) no-repeat center 0%;
-                mask: url(../../img/tab-icons/source.svg) no-repeat center;
+                mask: url(../../img/tab-icons/source.svg) no-repeat center 0%;
             }
-            
+
 
             &.content-tab-1 {
+                -webkit-mask: url(../../img/tab-icons/source.svg) no-repeat center 0%;
+                mask: url(../../img/tab-icons/source.svg) no-repeat center;
                 background-image: url(../../img/tab-icons/projector.svg);
             }
 
             &.content-tab-2 {
-                background-image: url(../../img/tab-icons/masking.svg);
+                -webkit-mask: url(../../img/tab-icons/masking.svg) no-repeat center 0%;
+                mask: url(../../img/tab-icons/masking.svg) no-repeat center 0%;
             }
 
             &.content-tab-3 {
-                background-image: url(../../img/tab-icons/volume.svg);
+                -webkit-mask: url(../../img/tab-icons/volume.svg) no-repeat center 0%;
+                mask: url(../../img/tab-icons/volume.svg) no-repeat center 0%;
             }
 
             &.content-tab-4 {
-                background-image: url(../../img/tab-icons/property.svg);
+                -webkit-mask: url(../../img/tab-icons/property.svg) no-repeat center 0%;
+                mask: url(../../img/tab-icons/property.svg) no-repeat center 0%;
             }
 
 
             &.content-tab-6 {
-                background-image: url(../../img/tab-icons/seating.svg);
+                -webkit-mask: url(../../img/tab-icons/seating.svg) no-repeat center 0%;
+                mask: url(../../img/tab-icons/seating.svg) no-repeat center 0%;
             }
 
             &.content-tab-7 {
-                background-image: url(../../img/tab-icons/property.svg);
+                -webkit-mask: url(../../img/tab-icons/property.svg) no-repeat center 0%;
+                mask: url(../../img/tab-icons/property.svg) no-repeat center 0%;
             }
 
             &.content-tab-8 {
-                background-image: url(../../img/tab-icons/frame.svg);
+                -webkit-mask: url(../../img/tab-icons/frame.svg) no-repeat center 0%;
+                mask: url(../../img/tab-icons/frame.svg) no-repeat center 0%;
             }
 
             &.content-tab-9 {
-                background-image: url(../../img/tab-icons/health.svg);
+                -webkit-mask: url(../../img/tab-icons/health.svg) no-repeat center 0%;
+                mask: url(../../img/tab-icons/health.svg) no-repeat center 0%;
             }
 
             &.content-tab-10 {
-                background-image: url(../../img/tab-icons/designtools.svg);
+                -webkit-mask: url(../../img/tab-icons/designtools.svg) no-repeat center 0%;
+                mask: url(../../img/tab-icons/designtools.svg) no-repeat center 0%;
             }
         }
 
@@ -130,47 +140,7 @@ $font-size-small: 12px;
 
             a:hover,
             a {
-
-                &.content-tab-main {
-                    background-image: url(../../img/source-icon/digital-cinema-active.svg);
-                }
-
-                &.content-tab-1 {
-                    background-image: url(../../img/tab-icons/progector-active.svg);
-                }
-
-                &.content-tab-2 {
-                    background-image: url(../../img/tab-icons/masking-active.svg);
-                }
-
-                &.content-tab-3 {
-                    background-image: url(../../img/tab-icons/volume-active.svg);
-                }
-
-                &.content-tab-4 {
-                    background-image: url(../../img/tab-icons/property-active.svg);
-                }
-
-
-                &.content-tab-6 {
-                    background-image: url(../../img/tab-icons/seating-active.svg);
-                }
-
-                &.content-tab-7 {
-                    background-image: url(../../img/tab-icons/property-active.svg);
-                }
-
-                &.content-tab-8 {
-                    background-image: url(../../img/tab-icons/frame-active.svg);
-                }
-
-                &.content-tab-9 {
-                    background-image: url(../../img/tab-icons/health-active.svg);
-                }
-
-                &.content-tab-10 {
-                    background-image: url(../../img/tab-icons/designtools-active.svg);
-                }
+                background-color: $active-color;
             }
         }
 
