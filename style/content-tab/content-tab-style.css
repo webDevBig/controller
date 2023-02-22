@@ -60,9 +60,8 @@
   mask: url(../../img/tab-icons/source.svg) no-repeat center 0%;
 }
 .content-nav-tabs li a.content-tab-1 {
-  -webkit-mask: url(../../img/tab-icons/source.svg) no-repeat center 0%;
-  mask: url(../../img/tab-icons/source.svg) no-repeat center;
-  background-image: url(../../img/tab-icons/projector.svg);
+  -webkit-mask: url(../../img/tab-icons/projector.svg) no-repeat center 0%;
+  mask: url(../../img/tab-icons/projector.svg) no-repeat center 0%;
 }
 .content-nav-tabs li a.content-tab-2 {
   -webkit-mask: url(../../img/tab-icons/masking.svg) no-repeat center 0%;
