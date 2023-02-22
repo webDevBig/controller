@@ -48,11 +48,12 @@ $font-size-small: 12px;
 
             .audio-name {
 
-                font-family: $font-family-bold;
+                // font-family: $font-family-bold;
                 font-size: $font-size-big1;
                 line-height: 24px;
                 letter-spacing: -0.02em;
                 color: $font-color;
+                font-weight: 600;
             }
         }
 

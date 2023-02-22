@@ -17,11 +17,11 @@
   align-items: flex-start;
 }
 .source-page-content .functional-content .audio-content .audio-name {
-  font-family: "PlusJakartaSans-Bold", sans-serif;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: -0.02em;
   color: white;
+  font-weight: 600;
 }
 .source-page-content .functional-content .audio-functional {
   width: 100%;
