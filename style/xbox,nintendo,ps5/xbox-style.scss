@@ -179,6 +179,7 @@
     user-select: none;
     overflow: hidden;
     border-radius: 24px;
+    object-fit: cover;
 }
 
 .video-js:-moz-full-screen {
@@ -287,7 +288,6 @@ body.vjs-full-window {
     color: #fff;
     background-color: #000;
     font-size: 18px;
-    // font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     width: 300px;
     height: 150px;
@@ -321,25 +321,6 @@ body.vjs-full-window {
     -webkit-backdrop-filter: blur(20px) saturate(1.5) brightness(1.2);
     backdrop-filter: blur(20px) saturate(1.5) brightness(1.2);
 }
-
-// .video-js .vjs-big-play-button:after {
-// 	content: 'Interstellar';
-// 	font-family: 'Questrial';
-// 	font-size: 35%;
-// 	line-height: 38px;
-// 	height: auto;
-// 	width: auto;
-// 	position: absolute;
-// 	top: 5px;
-// 	left: 100px;
-// 	padding: 0 15px;
-// 	text-align: center;
-// 	background: #111;
-// 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1),0 2px 10px 0 rgba(0,0,0,0.1);
-// 	-webkit-border-radius: 5px;
-// 	-moz-border-radius: 5px;
-// 	border-radius: 5px;
-// }
 
 .vjs-controls-disabled .vjs-big-play-button,
 .vjs-has-started .vjs-big-play-button,

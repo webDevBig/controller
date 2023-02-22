@@ -177,6 +177,8 @@
   user-select: none;
   overflow: hidden;
   border-radius: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .video-js:-moz-full-screen {
