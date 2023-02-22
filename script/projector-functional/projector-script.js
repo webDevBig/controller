@@ -17,12 +17,12 @@
  function switchDowserClick() {
      if (switchDowser.checked == true) {
          this.parentElement.querySelector('.title span').innerHTML = 'OPEN';
-         this.parentElement.querySelector('.title span').classList.remove('anactive');
+         this.parentElement.querySelector('.title span').classList.remove('inactive');
          this.parentElement.classList.add('active')
 
      } else {
          this.parentElement.querySelector('.title span').innerHTML = 'CLOSED';
-         this.parentElement.querySelector('.title span').classList.add('anactive');
+         this.parentElement.querySelector('.title span').classList.add('inactive');
          this.parentElement.classList.remove('active')
      }
  }
