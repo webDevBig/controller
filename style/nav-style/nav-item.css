@@ -12,48 +12,36 @@
 .nav-tabs li a {
   width: 100%;
   height: 100%;
-  background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 24;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: all 0.3s ease;
+  background-color: #52525A;
+  -webkit-mask-size: 24px;
+  mask-size: 24px;
 }
 .nav-tabs li a.tab1 {
-  background-image: url(../../img/menu-icons/element.svg);
+  -webkit-mask: url(../../img/menu-icons/element.svg) no-repeat center;
+  mask: url(../../img/menu-icons/element.svg) no-repeat center;
 }
 .nav-tabs li a.tab2 {
-  background-image: url(../../img/menu-icons/monitor.svg);
+  -webkit-mask: url(../../img/menu-icons/monitor.svg) no-repeat center;
+  mask: url(../../img/menu-icons/monitor.svg) no-repeat center;
 }
 .nav-tabs li a.tab3 {
-  background-image: url(../../img/menu-icons/lamp-on.svg);
+  -webkit-mask: url(../../img/menu-icons/lamp-on.svg) no-repeat center;
+  mask: url(../../img/menu-icons/lamp-on.svg) no-repeat center;
 }
 .nav-tabs li a.tab4 {
-  background-image: url(../../img/menu-icons/climmate.svg);
+  -webkit-mask: url(../../img/menu-icons/climmate.svg) no-repeat center;
+  mask: url(../../img/menu-icons/climmate.svg) no-repeat center;
 }
 .nav-tabs li a.tab5 {
-  background-image: url(../../img/menu-icons/setting.svg);
+  -webkit-mask: url(../../img/menu-icons/setting.svg) no-repeat center;
+  mask: url(../../img/menu-icons/setting.svg) no-repeat center;
 }
-.nav-tabs li.active a.tab1,
-.nav-tabs li.active a:hover.tab1 {
-  background-image: url(../../img/menu-icons/element-active.svg);
-}
-.nav-tabs li.active a.tab2,
-.nav-tabs li.active a:hover.tab2 {
-  background-image: url(../../img/menu-icons/monitor-active.svg);
-}
-.nav-tabs li.active a.tab3,
-.nav-tabs li.active a:hover.tab3 {
-  background-image: url(../../img/menu-icons/lamp-on-active.svg);
-}
-.nav-tabs li.active a.tab4,
-.nav-tabs li.active a:hover.tab4 {
-  background-image: url(../../img/menu-icons/climmate-active.svg);
-}
-.nav-tabs li.active a.tab5,
-.nav-tabs li.active a:hover.tab5 {
-  background-image: url(../../img/menu-icons/setting-active.svg);
+.nav-tabs li.active a,
+.nav-tabs li.active a:hover {
+  background-color: #41FFB4;
 }/*# sourceMappingURL=nav-item.css.map */

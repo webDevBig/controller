@@ -51,7 +51,7 @@
   background-size: 24px;
   cursor: pointer;
   transition: all 0.3s linear;
-  background-color: white;
+  background-color: #52525A;
   -webkit-mask-size: 24px;
   mask-size: 24px;
 }

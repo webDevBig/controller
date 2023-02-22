@@ -1,5 +1,25 @@
+$main-bg-color:#1E1E20;
+
+$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
+$font-family-Medium: 'PlusJakartaSans-Medium';
+$font-family-Regular: 'PlusJakartaSans-Regular';
+
+$font-color: white;
 $icon-color:#52525A;
-$icon-active-color:#41FFB4;
+$active-color:#41FFB4;
+$font-color-alert:#FF7070;
+$button-border-color:#313538;
+
+$climate-color1:#ADEBFF;
+$climate-color2:#FFADAD;
+
+$font-size-big3: 48px;
+$font-size-big2: 24px;
+$font-size-big1: 20px;
+$font-size-regular3: 18px;
+$font-size-regular2: 16px;
+$font-size-regular: 14px;
+$font-size-small: 12px;
 
 
 .nav-tabs {
@@ -18,34 +38,38 @@ $icon-active-color:#41FFB4;
         a {
             width: 100%;
             height: 100%;
-            background-color: transparent;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 24;
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
             transition: all .3s ease;
+            background-color: $icon-color;
+            -webkit-mask-size: 24px;
+            mask-size: 24px;
 
             &.tab1 {
-                background-image: url(../../img/menu-icons/element.svg);
+                -webkit-mask: url(../../img/menu-icons/element.svg) no-repeat center;
+                mask: url(../../img/menu-icons/element.svg) no-repeat center;
             }
 
             &.tab2 {
-                background-image: url(../../img/menu-icons/monitor.svg);
+                -webkit-mask: url(../../img/menu-icons/monitor.svg) no-repeat center;
+                mask: url(../../img/menu-icons/monitor.svg) no-repeat center;
             }
 
             &.tab3 {
-                background-image: url(../../img/menu-icons/lamp-on.svg);
+                -webkit-mask: url(../../img/menu-icons/lamp-on.svg) no-repeat center;
+                mask: url(../../img/menu-icons/lamp-on.svg) no-repeat center;
             }
 
             &.tab4 {
-                background-image: url(../../img/menu-icons/climmate.svg);
+                -webkit-mask: url(../../img/menu-icons/climmate.svg) no-repeat center;
+                mask: url(../../img/menu-icons/climmate.svg) no-repeat center;
             }
 
             &.tab5 {
-                background-image: url(../../img/menu-icons/setting.svg);
+                -webkit-mask: url(../../img/menu-icons/setting.svg) no-repeat center;
+                mask: url(../../img/menu-icons/setting.svg) no-repeat center;
             }
         }
 
@@ -53,27 +77,8 @@ $icon-active-color:#41FFB4;
 
             a,
             a:hover {
-                &.tab1 {
-                    background-image: url(../../img/menu-icons/element-active.svg);
-                }
-
-                &.tab2 {
-                    background-image: url(../../img/menu-icons/monitor-active.svg);
-                }
-
-                &.tab3 {
-                    background-image: url(../../img/menu-icons/lamp-on-active.svg);
-                }
-
-                &.tab4 {
-                    background-image: url(../../img/menu-icons/climmate-active.svg);
-                }
-
-                &.tab5 {
-                    background-image: url(../../img/menu-icons/setting-active.svg);
-                }
+                background-color: $active-color;
             }
-
 
         }
 

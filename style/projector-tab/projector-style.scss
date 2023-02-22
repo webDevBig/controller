@@ -62,32 +62,36 @@ $font-size-small: 12px;
         .functional-icon {
             width: 24px;
             height: 24px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
             margin: 0 24px 0 0;
+            -webkit-mask-size: 24px;
+            mask-size: 24px;
 
             &.dowser-icon {
-                background-image: url(../../img/tab-icons/projector.svg);
+                background-color: $icon-color;
+                -webkit-mask: url(../../img/tab-icons/projector.svgg) no-repeat center;
+                mask: url(../../img/tab-icons/projector.svg) no-repeat center;
 
             }
 
             &.storage-icon {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
                 background-image: url(../../img/projector-icons/storage.svg);
             }
 
             &.lamp-icon {
-                background-image: url(../../img/projector-icons/lamp.svg);
+                background-color: $icon-color;
+                -webkit-mask: url(../../img/projector-icons/lamp.svg) no-repeat center;
+                mask: url(../../img/projector-icons/lamp.svg) no-repeat center;
             }
         }
 
         &.active {
-            .dowser-icon {
-                background-image: url(../../img/tab-icons/progector-active.svg);
-            }
 
+            .dowser-icon,
             .lamp-icon {
-                background-image: url(../../img/projector-icons/lamp-active.svg);
+                background-color: $active-color;
             }
 
         }
