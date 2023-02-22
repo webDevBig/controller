@@ -41,7 +41,7 @@
 }
 .progector-content .projector-header-item .functional-icon.dowser-icon {
   background-color: #52525A;
-  -webkit-mask: url(../../img/tab-icons/projector.svgg) no-repeat center;
+  -webkit-mask: url(../../img/tab-icons/projector.svg) no-repeat center;
   mask: url(../../img/tab-icons/projector.svg) no-repeat center;
 }
 .progector-content .projector-header-item .functional-icon.storage-icon {
