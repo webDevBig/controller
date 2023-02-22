@@ -55,9 +55,6 @@
 .progector-content .projector-header-item.active .lamp-icon {
   background-image: url(../../img/projector-icons/lamp-active.svg);
 }
-.progector-content .projector-header-item.active span {
-  color: #41FFB4;
-}
 .progector-content .projector-header-item .title {
   text-align: left;
 }
@@ -65,6 +62,9 @@
   font-size: 14px;
   line-height: 20px;
   color: #52525A;
+}
+.progector-content .projector-header-item .title span.active {
+  color: #41FFB4;
 }
 .progector-content .projector-header-item .title span.storage {
   color: #41FFB4;

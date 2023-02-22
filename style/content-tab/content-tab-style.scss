@@ -78,10 +78,15 @@ $font-size-small: 12px;
             background-size: 24px;
             cursor: pointer;
             transition: all .3s linear;
+            background-color: white;
+            -webkit-mask-size: 24px;
+            mask-size: 24px;
 
             &.content-tab-main {
-                background-image: url(../../img/source-icon/digital-cinema.svg);
+                -webkit-mask: url(../../img/tab-icons/source.svg) no-repeat center 0%;
+                mask: url(../../img/tab-icons/source.svg) no-repeat center;
             }
+            
 
             &.content-tab-1 {
                 background-image: url(../../img/tab-icons/projector.svg);

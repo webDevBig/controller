@@ -19,7 +19,6 @@ $font-size-regular: 14px;
 $font-size-small: 12px;
 
 
-
 $active-color-theme1:#41FFB4;
 $active-color-theme2:#5DBADC;
 $active-color-theme3:#5BACED;
@@ -36,6 +35,30 @@ $bg1-theme:#181818;
 $bg2-theme:#08090C;
 $bg3-theme:#101119;
 
+
+.theme-overflow {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background-color: $button-border-color;
+    }
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        background-color: $button-border-color;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+        background-color: $icon-color;
+    }
+}
+
 .theme-content {
     width: fit-content;
     height: 100%;
@@ -44,26 +67,8 @@ $bg3-theme:#101119;
     grid-template-rows: 232px 232px;
     grid-column-gap: 24px;
     grid-row-gap: 24px;
-    overflow: auto;
     margin: 0 auto;
     padding: 0 24px;
-
-    ::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
-        background-color: $button-border-color;
-    }
-
-    ::-webkit-scrollbar {
-        width: 4px;
-        background-color: $button-border-color;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-        background-color: $icon-color;
-    }
 }
 
 .theme-item {
@@ -197,6 +202,7 @@ $bg3-theme:#101119;
         padding: 0 18px;
     }
 }
+
 @media all and (max-width:1024px) {
     .theme-content {
         grid-template-columns: 235px 235px 235px;

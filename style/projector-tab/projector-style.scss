@@ -90,9 +90,6 @@ $font-size-small: 12px;
                 background-image: url(../../img/projector-icons/lamp-active.svg);
             }
 
-            span {
-                color: $active-color;
-            }
         }
 
         .title {
@@ -102,6 +99,10 @@ $font-size-small: 12px;
                 font-size: 14px;
                 line-height: 20px;
                 color: $icon-color;
+
+                &.active {
+                    color: $active-color;
+                }
 
                 &.storage {
                     color: $active-color;
@@ -186,15 +187,17 @@ $font-size-small: 12px;
     .progector-content {
         .swiper {
             height: calc(100% - 80px);
+
             .swiper-wrapper {
                 margin: 5px 0 0;
                 height: calc(100% - 50px);
             }
-            .swiper-pagination
-            {
+
+            .swiper-pagination {
                 margin: 10px 0 0;
             }
         }
+
         .projector-header {
             padding: 0 0 15px;
             margin-bottom: 15px;

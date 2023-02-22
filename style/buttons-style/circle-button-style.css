@@ -22,6 +22,14 @@
 .circle-btn.circle-btn-no-border {
   border: none;
 }
+.circle-btn.anactive {
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  box-shadow: none;
+}
+.circle-btn.anactive i {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
 .btn-container {
   width: auto;
