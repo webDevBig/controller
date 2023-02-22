@@ -41,12 +41,12 @@ header .circle-btn.power-btn {
   min-width: 150px;
 }
 .title-box .source-name {
-  font-family: "PlusJakartaSans-Regular";
+  font-family: "PlusJakartaSans-Regular", sans-serif;
   line-height: 28px;
   font-size: 24px;
 }
 .title-box .source-subtitle {
-  font-family: "PlusJakartaSans-Regular";
+  font-family: "PlusJakartaSans-Regular", sans-serif;
   line-height: 24px;
   opacity: 0.3;
   font-size: 14px;

@@ -27,7 +27,7 @@ button {
 }
 
 body {
-  font-family: "PlusJakartaSans-Medium";
+  font-family: "PlusJakartaSans-Medium", sans-serif;
   color: white;
   width: 100vw;
   height: 100vh;

@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 .source-item .source-name {
-  font-family: "PlusJakartaSans-Regular";
+  font-family: "PlusJakartaSans-Regular", sans-serif;
   font-size: 20px;
   line-height: 24px;
 }

@@ -9,6 +9,7 @@
   padding: 8px 16px;
   z-index: 1;
   position: relative;
+  cursor: pointer;
 }
 .shows-item.active {
   background: linear-gradient(130.35deg, #313538 -8.16%, rgba(49, 53, 56, 0) 135.93%);

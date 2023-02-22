@@ -5,8 +5,13 @@
 }
 
 .volume-bar .volume {
+  width: 434px;
+  height: 3px;
   display: flex;
   align-items: center;
+  background: linear-gradient(270deg, #41FFB4 9.76%, rgba(65, 255, 180, 0) 108.54%);
+  margin: 0 16px;
+  border-radius: 8px;
   /* Input Thumb */
 }
 .volume-bar .volume input {
@@ -17,14 +22,14 @@
 }
 .volume-bar .volume input[type=range] {
   -webkit-appearance: none;
-  width: 434px;
+  width: calc(100% + 1px);
   height: 4px;
-  background: #313538;
+  background: linear-gradient(270deg, #41FFB4 9.76%, rgba(65, 255, 180, 0) 108.54%);
   border-radius: 8px;
-  background-image: linear-gradient(270deg, #41FFB4 9.76%, rgba(65, 255, 180, 0) 108.54%);
+  background-image: linear-gradient(270deg, #313538 9.76%, #313538 108.54%);
   background-size: 70% 100%;
   background-repeat: no-repeat;
-  margin: 0 16px;
+  transform: rotate(180deg);
 }
 .volume-bar .volume input[type=range]::-webkit-slider-thumb {
   background: #41FFB4;

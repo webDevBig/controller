@@ -20,7 +20,7 @@
   border-radius: 16px;
   padding: 16px;
 }
-.source-page-content .functional-box {
+.source-page-content .functional-content {
   width: 100%;
   height: calc(100% - 136px);
   display: flex;
@@ -28,7 +28,7 @@
   align-items: center;
   border-radius: 16px;
 }
-.source-page-content .functional-box .circle-btn {
+.source-page-content .functional-content .circle-btn {
   width: 64px;
   height: 64px;
 }/*# sourceMappingURL=device-main-style.css.map */

@@ -1,8 +1,9 @@
 $main-bg-color:#1E1E20;
 
-$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
-$font-family-Medium: 'PlusJakartaSans-Medium';
-$font-family-Regular: 'PlusJakartaSans-Regular';
+$font-family-bold: 'PlusJakartaSans-Bold',sans-serif;
+$font-family-SemiBold: 'PlusJakartaSans-SemiBold',sans-serif;
+$font-family-Medium: 'PlusJakartaSans-Medium',sans-serif;
+$font-family-Regular: 'PlusJakartaSans-Regular',sans-serif;
 
 $font-color: white;
 $icon-color:#52525A;
@@ -33,6 +34,7 @@ $font-size-small: 12px;
     padding: 8px 16px;
     z-index: 1;
     position: relative;
+    cursor: pointer;
     
 
     &.active {

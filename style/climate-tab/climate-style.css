@@ -80,7 +80,7 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
-  font-family: "PlusJakartaSans-Regular";
+  font-family: "PlusJakartaSans-Regular", sans-serif;
   display: flex;
   align-items: flex-start;
   justify-content: center;

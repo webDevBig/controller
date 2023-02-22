@@ -26,11 +26,15 @@ $font-size-small: 12px;
 
 #player {
     position: relative;
-    width: 455px;
+    width: 100%;
 
     #timeline,
     .flex-grow {
         width: 100%;
+    }
+    #timeline
+    {
+        margin: 48px 0 16px;
     }
 
     input[type="range"]::-webkit-slider-thumb {
@@ -58,7 +62,7 @@ $font-size-small: 12px;
         display: flex;
         // margin: 17px 0;
 
-        .narrativ-seek_slider {
+        .narrativ-seek-slider {
             -webkit-appearance: none;
             height: 100%;
             background: #313538;

@@ -141,11 +141,11 @@ $font-size-small: 12px;
         border: 1px solid #313538;
         margin: 12px 24px 12px 0;
         cursor: pointer;
+        position: relative;
 
         &:nth-child(4n) {
             margin: 12px 0;
         }
-
 
         &.active {
             border-color: transparent;
@@ -158,7 +158,39 @@ $font-size-small: 12px;
             }
         }
 
+        .inprogress-img,
+        .animation {
+            opacity: 0;
+            position: absolute;
+            right: 24px;
+            top: 24px;
+        }
 
+        &.inprogress {
+            .animation {
+                opacity: 1;
+            }
+
+            .inprogress-img {
+                opacity: 1;
+                animation: rotate 1.5s infinite;
+            }
+
+            .loader {
+                opacity: 1;
+            }
+
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
 
         .functional-title {
             font-size: 16px;
@@ -174,6 +206,126 @@ $font-size-small: 12px;
         }
     }
 }
+
+.loader,
+.loader::before,
+.loader::after {
+    border-radius: 50%;
+    border: 1px solid transparent;
+    //you can select color
+    // border: 3px solid #fff;
+}
+
+
+.loader {
+    width: 24px;
+    height: 24px;
+    border-left-color: $font-color;
+    position: relative;
+
+    //This controls the speed of the animation of all elements
+    animation: rotate2 .7s linear infinite;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-61%, -50%);
+        width: 30px;
+        height: 30px;
+        border-left-color: $active-color;
+        animation: rotating 1.3s linear infinite;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-39%, -50%);
+        width: 14px;
+        height: 14px;
+        border-left-color: $font-color-alert;
+        animation: rotating 1s linear infinite;
+    }
+}
+
+@keyframes rotating {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes rotate2 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+.loading,
+.loading::before,
+.loading::after {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left-color: rgba($active-color, 0.4);
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+}
+
+.loading {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    animation: rotate2 .7s linear infinite;
+    // -webkit-animation: animation-rotate 1000ms linear infinite;
+    // -moz-animation: animation-rotate 1000ms linear infinite;
+    // -o-animation: animation-rotate 1000ms linear infinite;
+    // animation: animation-rotate 1000ms linear infinite;
+}
+
+.loading::before {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 14px;
+    width: 14px;
+    top: 50%;
+    left: 50%;
+    animation: rotating 1.7s linear infinite;
+    // -webkit-animation: animation-rotate2 1200ms linear infinite;
+    // -moz-animation: animation-rotate2 1200ms linear infinite;
+    // -o-animation: animation-rotate2 1200ms linear infinite;
+    // animation: animation-rotate2 1200ms linear infinite;
+}
+
+.loading::after {
+    content: "";
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: rotating 1s linear infinite;
+    // -webkit-animation: animation-rotate2 2000ms linear infinite;
+    // -moz-animation: animation-rotate2 2000ms linear infinite;
+    // -o-animation: animation-rotate2 2000ms linear infinite;
+    // animation: animation-rotate2 2000ms linear infinite;
+}
+
+
+
+
+
 
 @media all and (max-width:1000px) {
     .progector-content {
@@ -216,6 +368,9 @@ $font-size-small: 12px;
             height: 120px;
             margin: 6px 24px 10px 0;
             padding: 15px 30px;
+            &:nth-child(4n){
+                margin: 6px 0; 
+            }
 
             .functional-title {
                 font-size: $font-size-regular;

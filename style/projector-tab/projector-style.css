@@ -94,6 +94,7 @@
   border: 1px solid #313538;
   margin: 12px 24px 12px 0;
   cursor: pointer;
+  position: relative;
 }
 .progector-content .macros-btn:nth-child(4n) {
   margin: 12px 0;
@@ -107,6 +108,31 @@
   width: 100%;
   height: 100%;
 }
+.progector-content .macros-btn .inprogress-img,
+.progector-content .macros-btn .animation {
+  opacity: 0;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+.progector-content .macros-btn.inprogress .animation {
+  opacity: 1;
+}
+.progector-content .macros-btn.inprogress .inprogress-img {
+  opacity: 1;
+  animation: rotate 1.5s infinite;
+}
+.progector-content .macros-btn.inprogress .loader {
+  opacity: 1;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .progector-content .macros-btn .functional-title {
   font-size: 16px;
   line-height: 24px;
@@ -117,6 +143,93 @@
 .progector-content .macros-btn .functional-title img {
   max-width: 24px;
   margin: 0 8px 0 0;
+}
+
+.loader,
+.loader::before,
+.loader::after {
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.loader {
+  width: 24px;
+  height: 24px;
+  border-left-color: white;
+  position: relative;
+  animation: rotate2 0.7s linear infinite;
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-61%, -50%);
+  width: 30px;
+  height: 30px;
+  border-left-color: #41FFB4;
+  animation: rotating 1.3s linear infinite;
+}
+.loader::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-39%, -50%);
+  width: 14px;
+  height: 14px;
+  border-left-color: #FF7070;
+  animation: rotating 1s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading,
+.loading::before,
+.loading::after {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left-color: rgba(65, 255, 180, 0.4);
+  border-radius: 999px;
+}
+
+.loading {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  animation: rotate2 0.7s linear infinite;
+}
+
+.loading::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 14px;
+  width: 14px;
+  top: 50%;
+  left: 50%;
+  animation: rotating 1.7s linear infinite;
+}
+
+.loading::after {
+  content: "";
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: rotating 1s linear infinite;
 }
 
 @media all and (max-width: 1000px) {
@@ -149,6 +262,9 @@
     height: 120px;
     margin: 6px 24px 10px 0;
     padding: 15px 30px;
+  }
+  .progector-content .macros-btn:nth-child(4n) {
+    margin: 6px 0;
   }
   .progector-content .macros-btn .functional-title {
     font-size: 14px;
