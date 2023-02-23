@@ -120,16 +120,19 @@
 }
 .progector-content .macros-btn.inprogress .inprogress-img {
   opacity: 1;
-  animation: rotate 1.5s infinite;
+  animation: rotate2 1.5s infinite;
 }
 .progector-content .macros-btn.inprogress .loader {
   opacity: 1;
 }
 @keyframes rotate {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
     transform: rotate(360deg);
   }
 }

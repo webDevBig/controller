@@ -174,7 +174,7 @@ $font-size-small: 12px;
 
             .inprogress-img {
                 opacity: 1;
-                animation: rotate 1.5s infinite;
+                animation: rotate2 1.5s infinite;
             }
 
             .loader {
@@ -184,11 +184,14 @@ $font-size-small: 12px;
         }
 
         @keyframes rotate {
-            from {
+            0% {
                 transform: rotate(0deg);
             }
+            50%{
+                transform: rotate(180deg);
+            }
 
-            to {
+            100% {
                 transform: rotate(360deg);
             }
         }
