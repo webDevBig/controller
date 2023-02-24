@@ -78,6 +78,19 @@ $font-size-small: 12px;
             a,
             a:hover {
                 background-color: $active-color;
+
+                &.tab2 {
+                    -webkit-mask: url(../../img/menu-icons/monitor-active.svg) no-repeat center;
+                    mask: url(../../img/menu-icons/monitor-active.svg) no-repeat center;
+                }
+                &.tab3 {
+                    -webkit-mask: url(../../img/menu-icons/lamp-on-active.svg) no-repeat center;
+                    mask: url(../../img/menu-icons/lamp-on-active.svg) no-repeat center;
+                }
+                &.tab5 {
+                    -webkit-mask: url(../../img/menu-icons/setting-active.svg) no-repeat center;
+                    mask: url(../../img/menu-icons/setting-active.svg) no-repeat center;
+                }
             }
 
         }

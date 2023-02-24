@@ -82,66 +82,65 @@ $font-size-small: 12px;
                 padding: 0 13px 0 0;
             }
         }
-
-        .health-current-temp {
-            width: 270px;
-            height: 270px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            background-image: url('../../img/both-temp-bg.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            position: relative;
-            margin: 70px 0 48px;
-
-            &::before {
-                content: "";
-                position: absolute;
-                width: calc(100% - 2px);
-                height: calc(100% - 2px);
-                border: 2px solid transparent;
-                background: linear-gradient(192deg, rgba(255, 255, 255, 0.28) 20%, rgba(255, 255, 255, 0) 48%) border-box;
-                -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-                -webkit-mask-composite: xor;
-                mask-composite: exclude;
-                left: 0;
-                top: 0;
-                border-radius: 50%;
-            }
-
-        }
-
-        .needle {
-            width: 50%;
-            height: 20px;
-            position: absolute;
-            left: 0px;
-            transform-origin: 100% 11px;
-            transform: rotate(0deg);
-            animation: fourspeed3 2s 1 both;
-            animation-delay: 1s;
-            display: block;
-            z-index: 0;
-
-            &::after {
-                content: '';
-                position: absolute;
-                background: #1E1E20;
-                width: 22px;
-                height: 22px;
-                border-radius: 4px;
-                transform: rotate(45deg);
-                top: 0;
-                left: 30px;
-                border-left: 1px solid rgba($font-color, 0.06);
-                border-bottom: 1px solid rgba($font-color, 0.06);
-            }
-        }
+       
 
     }
+    .needle {
+        width: 50%;
+        height: 20px;
+        position: absolute;
+        left: 0px;
+        transform-origin: 100% 11px;
+        transform: rotate(0deg);
+        animation: fourspeed3 2s 1 both;
+        animation-delay: 1s;
+        display: block;
+        z-index: 0;
+    
+        &::after {
+            content: '';
+            position: absolute;
+            background: #1E1E20;
+            width: 22px;
+            height: 22px;
+            border-radius: 4px;
+            transform: rotate(45deg);
+            top: 0;
+            left: 30px;
+            border-left: 1px solid rgba($font-color, 0.06);
+            border-bottom: 1px solid rgba($font-color, 0.06);
+        }
+    }
+}
+.health-current-temp {
+    width: 270px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-image: url('../../img/both-temp-bg.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin: 70px 0 48px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        border: 2px solid transparent;
+        background: linear-gradient(192deg, rgba(255, 255, 255, 0.28) 20%, rgba(255, 255, 255, 0) 48%) border-box;
+        -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+    }
+
 }
 
 @keyframes fourspeed3 {

@@ -8,6 +8,9 @@
 .circle-btn.active i {
   background-color: #41FFB4;
 }
+.circle-btn.no-icon i {
+  display: none;
+}
 .circle-btn i {
   width: 24px;
   height: 24px;

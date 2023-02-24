@@ -56,7 +56,33 @@
   margin: 12px 0 0;
   padding: 0 13px 0 0;
 }
-.health-monitor-content .box .health-current-temp {
+.health-monitor-content .needle {
+  width: 50%;
+  height: 20px;
+  position: absolute;
+  left: 0px;
+  transform-origin: 100% 11px;
+  transform: rotate(0deg);
+  animation: fourspeed3 2s 1 both;
+  animation-delay: 1s;
+  display: block;
+  z-index: 0;
+}
+.health-monitor-content .needle::after {
+  content: "";
+  position: absolute;
+  background: #1E1E20;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  transform: rotate(45deg);
+  top: 0;
+  left: 30px;
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.health-current-temp {
   width: 270px;
   height: 270px;
   display: flex;
@@ -70,7 +96,7 @@
   position: relative;
   margin: 70px 0 48px;
 }
-.health-monitor-content .box .health-current-temp::before {
+.health-current-temp::before {
   content: "";
   position: absolute;
   width: calc(100% - 2px);
@@ -83,31 +109,6 @@
   left: 0;
   top: 0;
   border-radius: 50%;
-}
-.health-monitor-content .box .needle {
-  width: 50%;
-  height: 20px;
-  position: absolute;
-  left: 0px;
-  transform-origin: 100% 11px;
-  transform: rotate(0deg);
-  animation: fourspeed3 2s 1 both;
-  animation-delay: 1s;
-  display: block;
-  z-index: 0;
-}
-.health-monitor-content .box .needle::after {
-  content: "";
-  position: absolute;
-  background: #1E1E20;
-  width: 22px;
-  height: 22px;
-  border-radius: 4px;
-  transform: rotate(45deg);
-  top: 0;
-  left: 30px;
-  border-left: 1px solid rgba(255, 255, 255, 0.06);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 @keyframes fourspeed3 {

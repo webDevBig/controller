@@ -45,10 +45,6 @@
 .content-nav-tabs li a {
   width: 100%;
   height: 100%;
-  background-color: transparent;
-  background-position: center 0%;
-  background-repeat: no-repeat;
-  background-size: 24px;
   cursor: pointer;
   transition: all 0.3s linear;
   background-color: #52525A;
@@ -98,6 +94,26 @@
 .content-nav-tabs li.active a:hover,
 .content-nav-tabs li.active a {
   background-color: #41FFB4;
+}
+.content-nav-tabs li.active a:hover.content-tab-3,
+.content-nav-tabs li.active a.content-tab-3 {
+  -webkit-mask: url(../../img/tab-icons/volume-active.svg) no-repeat center 0%;
+  mask: url(../../img/tab-icons/volume-active.svg) no-repeat center 0%;
+}
+.content-nav-tabs li.active a:hover.content-tab-4,
+.content-nav-tabs li.active a.content-tab-4 {
+  -webkit-mask: url(../../img/tab-icons/property-active.svg) no-repeat center 0%;
+  mask: url(../../img/tab-icons/property-active.svg) no-repeat center 0%;
+}
+.content-nav-tabs li.active a:hover.content-tab-6,
+.content-nav-tabs li.active a.content-tab-6 {
+  -webkit-mask: url(../../img/tab-icons/seating-active.svg) no-repeat center 0%;
+  mask: url(../../img/tab-icons/seating-active.svg) no-repeat center 0%;
+}
+.content-nav-tabs li.active a:hover.content-tab-10,
+.content-nav-tabs li.active a.content-tab-10 {
+  -webkit-mask: url(../../img/tab-icons/designtools-active.svg) no-repeat center 0%;
+  mask: url(../../img/tab-icons/designtools-active.svg) no-repeat center 0%;
 }
 
 .content-tab-indicator {

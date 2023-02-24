@@ -34,6 +34,11 @@ $font-size-small: 12px;
             background-color: $active-color;
         }
     }
+     &.no-icon {
+        i {
+            display: none;
+        }
+    }
 
     i {
         width: 24px;

@@ -50,40 +50,55 @@ $font-size-small: 12px;
     width: 50%;
     margin: 0 0 0 auto;
 
-    span {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .pulse {
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        position: relative;
         margin: 0 14px 0 0;
-
-        span {
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            display: block;
-            margin: 0;
-        }
     }
 
-    &.online {
-        span {
-            background: rgba($active-color, 0.24);
-            span {
-                background: $active-color;
-            }
+    .ring {
+        position: absolute;
+        background-color: inherit;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        opacity: 0.4;
+        animation: pulsing 2.3s ease-out infinite;
+
+        &:nth-of-type(1) {
+            animation-delay: -0.5s;
         }
+
+        &:nth-of-type(2) {
+            animation-delay: -1s;
+        }
+
+        &:nth-of-type(3) {
+            animation-delay: -1.5s;
+        }
+    }
+    
+
+    &.online {
+        .pulse {
+            background: $active-color;
+        }
+
     }
 
     &.offline {
-        span {
-            background: rgba($font-color-alert, 0.24);
-            span {
-                background: $font-color-alert;
-            }
+        .pulse {
+            background: $font-color-alert;
         }
+
+    }
+}
+@keyframes pulsing {
+    100% {
+        transform: scale(3.6);
+        opacity: 0;
     }
 }
 
@@ -91,6 +106,7 @@ $font-size-small: 12px;
     .items-box .status-row {
         margin-top: 15px;
     }
+
     .status-item {
         padding: 15px 24px;
         // padding: 12px 24px;
@@ -98,6 +114,7 @@ $font-size-small: 12px;
     }
 
 }
+
 @media all and (max-height:650px) {
     .status-item {
         padding: 12px 24px;

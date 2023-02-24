@@ -5,7 +5,6 @@
 }
 
 .volume-bar .volume {
-  width: 434px;
   height: 3px;
   display: flex;
   align-items: center;

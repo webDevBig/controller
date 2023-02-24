@@ -25,35 +25,44 @@
   width: 50%;
   margin: 0 0 0 auto;
 }
-.status span {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 14px 0 0;
-}
-.status span span {
+.status .pulse {
   width: 6px;
   height: 6px;
-  border-radius: 50%;
-  display: block;
-  margin: 0;
+  border-radius: 100%;
+  position: relative;
+  margin: 0 14px 0 0;
 }
-.status.online span {
-  background: rgba(65, 255, 180, 0.24);
+.status .ring {
+  position: absolute;
+  background-color: inherit;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  opacity: 0.4;
+  animation: pulsing 2.3s ease-out infinite;
 }
-.status.online span span {
+.status .ring:nth-of-type(1) {
+  animation-delay: -0.5s;
+}
+.status .ring:nth-of-type(2) {
+  animation-delay: -1s;
+}
+.status .ring:nth-of-type(3) {
+  animation-delay: -1.5s;
+}
+.status.online .pulse {
   background: #41FFB4;
 }
-.status.offline span {
-  background: rgba(255, 112, 112, 0.24);
-}
-.status.offline span span {
+.status.offline .pulse {
   background: #FF7070;
 }
 
+@keyframes pulsing {
+  100% {
+    transform: scale(3.6);
+    opacity: 0;
+  }
+}
 @media all and (max-height: 740px) {
   .items-box .status-row {
     margin-top: 15px;
