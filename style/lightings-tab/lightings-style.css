@@ -19,11 +19,11 @@
 }
 .lightings-content .lightings-clm .rectangle-btn {
   width: 216px;
-  font-size: 16px;
-  color: #52525A;
+  font-size: var(--font-size-regular2);
+  color: var(--icon-color);
 }
 .lightings-content .lightings-clm .rectangle-btn.active {
-  color: #41FFB4;
+  color: var(--active-color);
 }
 .lightings-content .title {
   margin: 0 0 16px;

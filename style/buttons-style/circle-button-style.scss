@@ -1,27 +1,3 @@
-$main-bg-color:#1E1E20;
-
-$font-family-bold: 'PlusJakartaSans-Bold',sans-serif;
-$font-family-SemiBold: 'PlusJakartaSans-SemiBold',sans-serif;
-$font-family-Medium: 'PlusJakartaSans-Medium',sans-serif;
-$font-family-Regular: 'PlusJakartaSans-Regular',sans-serif;
-
-$font-color: white;
-$icon-color:#52525A;
-$active-color:#41FFB4;
-$font-color-alert:#FF7070;
-$button-border-color:#313538;
-
-$climate-color1:#ADEBFF;
-$climate-color2:#FFADAD;
-
-$font-size-big3: 48px;
-$font-size-big2: 24px;
-$font-size-big1: 20px;
-$font-size-regular3: 18px;
-$font-size-regular2: 16px;
-$font-size-regular: 14px;
-$font-size-small: 12px;
-
 .circle-btn {
     border-radius: 50%;
     border: 1px solid #313538;
@@ -31,7 +7,7 @@ $font-size-small: 12px;
 
     &.active {
         i {
-            background-color: $active-color;
+            background-color: var(--active-color);
         }
     }
      &.no-icon {
@@ -45,7 +21,7 @@ $font-size-small: 12px;
         height: 24px;
         -webkit-mask-size: 24px;
         mask-size: 24px;
-        background-color: $font-color;
+        background-color: var(--font-color);
     }
 
     &.circle-bg-btn {
@@ -77,7 +53,7 @@ $font-size-small: 12px;
     align-items: center;
 
     .btn-title {
-        font-size: $font-size-regular;
+        font-size: var(--font-size-regular);
         line-height: 24px;
         font-weight: 500;
         margin: 16px 0 0;

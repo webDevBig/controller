@@ -1,3 +1,81 @@
+:root {
+  --background: #1E1E20;
+  --active-color: #41FFB4;
+  --font-color: white;
+  --icon-color: #52525A;
+  --font-color-alert: #FF7070;
+  --button-border-color: #313538;
+  --reset-color: #FFF7AD;
+  --climate-color1: #ADEBFF;
+  --climate-color2: #FFADAD;
+  --font-family-bold: "PlusJakartaSans-Bold", sans-serif;
+  --font-family-SemiBold: "PlusJakartaSans-SemiBold", sans-serif;
+  --font-family-Medium: "PlusJakartaSans-Medium", sans-serif;
+  --font-family-Regular: "PlusJakartaSans-Regular", sans-serif;
+  --font-size-big3: 48px;
+  --font-size-big2: 24px;
+  --font-size-big1: 20px;
+  --font-size-regular3: 18px;
+  --font-size-regular2: 16px;
+  --font-size-regular: 14px;
+  --font-size-small: 12px;
+}
+
+[data-theme=theme1] {
+  --background: #1E1E20;
+  --active-color: #41FFB4;
+}
+
+[data-theme=theme2] {
+  --background: #181818;
+  --active-color: #5DBADC;
+}
+
+[data-theme=theme3] {
+  --background: #181818;
+  --active-color: #5BACED;
+}
+
+[data-theme=theme4] {
+  --background: #181818;
+  --active-color: #7197FB;
+}
+
+[data-theme=theme5] {
+  --background: #181818;
+  --active-color: #89D9D6;
+}
+
+[data-theme=theme6] {
+  --background: #08090C;
+  --active-color: #8998F9;
+}
+
+[data-theme=theme7] {
+  --background: #101119;
+  --active-color: #8998F9;
+}
+
+[data-theme=theme8] {
+  --background: #181818;
+  --active-color: #F272AF;
+}
+
+[data-theme=theme9] {
+  --background: #181818;
+  --active-color: #98C966;
+}
+
+[data-theme=theme10] {
+  --background: #181818;
+  --active-color: #A985E0;
+}
+
+[data-theme=theme11] {
+  --background: #181818;
+  --active-color: #DEA768;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,15 +98,15 @@ a {
 button {
   background-color: transparent;
   background: transparent;
-  border-color: #313538;
+  border-color: var(--button-border-color);
   border: none;
   cursor: pointer;
-  color: white;
+  color: var(--font-color);
 }
 
 body {
-  font-family: "PlusJakartaSans-Medium", sans-serif;
-  color: white;
+  font-family: var(--font-family-Medium);
+  color: var(--font-color);
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -36,13 +114,13 @@ body {
 
 .title {
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--font-size-regular2);
   line-height: 24px;
 }
 
 .devise-title {
   font-weight: 500;
-  font-size: 18px;
+  font-size: var(--font-size-regular3);
   line-height: 24px;
 }
 
@@ -51,7 +129,7 @@ body {
   max-width: 1400px;
   height: 100%;
   max-height: 1024px;
-  background-color: #1E1E20;
+  background-color: var(--background);
   border-radius: 24px;
   display: flex;
   justify-content: flex-start;
@@ -118,7 +196,7 @@ body {
     height: calc(100% - 148px);
   }
   .title {
-    font-size: 14px;
+    font-size: var(--font-size-regular);
     line-height: 1;
   }
   .sources-content .source-box {

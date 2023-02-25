@@ -37,7 +37,7 @@
   width: 64px;
   height: 64px;
   margin: 12px 0;
-  font-size: 16px;
+  font-size: var(--font-size-regular2);
 }
 .source-page-content .rgby-btn-box {
   width: 100%;
@@ -51,7 +51,7 @@
 .source-page-content .rgby-btn-box .circle-btn {
   width: 48px;
   height: 48px;
-  font-size: 14px;
+  font-size: var(--font-size-regular);
 }
 .source-page-content .rgby-btn-box .circle-btn.r-btn {
   color: #FFADAD;

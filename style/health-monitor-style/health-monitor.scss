@@ -1,24 +1,3 @@
-$main-bg-color:#1E1E20;
-
-$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
-$font-family-Medium: 'PlusJakartaSans-Medium';
-$font-family-Regular: 'PlusJakartaSans-Regular';
-
-$font-color: white;
-$icon-color:#52525A;
-$active-color:#41FFB4;
-$font-color-alert:#FF7070;
-$button-border-color:#313538;
-
-$climate-color1:#ADEBFF;
-$climate-color2:#FFADAD;
-
-$font-size-big2: 48px;
-$font-size-big: 24px;
-$font-size-regular2: 16px;
-$font-size-regular: 14px;
-$font-size-small: 12px;
-
 .health-monitor-content {
     width: 100%;
     height: 100%;
@@ -45,10 +24,10 @@ $font-size-small: 12px;
         align-items: center;
 
         .health-monitor-subtitle {
-            font-size: $font-size-regular;
+            font-size: var(--font-size-regular);
             line-height: 24px;
             letter-spacing: -0.02em;
-            color: rgba($font-color, 0.48);
+            color: rgba(var(--font-color), 0.48);
         }
 
         .circle-btn {
@@ -62,7 +41,7 @@ $font-size-small: 12px;
             align-items: center;
 
             .temperature-number {
-                font-size: $font-size-big2;
+                font-size: var(--font-size-big2);
                 display: flex;
                 align-items: flex-start;
                 justify-content: center;
@@ -70,21 +49,22 @@ $font-size-small: 12px;
 
             sup {
                 opacity: 0.14;
-                font-size: $font-size-regular;
+                font-size: var(--font-size-regular);
             }
 
             .message {
-                font-size: $font-size-regular;
-                color: $font-color-alert;
+                font-size: var(--font-size-regular);
+                color: var(--font-color-alert);
                 font-weight: 700;
                 line-height: 18px;
                 margin: 12px 0 0;
                 padding: 0 13px 0 0;
             }
         }
-       
+
 
     }
+
     .needle {
         width: 50%;
         height: 20px;
@@ -96,7 +76,7 @@ $font-size-small: 12px;
         animation-delay: 1s;
         display: block;
         z-index: 0;
-    
+
         &::after {
             content: '';
             position: absolute;
@@ -107,11 +87,12 @@ $font-size-small: 12px;
             transform: rotate(45deg);
             top: 0;
             left: 30px;
-            border-left: 1px solid rgba($font-color, 0.06);
-            border-bottom: 1px solid rgba($font-color, 0.06);
+            border-left: 1px solid rgba(var(--font-color), 0.06);
+            border-bottom: 1px solid rgba(var(--font-color), 0.06);
         }
     }
 }
+
 .health-current-temp {
     width: 270px;
     height: 270px;
@@ -141,7 +122,19 @@ $font-size-small: 12px;
         border-radius: 50%;
     }
 
+    .booth-active-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        -webkit-mask: url(../../img/both-temp-active-bg.svg) no-repeat center;
+        mask: url(../../img/both-temp-active-bg.svg) no-repeat center;
+        left: 0;
+        top: 0;
+        background-color: var(--active-color);
+    }
 }
+
+
 
 @keyframes fourspeed3 {
     0% {
@@ -175,7 +168,7 @@ $font-size-small: 12px;
     .status-bar {
         width: 100%;
         height: 8px;
-        background: linear-gradient(90deg, $active-color 53%, $font-color-alert 47%);
+        background: linear-gradient(90deg, var(--active-color) 53%, var(--font-color-alert) 47%);
     }
 
     .status-row {

@@ -8,7 +8,7 @@
 .dashboard-content .circle-bg-btn {
   width: 130px;
   height: 130px;
-  font-size: 14px;
+  font-size: var(--font-size-regular);
   line-height: 24px;
   margin: 0 35px;
 }
@@ -25,7 +25,7 @@
   min-width: calc(28% - 48px);
 }
 .dashboard-clm .rectangle-btn {
-  font-size: 20px;
+  font-size: var(--font-size-big1);
   line-height: 24px;
   font-weight: 400;
 }
@@ -41,7 +41,7 @@
     margin: 0 20px;
   }
   .dashboard-content .rectangle-btn {
-    font-size: 18px;
+    font-size: var(--font-size-regular3);
     width: 141px;
     padding: 0 15px;
   }

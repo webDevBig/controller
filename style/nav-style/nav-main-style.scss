@@ -1,6 +1,3 @@
-$nav-bg-color:#1E1E20;
-$nav-border-color:white;
-
 .nav-bar {
     width: 72px;
     height: 100%;
@@ -8,7 +5,7 @@ $nav-border-color:white;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background: rgba($nav-bg-color, 0.3);
+    background: rgba(var(--background), 0.3);
     backdrop-filter: blur(128px);
     background-image: url(../../img/Lights.png);
     background-repeat: no-repeat;
@@ -21,8 +18,8 @@ $nav-border-color:white;
     border-image: 
       linear-gradient(
         to bottom, 
-        rgba($nav-border-color,0.28),
-        rgba($nav-border-color,0.04)
+        rgba(white,0.28),
+        rgba(white,0.04)
       ) 1 100%;
       border-left: 0px solid transparent;
 

@@ -1,27 +1,3 @@
-$main-bg-color:#1E1E20;
-
-$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
-$font-family-Medium: 'PlusJakartaSans-Medium';
-$font-family-Regular: 'PlusJakartaSans-Regular';
-
-$font-color: white;
-$icon-color:#52525A;
-$active-color:#41FFB4;
-$font-color-alert:#FF7070;
-$button-border-color:#313538;
-
-$climate-color1:#ADEBFF;
-$climate-color2:#FFADAD;
-
-$font-size-big2: 48px;
-$font-size-big: 24px;
-$font-size-regular3: 18px;
-$font-size-regular2: 16px;
-$font-size-regular: 14px;
-$font-size-small: 12px;
-
-
-
 .progector-content {
     width: 100%;
     height: 100%;
@@ -67,7 +43,7 @@ $font-size-small: 12px;
             mask-size: 24px;
 
             &.dowser-icon {
-                background-color: $icon-color;
+                background-color: var(--icon-color);
                 -webkit-mask: url(../../img/tab-icons/projector.svg) no-repeat center;
                 mask: url(../../img/tab-icons/projector.svg) no-repeat center;
 
@@ -81,7 +57,7 @@ $font-size-small: 12px;
             }
 
             &.lamp-icon {
-                background-color: $icon-color;
+                background-color: var(--icon-color);
                 -webkit-mask: url(../../img/projector-icons/lamp.svg) no-repeat center;
                 mask: url(../../img/projector-icons/lamp.svg) no-repeat center;
             }
@@ -91,9 +67,8 @@ $font-size-small: 12px;
 
             .dowser-icon,
             .lamp-icon {
-                background-color: $active-color;
+                background-color: var(--active-color);
             }
-
         }
 
         .title {
@@ -102,20 +77,19 @@ $font-size-small: 12px;
             span {
                 font-size: 14px;
                 line-height: 20px;
-                color: $icon-color;
+                color: var(--icon-color);
 
                 &.active {
-                    color: $active-color;
+                    color: var(--active-color);
                 }
 
                 &.storage {
-                    color: $active-color;
+                    color: var(--active-color);
                 }
 
                 &.inactive {
-                    color: $font-color-alert;
+                    color: var(--font-color-alert);
                 }
-
             }
         }
     }
@@ -216,8 +190,6 @@ $font-size-small: 12px;
 .loader::after {
     border-radius: 50%;
     border: 1px solid transparent;
-    //you can select color
-    // border: 3px solid #fff;
 }
 
 
@@ -226,8 +198,6 @@ $font-size-small: 12px;
     height: 24px;
     border-left-color: $font-color;
     position: relative;
-
-    //This controls the speed of the animation of all elements
     animation: rotate2 .7s linear infinite;
 
     &::before {
@@ -238,7 +208,7 @@ $font-size-small: 12px;
         transform: translate(-61%, -50%);
         width: 30px;
         height: 30px;
-        border-left-color: $active-color;
+        border-left-color: var(--active-color);
         animation: rotating 1.3s linear infinite;
     }
 
@@ -250,7 +220,7 @@ $font-size-small: 12px;
         transform: translate(-39%, -50%);
         width: 14px;
         height: 14px;
-        border-left-color: $font-color-alert;
+        border-left-color: var(--font-color-alert);
         animation: rotating 1s linear infinite;
     }
 }
@@ -279,7 +249,7 @@ $font-size-small: 12px;
 .loading::before,
 .loading::after {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-left-color: rgba($active-color, 0.4);
+    border-left-color: rgba(var(--active-color), 0.4);
     -webkit-border-radius: 999px;
     -moz-border-radius: 999px;
     border-radius: 999px;
@@ -377,7 +347,7 @@ $font-size-small: 12px;
             }
 
             .functional-title {
-                font-size: $font-size-regular;
+                font-size: var(--font-size-regular);
                 line-height: 1;
             }
         }

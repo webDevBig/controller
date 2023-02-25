@@ -16,7 +16,7 @@
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background: #41FFB4;
+  background: var(--active-color);
   pointer-events: none;
   cursor: pointer;
 }
@@ -26,7 +26,7 @@
 .range-slider__bar {
   bottom: 0;
   position: absolute;
-  background: linear-gradient(180deg, #41FFB4 9.76%, rgba(65, 255, 180, 0) 108.54%);
+  background: linear-gradient(180deg, var(--active-color) 9.76%, rgba(65, 255, 180, 0) 108.54%);
   pointer-events: none;
   width: 4px;
   border-radius: 8px;

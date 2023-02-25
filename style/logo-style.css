@@ -2,12 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--font-color);
   -webkit-mask-size: 24px;
   mask-size: 24px;
 }
 .logo-item.active .logo {
-  background-color: #41FFB4;
+  background-color: var(--active-color);
   -webkit-mask-size: 24px;
   mask-size: 24px;
 }/*# sourceMappingURL=logo-style.css.map */

@@ -47,7 +47,7 @@
   height: 100%;
   cursor: pointer;
   transition: all 0.3s linear;
-  background-color: #52525A;
+  background-color: var(--icon-color);
   -webkit-mask-size: 24px;
   mask-size: 24px;
 }
@@ -93,7 +93,7 @@
 }
 .content-nav-tabs li.active a:hover,
 .content-nav-tabs li.active a {
-  background-color: #41FFB4;
+  background-color: var(--active-color);
 }
 .content-nav-tabs li.active a:hover.content-tab-3,
 .content-nav-tabs li.active a.content-tab-3 {
@@ -119,7 +119,7 @@
 .content-tab-indicator {
   width: 56px;
   height: 4px;
-  background: #41FFB4;
+  background: var(--active-color);
   box-shadow: 0px 0px 24px rgba(0, 119, 254, 0.32);
   border-radius: 6px 6px 0px 0px;
   position: absolute;

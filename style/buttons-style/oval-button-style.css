@@ -1,15 +1,15 @@
 .oval-btn {
   width: 135px;
   padding: 15px 0px;
-  border: 1px solid #313538;
+  border: 1px solid var(--button-border-color);
   border-radius: 32px;
-  font-family: "PlusJakartaSans-SemiBold", sans-serif;
-  font-size: 14px;
+  font-family: var(--font-family-SemiBold);
+  font-size: var(--font-size-regular);
   line-height: 24px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--font-color);
 }
 .oval-btn img {
   max-width: 24px;
@@ -20,7 +20,7 @@
   .oval-btn {
     width: 135px;
     padding: 10px 0px;
-    font-size: 12px;
+    font-size: var(--font-size-small);
     line-height: 1;
   }
   .oval-btn img {

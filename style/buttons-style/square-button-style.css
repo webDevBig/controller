@@ -1,7 +1,7 @@
 .square-btn {
   width: 104px;
   height: 104px;
-  border: 1px solid #313538;
+  border: 1px solid var(--button-border-color);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@
 .square-btn i {
   width: 24px;
   height: 24px;
-  background-color: #52525A;
+  background-color: var(--icon-color);
   -webkit-mask-size: 24px;
   mask-size: 24px;
   margin: 0 16px 0 0;
@@ -34,9 +34,9 @@
   mask: url(../../img/climate-icon/circulate.svg) no-repeat center;
 }
 .square-btn.active {
-  background: linear-gradient(130.35deg, #313538 -8.16%, rgba(49, 53, 56, 0) 135.93%);
-  color: #41FFB4;
+  background: linear-gradient(130.35deg, var(--button-border-color) -8.16%, rgba(49, 53, 56, 0) 135.93%);
+  color: var(--active-color);
 }
 .square-btn.active i {
-  background-color: #41FFB4;
+  background-color: var(--active-color);
 }/*# sourceMappingURL=square-button-style.css.map */

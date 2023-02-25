@@ -921,6 +921,123 @@
                 <!-- climate tab DONE-->
                 <div id="tab-4" class="tab-pane">
                     <div class="climate-content">
+                        <div class="thermostat" id="thermostat-heat">
+                            <div class="bar">
+                                <div class="inner_bar"></div>
+                                <div class='hold left'>
+                                    <div class='fill fill1'></div>
+                                </div>
+                                <div class='hold right'>
+                                    <div class='fill fill2'></div>
+                                </div>
+                                <span>Heating</span>
+                            </div>
+                            <div class="shadow">
+                                <div class="shadow-cube"></div>
+                            </div>
+                            <div class="number">
+                                <span class="ext">40</span>
+                            </div>
+                            <div class="center">
+                                <span class="arrow minus-heat minus"><i class="material-icons">l</i></span>
+                                <span class="arrow plus-heat plus"><i class="material-icons">r</i></span>
+                                <div class="small">
+                                    <span class="heat">40</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="block current-temp">
+                                <div class="box"><button class="circle-btn circle-bg-btn">
+                                        <p class="number"><span class="current">24</span> <sup>°c</sup></p>
+                                        <p class="title">current<br>
+                                            temperature</p>
+                                    </button></div>
+                            </div>
+                            <div class="btn-box">
+                                <button class="square-btn active climate-btn"><i class="cooling"></i>Cooling</button>
+                                <button class="square-btn climate-btn"><i class="auto"></i>Auto</button>
+                                <button class="square-btn climate-btn"><i class="heating"></i>Heating</button>
+                                <button class="square-btn climate-btn"><i class="circulate"></i>Circulate</button>
+                            </div>
+                        </div>
+                        <div class="thermostat" id="thermostat-cool">
+                            <div class="bar">
+                                <div class="inner_bar"></div>
+                                <div class='hold left'>
+                                    <div class='fill fill3'></div>
+                                </div>
+                                <div class='hold right'>
+                                    <div class='fill fill4'></div>
+                                </div>
+                                <span>Cooling</span>
+                            </div>
+                            <div class="shadow">
+                                <div class="shadow-cube"></div>
+                            </div>
+                            <div class="number">
+                                <span class="ext">19</span>
+                            </div>
+                            <div class="center">
+                                <span class="arrow minus-cool"><i class="material-icons">keyboard_arrow_left</i></span>
+                                <span class="arrow plus-cool"><i class="material-icons">keyboard_arrow_right</i></span>
+                                <div class="small">
+                                    <span class="cool">19</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- <div id="tab-4" class="tab-pane">
+                    <div class="climate-content">
+                        <div class="temp-item">
+                            <button class="up-temp circle-btn"></button>
+                            <div class="temp-value">
+                                <p class="value heat"><span>24</span><sup>°c</sup></p>
+                                <p class="value-text heat">Heating<br>
+                                    Setpoint</p>
+                            </div>
+                            <button class="down-temp  circle-btn"></button>
+                        </div>
+                        <div class="box">
+                            <div class="block current-temp">
+                                <div class="box"><button class="circle-btn circle-bg-btn">
+                                        <p class="number"><span class="current">24</span> <sup>°c</sup></p>
+                                        <p class="title">current<br>
+                                            temperature</p>
+                                    </button></div>
+                                <svg class="svg">
+                                    <linearGradient id="gradientStyle" x1="0%" y1="27%" x2="100%" y2="23%" gradientTransform="rotate(0)">
+                                        <stop offset="50%" class="stop1"></stop>
+                                        <stop offset="100%" class="stop2"></stop>
+                                    </linearGradient>
+
+                                    <circle class="circle circle-container__progress" cx="135" cy="135" r="115.1"></circle>
+                                </svg>
+                            </div>
+                            <div class="btn-box">
+                                <button class="square-btn active climate-btn"><i class="cooling"></i>Cooling</button>
+                                <button class="square-btn climate-btn"><i class="auto"></i>Auto</button>
+                                <button class="square-btn climate-btn"><i class="heating"></i>Heating</button>
+                                <button class="square-btn climate-btn"><i class="circulate"></i>Circulate</button>
+                            </div>
+                        </div>
+                        <div class="temp-item">
+                            <button class="up-cool circle-btn up-temp"></button>
+                            <div class="temp-value">
+                                <p class="value cool"> <span>24</span> <sup>°c</sup></p>
+                                <p class="value-text cool">Cooling<br>
+                                    Setpoint</p>
+                            </div>
+                            <button class="down-cool circle-btn down-temp"></button>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div id="tab-4" class="tab-pane">
+                    <div class="climate-content">
                         <div class="temp-item">
                             <button class="up-temp circle-btn"></button>
                             <div class="temp-value">
@@ -951,15 +1068,15 @@
 
                                     <circle class="circle circle-container__progress" cx="135" cy="135" r="115.1" />
                                 </svg> -->
-                            </div>
+                <!-- </div>
                             <div class="btn-box">
                                 <button class="square-btn active climate-btn"><i class="cooling"></i>Cooling</button>
                                 <button class="square-btn climate-btn"><i class="auto"></i>Auto</button>
                                 <button class="square-btn climate-btn"><i class="heating"></i>Heating</button>
                                 <button class="square-btn climate-btn"><i class="circulate"></i>Circulate</button>
                             </div>
-                        </div>
-                        <!-- <div class="thermostat">
+                        </div> -->
+                <!-- <div class="thermostat">
                             <div class="bar">
                                 <div class='hold left'>
                                     <div class='fill fill1'></div>
@@ -973,7 +1090,7 @@
                                 <span class="ext">60</span>
                                 <span class="arrow plus">P</span>
                             </div>
-                        </div> -->
+                        </div> 
                         <div class="temp-item">
                             <button class="up-cool circle-btn up-temp"></button>
                             <div class="temp-value">
@@ -987,7 +1104,8 @@
                     </div>
 
 
-                </div>
+                </div> -->
+
 
                 <!-- settings tab  DONE-->
                 <div id="tab-5" class="tab-pane">
@@ -1125,6 +1243,7 @@
                                 <div class="box">
                                     <p class="title">Booth Temperature</p>
                                     <div class=" health-current-temp">
+                                        <i class="booth-active-img"></i>
                                         <div class="needle"></div>
                                         <button class="circle-btn circle-bg-btn">
                                             <p class="temperature-number"><span>23</span> <sup>°c</sup></p>

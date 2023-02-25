@@ -34,20 +34,20 @@
   height: 24px;
   -webkit-mask: url(../../img/power-resets.svg) no-repeat center;
   mask: url(../../img/power-resets.svg) no-repeat center;
-  background-color: #FFADAD;
+  background-color: var(--climate-color2);
   margin: 0 16px 0 0;
 }
 .power-resets-content .power-resets-item.active .power-resets-icon {
-  background-color: #41FFB4;
+  background-color: var(--active-color);
 }
 .power-resets-content .power-resets-item.power-resets-item-reset .power-resets-icon {
   -webkit-mask: url(../../img/refresh.svg) no-repeat center;
   mask: url(../../img/refresh.svg) no-repeat center;
-  background-color: #FFF7AD;
+  background-color: var(--reset-color);
 }
 .power-resets-content .power-resets-item .power-resets-name {
   font-weight: 600;
-  font-size: 14px;
+  font-size: var(--font-size-regular);
   line-height: 24px;
   letter-spacing: -0.02em;
 }
@@ -60,7 +60,7 @@
 
 @media all and (max-height: 800px) {
   .power-resets-content .power-resets-clm .title {
-    font-size: 12px;
+    font-size: var(--font-size-small);
     margin: 0 0 8px;
   }
   .power-resets-content .power-resets-item {
@@ -76,7 +76,7 @@
     mask-size: 20px;
   }
   .power-resets-content .power-resets-item .power-resets-name {
-    font-size: 12px;
+    font-size: var(--font-size-small);
     line-height: 1;
   }
   .power-resets-content .power-resets-item .oval-btn {

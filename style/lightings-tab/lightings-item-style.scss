@@ -1,31 +1,9 @@
-$main-bg-color:#1E1E20;
-
-$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
-$font-family-Medium: 'PlusJakartaSans-Medium';
-$font-family-Regular: 'PlusJakartaSans-Regular';
-
-$font-color: white;
-
-$icon-color:#52525A;
-$active-color:#41FFB4;
-$button-border-color:#313538;
-
-$climate-color1:#ADEBFF;
-$climate-color2:#FFADAD;
-
-$font-size-big: 24px;
-$font-size-regular2: 16px;
-$font-size-regular: 14px;
-$font-size-small: 12px;
-
 $volume-bar-color:#313538;
-$volume-bar-active-color: linear-gradient(180deg, #41FFB4 9.76%, rgba(65, 255, 180, 0) 108.54%);
-$volume-thumb-color:#41FFB4;
+$volume-bar-active-color: linear-gradient(180deg, var(--active-color) 9.76%, rgba(65, 255, 180, 0) 108.54%);
+$volume-thumb-color:var(--active-color);
 
 
 .lightings-item {
-    // width: 138px;
-    // height: 548px;
     width: calc(20% - 24px);
     background: #232326;
     border-radius: 24px;
@@ -34,19 +12,19 @@ $volume-thumb-color:#41FFB4;
     justify-content: flex-start;
     align-items: center;
     padding: 24px 21px;
-    color: $font-color;
+    color: var(--font-color);
     line-height: 24px;
     font-weight: 400;
 
     .lightings-item-title {
-        font-size: $font-size-regular;
+        font-size: var(--font-size-regular);
         text-align: center;
         opacity: 0.3;
     }
 
     .lightings-perc {
         font-weight: 600;
-        font-size: $font-size-small;
+        font-size: var(--font-size-small);
         letter-spacing: -0.02em;
     }
 

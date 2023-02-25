@@ -17,7 +17,7 @@
   align-items: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  background-color: #52525A;
+  background-color: var(--icon-color);
   -webkit-mask-size: 24px;
   mask-size: 24px;
 }
@@ -43,7 +43,7 @@
 }
 .nav-tabs li.active a,
 .nav-tabs li.active a:hover {
-  background-color: #41FFB4;
+  background-color: var(--active-color);
 }
 .nav-tabs li.active a.tab2,
 .nav-tabs li.active a:hover.tab2 {

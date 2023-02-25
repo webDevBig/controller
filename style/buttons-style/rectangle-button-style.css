@@ -3,7 +3,7 @@
   height: 72px;
   border-radius: 16px;
   position: relative;
-  color: white;
+  color: var(--font-color);
   padding: 0 24px;
   display: flex;
   justify-content: flex-start;
@@ -13,14 +13,14 @@
 .rectangle-btn i {
   width: 24px;
   height: 24px;
-  background-color: #52525A;
+  background-color: var(--icon-color);
   -webkit-mask-size: 24px;
   mask-size: 24px;
   margin: 0 16px 0 0;
 }
 .rectangle-btn.active {
   background: linear-gradient(130.35deg, #313538 -8.16%, rgba(49, 53, 56, 0) 135.93%);
-  color: #41FFB4;
+  color: var(--active-color);
 }
 .rectangle-btn.active::before {
   content: "";
@@ -28,7 +28,7 @@
   width: calc(100% - 1px);
   height: calc(100% - 1px);
   border: 1px solid transparent;
-  background: linear-gradient(133deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.04)) border-box;
+  background: linear-gradient(133deg, rgba(var(--font-color), 0.28), rgba(var(--font-color), 0.04)) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -37,5 +37,5 @@
   border-radius: 16px;
 }
 .rectangle-btn.active i {
-  background-color: #41FFB4;
+  background-color: var(--active-color);
 }/*# sourceMappingURL=rectangle-button-style.css.map */

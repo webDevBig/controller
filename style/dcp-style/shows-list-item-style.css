@@ -48,13 +48,13 @@
 }
 .shows-item .info-box .item-name {
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--font-size-regular2);
   line-height: 24px;
   letter-spacing: -0.02em;
 }
 .shows-item .info-box .item-time {
   font-weight: 500;
-  font-size: 12px;
+  font-size: var(--font-size-small);
   line-height: 24px;
   letter-spacing: -0.02em;
   color: #52525A;

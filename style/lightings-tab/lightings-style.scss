@@ -1,26 +1,3 @@
-$main-bg-color:#1E1E20;
-
-$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
-$font-family-Medium: 'PlusJakartaSans-Medium';
-$font-family-Regular: 'PlusJakartaSans-Regular';
-
-$font-color: white;
-
-$icon-color:#52525A;
-$active-color:#41FFB4;
-$button-border-color:#313538;
-
-$climate-color1:#ADEBFF;
-$climate-color2:#FFADAD;
-
-$font-size-big: 24px;
-$font-size-regular2: 16px;
-$font-size-regular: 14px;
-$font-size-small: 12px;
-
-
-
-
 .lightings-content {
     width: 100%;
     height: 100%;
@@ -42,11 +19,11 @@ $font-size-small: 12px;
 
         .rectangle-btn {
             width: 216px;
-            font-size: $font-size-regular2;
-            color: $icon-color;
+            font-size: var(--font-size-regular2);
+            color: var(--icon-color);
 
             &.active {
-                color: $active-color;
+                color: var(--active-color);
             }
         }
     }

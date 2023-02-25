@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: flex-start;
   font-weight: 600;
-  font-size: 14px;
+  font-size: var(--font-size-regular);
   line-height: 24px;
   letter-spacing: -0.02em;
 }
@@ -51,10 +51,10 @@
   animation-delay: -1.5s;
 }
 .status.online .pulse {
-  background: #41FFB4;
+  background: var(--active-color);
 }
 .status.offline .pulse {
-  background: #FF7070;
+  background: var(--font-color-alert);
 }
 
 @keyframes pulsing {

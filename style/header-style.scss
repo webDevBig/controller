@@ -1,28 +1,3 @@
-$main-bg-color:#1E1E20;
-
-$font-family-bold: 'PlusJakartaSans-Bold',sans-serif;
-$font-family-SemiBold: 'PlusJakartaSans-SemiBold',sans-serif;
-$font-family-Medium: 'PlusJakartaSans-Medium',sans-serif;
-$font-family-Regular: 'PlusJakartaSans-Regular',sans-serif;
-
-$font-color: white;
-$icon-color:#52525A;
-$active-color:#41FFB4;
-$font-color-alert:#FF7070;
-$button-border-color:#313538;
-
-$climate-color1:#ADEBFF;
-$climate-color2:#FFADAD;
-
-$font-size-big3: 48px;
-$font-size-big2: 24px;
-$font-size-big1: 20px;
-$font-size-regular3: 18px;
-$font-size-regular2: 16px;
-$font-size-regular: 14px;
-$font-size-small: 12px;
-
-
 header {
     width: 100%;
     display: flex;
@@ -72,16 +47,16 @@ header {
     min-width: 150px;
 
     .source-name {
-        font-family: $font-family-Regular;
+        font-family: var(--font-family-Regular);
         line-height: 28px;
-        font-size: $font-size-big2;
+        font-size: var(--font-size-big2);
     }
 
     .source-subtitle {
-        font-family: $font-family-Regular;
+        font-family: var(--font-family-Regular);
         line-height: 24px;
         opacity: 0.3;
-        font-size: $font-size-regular;
+        font-size: var(--font-size-regular);
         margin-top: 4px;
     }
 }
@@ -118,7 +93,7 @@ header {
     .title-box {
         .source-subtitle {
             line-height: 1;
-            font-size: $font-size-small;
+            font-size: var(--font-size-small);
         }
     }
 }

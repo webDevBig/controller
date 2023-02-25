@@ -1,28 +1,3 @@
-$main-bg-color:#1E1E20;
-
-$font-family-bold: 'PlusJakartaSans-Bold',sans-serif;
-$font-family-SemiBold: 'PlusJakartaSans-SemiBold',sans-serif;
-$font-family-Medium: 'PlusJakartaSans-Medium',sans-serif;
-$font-family-Regular: 'PlusJakartaSans-Regular',sans-serif;
-
-$font-color: white;
-$icon-color:#52525A;
-$active-color:#41FFB4;
-$font-color-alert:#FF7070;
-$button-border-color:#313538;
-
-$climate-color1:#ADEBFF;
-$climate-color2:#FFADAD;
-
-$font-size-big3: 48px;
-$font-size-big2: 24px;
-$font-size-big1: 20px;
-$font-size-regular3: 18px;
-$font-size-regular2: 16px;
-$font-size-regular: 14px;
-$font-size-small: 12px;
-
-
 .source-item {
     display: flex;
     flex-direction: column;
@@ -35,7 +10,7 @@ $font-size-small: 12px;
     cursor: pointer;
 
     .source-name {
-        font-family: $font-family-Regular;
+        font-family: var(--font-family-Regular);
         font-size: 20px;
         line-height: 24px;
     }
@@ -44,18 +19,18 @@ $font-size-small: 12px;
         width: 72px;
         height: 72px;
         margin: 0 0 48px;
-        background-color: $icon-color;
+        background-color: var(--icon-color);
     }
 
     &.active {
         background: linear-gradient(130.35deg, #313538 -8.16%, rgba(49, 53, 56, 0) 135.93%);
 
         .source-name {
-            color: $active-color;
+            color: var(--active-color);
         }
 
         .source-icon {
-            background-color: $active-color;
+            background-color: var(--active-color);
         }
     }
 }

@@ -21,14 +21,14 @@
   margin: 0 0 24px;
 }
 .masking-clm i {
-  background-color: #52525A;
+  background-color: var(--icon-color);
   -webkit-mask: url(../../img/projector-icons/maximize.svg) no-repeat center;
   mask: url(../../img/projector-icons/maximize.svg) no-repeat center;
   -webkit-mask-size: 24px;
   mask-size: 24px;
 }
 .masking-clm .aspect-btn.active i {
-  background-color: #41FFB4;
+  background-color: var(--active-color);
 }
 
 .masking-box {
@@ -47,14 +47,14 @@
   background: transparent;
 }
 .masking-box .rectangle-btn.active i {
-  background-color: #41FFB4;
+  background-color: var(--active-color);
 }
 .masking-box .rectangle-btn::before {
   display: none;
 }
 .masking-box .rectangle-btn i {
   margin: 0;
-  background-color: #52525A;
+  background-color: var(--icon-color);
 }
 .masking-box .bigger {
   -webkit-mask: url(../../img/masking-icon/pharagraphspacing.svg) no-repeat center;
@@ -123,7 +123,7 @@
 }
 .masking .masking-view .masking-view-value {
   font-weight: 500;
-  font-size: 24px;
+  font-size: var(--font-size-big);
   line-height: 28px;
 }
 .masking .masking-view.height-change {

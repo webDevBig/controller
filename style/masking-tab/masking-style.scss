@@ -1,26 +1,3 @@
-$main-bg-color:#1E1E20;
-
-$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
-$font-family-Medium: 'PlusJakartaSans-Medium';
-$font-family-Regular: 'PlusJakartaSans-Regular';
-
-$font-color: white;
-$icon-color:#52525A;
-$active-color:#41FFB4;
-$font-color-alert:#FF7070;
-$button-border-color:#313538;
-
-$climate-color1:#ADEBFF;
-$climate-color2:#FFADAD;
-
-$font-size-big2: 48px;
-$font-size-big: 24px;
-$font-size-regular3: 18px;
-$font-size-regular2: 16px;
-$font-size-regular: 14px;
-$font-size-small: 12px;
-
-
 .masking-content {
     width: 100%;
     height: 100%;
@@ -45,7 +22,7 @@ $font-size-small: 12px;
     }
 
     i {
-        background-color: $icon-color;
+        background-color: var(--icon-color);
         -webkit-mask: url(../../img/projector-icons/maximize.svg) no-repeat center;
         mask: url(../../img/projector-icons/maximize.svg) no-repeat center;
         -webkit-mask-size: 24px;
@@ -54,7 +31,7 @@ $font-size-small: 12px;
 
     .aspect-btn.active {
         i {
-            background-color: $active-color;
+            background-color: var(--active-color);
         }
     }
 }
@@ -76,7 +53,7 @@ $font-size-small: 12px;
             background: transparent;
 
             i {
-                background-color: $active-color;
+                background-color: var(--active-color)
             }
 
         }
@@ -87,7 +64,7 @@ $font-size-small: 12px;
 
         i {
             margin: 0;
-            background-color: $icon-color;
+            background-color: var(--icon-color);
         }
 
     }
@@ -168,7 +145,7 @@ $font-size-small: 12px;
 
         .masking-view-value {
             font-weight: 500;
-            font-size: $font-size-big;
+            font-size: var(--font-size-big);
             line-height: 28px;
         }
 

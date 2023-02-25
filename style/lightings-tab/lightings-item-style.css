@@ -7,18 +7,18 @@
   justify-content: flex-start;
   align-items: center;
   padding: 24px 21px;
-  color: white;
+  color: var(--font-color);
   line-height: 24px;
   font-weight: 400;
 }
 .lightings-item .lightings-item-title {
-  font-size: 14px;
+  font-size: var(--font-size-regular);
   text-align: center;
   opacity: 0.3;
 }
 .lightings-item .lightings-perc {
   font-weight: 600;
-  font-size: 12px;
+  font-size: var(--font-size-small);
   letter-spacing: -0.02em;
 }
 .lightings-item .lightings-bar {

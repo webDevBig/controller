@@ -1,28 +1,3 @@
-$main-bg-color:#1E1E20;
-
-$font-family-bold: 'PlusJakartaSans-Bold',sans-serif;
-$font-family-SemiBold: 'PlusJakartaSans-SemiBold',sans-serif;
-$font-family-Medium: 'PlusJakartaSans-Medium',sans-serif;
-$font-family-Regular: 'PlusJakartaSans-Regular',sans-serif;
-
-$font-color: white;
-$icon-color:#52525A;
-$active-color:#41FFB4;
-$font-color-alert:#FF7070;
-$button-border-color:#313538;
-
-$climate-color1:#ADEBFF;
-$climate-color2:#FFADAD;
-
-$font-size-big3: 48px;
-$font-size-big2: 24px;
-$font-size-big1: 20px;
-$font-size-regular3: 18px;
-$font-size-regular2: 16px;
-$font-size-regular: 14px;
-$font-size-small: 12px;
-
-
 $active-color-theme1:#41FFB4;
 $active-color-theme2:#5DBADC;
 $active-color-theme3:#5BACED;
@@ -48,18 +23,18 @@ $bg3-theme:#101119;
     &::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
         border-radius: 10px;
-        background-color: $button-border-color;
+        background-color: var(--button-border-color);
     }
 
     &::-webkit-scrollbar {
         width: 4px;
-        background-color: $button-border-color;
+        background-color: var(--button-border-color);
     }
 
     &::-webkit-scrollbar-thumb {
         border-radius: 10px;
         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-        background-color: $icon-color;
+        background-color: var(--icon-color);
     }
 }
 
@@ -77,15 +52,12 @@ $bg3-theme:#101119;
 
 .theme-item {
     border-radius: 20px;
-    // width: 235px;
-    // height: 232px;
-    // margin: 12px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     background: $bg1-theme;
-    border: 1px solid $button-border-color;
+    border: 1px solid var(--button-border-color);
     position: relative;
     padding: 24px;
     transition: all .3s;
@@ -102,7 +74,7 @@ $bg3-theme:#101119;
         width: 100%;
         height: 100%;
         border: 1px solid transparent;
-        background: linear-gradient(133deg, rgba($font-color, 0.28) 35%, rgba($font-color, 0) 80%) border-box;
+        background: linear-gradient(133deg, rgba(var(--font-color), 0.28) 35%, rgba(var(--font-color), 0) 80%) border-box;
         -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
         -webkit-mask-composite: xor;
         mask-composite: exclude;

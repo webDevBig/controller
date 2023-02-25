@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 .source-item .source-name {
-  font-family: "PlusJakartaSans-Regular", sans-serif;
+  font-family: var(--font-family-Regular);
   font-size: 20px;
   line-height: 24px;
 }
@@ -18,14 +18,14 @@
   width: 72px;
   height: 72px;
   margin: 0 0 48px;
-  background-color: #52525A;
+  background-color: var(--icon-color);
 }
 .source-item.active {
   background: linear-gradient(130.35deg, #313538 -8.16%, rgba(49, 53, 56, 0) 135.93%);
 }
 .source-item.active .source-name {
-  color: #41FFB4;
+  color: var(--active-color);
 }
 .source-item.active .source-icon {
-  background-color: #41FFB4;
+  background-color: var(--active-color);
 }/*# sourceMappingURL=source-item-style.css.map */

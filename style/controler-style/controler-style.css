@@ -28,10 +28,10 @@
   height: 24px;
   -webkit-mask-size: 24px;
   mask-size: 24px;
-  background-color: white;
+  background-color: var(--font-color);
 }
 .player-controler .circle-btn.active i {
-  background-color: #41FFB4;
+  background-color: var(--active-color);
 }
 
 @media all and (max-width: 1220px) {

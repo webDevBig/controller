@@ -1,24 +1,3 @@
-$main-bg-color:#1E1E20;
-
-$font-family-SemiBold: 'PlusJakartaSans-SemiBold';
-$font-family-Medium: 'PlusJakartaSans-Medium';
-$font-family-Regular: 'PlusJakartaSans-Regular';
-
-$font-color: white;
-
-$icon-color:#52525A;
-$active-color:#41FFB4;
-$button-border-color:#313538;
-
-$climate-color1:#ADEBFF;
-$climate-color2:#FFADAD;
-
-$font-size-big: 24px;
-$font-size-regular2: 16px;
-$font-size-regular: 14px;
-$font-size-small: 12px;
-
-
 .lightings-slider {
     width: 786px;
 }
@@ -84,7 +63,7 @@ $font-size-small: 12px;
     .swiper-pagination-bullet {
         width: 8px;
         height: 8px;
-        background: $icon-color;
+        background: var(--icon-color);
         border-radius: 19px;
         margin: 0 2px;
         transition: all .3s;
@@ -92,7 +71,7 @@ $font-size-small: 12px;
 
         &.swiper-pagination-bullet-active {
             width: 16px;
-            background: $active-color;
+            background: var(--active-color);
 
             &:active,
             &:focus {
@@ -109,6 +88,4 @@ $font-size-small: 12px;
             box-shadow: none;
         }
     }
-
-
 }

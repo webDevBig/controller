@@ -1,49 +1,25 @@
-// // up climate
-var upTempCool = document.querySelector('.up-cool');
-var needleCool = document.querySelector('.cool-needle');
+// // // up climate
+// var upTempCool = document.querySelector('.up-cool');
+// var needleCool = document.querySelector('.cool-needle');
 
+// upTempCool.addEventListener("click", upTempCoolClick, false);
 
-var el = document.getElementById("complex-transform");
-var st = window.getComputedStyle(el, null);
-var tr = st.getPropertyValue("transform") ||
-         "fail...";
+// function upTempCoolClick() {
+//     var value = el.parentElement.querySelector('.value span');
+//     const oldValue = parseFloat(el.parentElement.querySelector('.value span').textContent);
 
-         var values = tr.split('(')[1];
-    values = values.split(')')[0];
-    values = values.split(',');
-var a = values[0];
-var b = values[1];
-var c = values[2];
-var d = values[3];
+//     let newVal;
+//     if (oldValue < 100) {
+//         newVal = oldValue + 1;
+//     } else {
+//         newVal = 100;
+//     }
 
-var scale = Math.sqrt(a*a + b*b);
+//     value.innerHTML = newVal;
+//     let numElement = document.querySelector('.number span');
+//     numElement.innerText = newVal;
 
-// arc sin, convert from radians to degrees, round
-// DO NOT USE: see update below
-var sin = b/scale;
-var angle = Math.round(Math.asin(sin) * (180/Math.PI));
-
-// works!
-console.log('Rotate: ' + angle + 'deg');
-
-upTempCool.addEventListener("click", upTempCoolClick, false);
-
-function upTempCoolClick() {
-    var value = el.parentElement.querySelector('.value span');
-    const oldValue = parseFloat(el.parentElement.querySelector('.value span').textContent);
-
-    let newVal;
-    if (oldValue < 100) {
-        newVal = oldValue + 1;
-    } else {
-        newVal = 100;
-    }
-
-    value.innerHTML = newVal;
-    let numElement = document.querySelector('.number span');
-    numElement.innerText = newVal;
-    
-}
+// }
 
 // // down climate
 // var downTemp = document.querySelectorAll('.down-temp');
@@ -94,57 +70,57 @@ function upTempCoolClick() {
 
 
 
-// // Set initial values
-// var gradi = document.querySelector(".ext").textContent;
-// console.log(gradi)
-// // var max = 99;
-// // var min = 2;
 
-// // Define function to update display
-// function updateGr() {
-//     document.querySelector(".heat").textContent = gradi;
-//     document.querySelector(".ext").textContent = gradi;
-//     // document.querySelector(".number").style.transform = "translate(-50%, -50%) rotate(" + (gradi * 10) + "deg)";
-//     // document.querySelector(".shadow").style.transform = "translate(-50%, -50%) rotate(" + (-180 + gradi * 10) + "deg)";
-//     document.querySelector(".fill").style.animation = "none";
-//     // document.querySelector(".shadow").style.animation = "none";
-// }
 
-// // Add event listener for minus button
-// document.querySelector(".minus").addEventListener("mousedown", function () {
-//     if (gradi > min) {
-//         gradi--;
-//         updateGr();
-//         if (gradi >= 18) {
-//             document.querySelector(".fill1").style.transform = "rotate(" + (gradi - 18) * 10 + "deg)";
-//             document.querySelector(".fill1").style.transitionDelay = "0s";
-//         } else if (gradi == 17) {
-//             document.querySelector(".fill2").style.transform = "rotate(" + gradi * 10 + "deg)";
-//             document.querySelector(".fill2").style.transitionDelay = "0.5s";
-//         } else {
-//             document.querySelector(".fill2").style.transform = "rotate(" + gradi * 10 + "deg)";
-//             document.querySelector(".fill2").style.transitionDelay = "0s";
-//         }
-//     }
-// });
+// Define function to update display
+function updateGr() {
+    var gradi = 40;
+    document.querySelector(".heat").textContent = gradi;
+    document.querySelector(".ext").textContent = gradi;
+    document.querySelector("#thermostat-heat .number").style.transform = "translate(-50%, -50%) rotate(" + (-180 + gradi * 10) + "deg)";
+    document.querySelector("#thermostat-heat .shadow").style.transform = "translate(-50%, -50%) rotate(" + (-180 + gradi * 10) + "deg)";
+    document.querySelector("#thermostat-heat .fill").style.animation = "none";
+    document.querySelector("#thermostat-heat .shadow").style.animation = "none";
+}
 
-// // Add event listener for plus button
-// document.querySelector(".up-cool").addEventListener("mousedown", function () {
-//     var max = 99,
-//     min = 59;
-//     if (gradi < max) {
-//         gradi++;
-//         updateGr();
-//         document.querySelector(".fill1").style.transform = "rotate(-" + (gradi - 18) * 10 + "deg)";
-//         document.querySelector(".fill1").style.transitionDelay = "1s";
-//     }
-// });
-// // Add event listener for plus button
-// document.querySelector(".down-cool").addEventListener("mousedown", function () {
-//     if (gradi <= max) {
-//         gradi--;
-//         updateGr();
-//         document.querySelector(".fill1").style.transform = "rotate(-" + (gradi - 18) * 10 + "deg)";
-//         document.querySelector(".fill1").style.transitionDelay = "0s";
-//     }
-// });
+// Add event listener for minus button
+document.querySelector(".minus-heat").addEventListener("mousedown", function () {
+    var gradi = 40;
+    var max = 99;
+    var min = 38;
+    if (gradi > min) {
+        gradi--;
+        updateGr();
+        if (gradi >= 39) {
+            document.querySelector(".fill1").style.transform = "rotate(" + (gradi - 39) * 10 + "deg)";
+            document.querySelector(".fill1").style.transitionDelay = "0s";
+        } else if (gradi == 17) {
+            document.querySelector(".fill2").style.transform = "rotate(" + gradi * 10 + "deg)";
+            document.querySelector(".fill2").style.transitionDelay = "0.5s";
+        } else {
+            document.querySelector(".fill2").style.transform = "rotate(" + gradi * 10 + "deg)";
+            document.querySelector(".fill2").style.transitionDelay = "0s";
+        }
+    }
+});
+
+// Add event listener for plus button
+document.querySelector(".plus-heat").addEventListener("mousedown", function () {
+    var gradi = 40;
+    var max = 99;
+    var min = 38;
+    if (gradi < max) {
+        gradi++;
+        updateGr();
+        if (gradi > 40) {
+            document.querySelector(".fill1").style.transform = "rotate(" + (gradi - 39) * 10 + "deg)";
+            document.querySelector(".fill1").style.transitionDelay = "0s";
+        } else if (gradi == 40) {
+            document.querySelector(".fill1").style.transform = "rotate(" + (gradi - 39) * 10 + "deg)";
+            document.querySelector(".fill1").style.transitionDelay = "1s";
+        } else {
+            document.querySelector(".fill2").style.transform = "rotate(" + gradi * 10 + "deg)";
+            document.querySelector(".fill2").style.transitionDelay = "0s";
+        }
+    }
+});

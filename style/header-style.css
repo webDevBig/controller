@@ -41,15 +41,15 @@ header .circle-btn.power-btn {
   min-width: 150px;
 }
 .title-box .source-name {
-  font-family: "PlusJakartaSans-Regular", sans-serif;
+  font-family: var(--font-family-Regular);
   line-height: 28px;
-  font-size: 24px;
+  font-size: var(--font-size-big2);
 }
 .title-box .source-subtitle {
-  font-family: "PlusJakartaSans-Regular", sans-serif;
+  font-family: var(--font-family-Regular);
   line-height: 24px;
   opacity: 0.3;
-  font-size: 14px;
+  font-size: var(--font-size-regular);
   margin-top: 4px;
 }
 
@@ -77,6 +77,6 @@ header .circle-btn.power-btn {
   }
   .title-box .source-subtitle {
     line-height: 1;
-    font-size: 12px;
+    font-size: var(--font-size-small);
   }
 }/*# sourceMappingURL=header-style.css.map */
