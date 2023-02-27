@@ -111,4 +111,9 @@
 .clear-btn {
   -webkit-mask: url(../../img/button-icon/clear.svg) no-repeat center;
   mask: url(../../img/button-icon/clear.svg) no-repeat center;
+}
+
+.eject-btn {
+  -webkit-mask: url(../../img/button-icon/eject.svg) no-repeat center;
+  mask: url(../../img/button-icon/eject.svg) no-repeat center;
 }/*# sourceMappingURL=icons-style.css.map */
