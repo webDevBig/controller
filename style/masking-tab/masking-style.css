@@ -152,21 +152,33 @@
   height: auto;
 }
 .masking .masking-view.aspect-ratio2 {
-  width: 1280px;
-  height: 960px;
+  width: 1000px;
+  height: 750px;
 }
 .masking .masking-view.aspect-ratio3 {
-  width: 1280px;
-  height: 720px;
+  width: 1000px;
+  height: 562.5px;
 }
 .masking .masking-view.aspect-ratio4 {
-  width: 1280px;
-  height: 640px;
+  width: 1000px;
+  height: 500px;
 }
 
 @media all and (max-width: 1000px) {
   .masking-content .rectangle-btn {
     width: 155px;
+  }
+  .masking-view.aspect-ratio2 {
+    width: 600px;
+    height: 450px;
+  }
+  .masking-view.aspect-ratio3 {
+    width: 600px;
+    height: 337.5px;
+  }
+  .masking-view.aspect-ratio4 {
+    width: 600px;
+    height: 300px;
   }
 }
 @media all and (max-height: 750px) {
@@ -194,6 +206,32 @@
   }
   .masking .masking-view {
     width: 300px;
+    height: 300px;
+  }
+  .masking .masking-view.aspect-ratio2 {
+    width: 890px;
+    height: 667.5px;
+  }
+  .masking .masking-view.aspect-ratio3 {
+    width: 890px;
+    height: 500.63px;
+  }
+  .masking .masking-view.aspect-ratio4 {
+    width: 890px;
+    height: 445px;
+  }
+}
+@media all and (max-width: 1000px) {
+  .masking .masking-view.aspect-ratio2 {
+    width: 600px;
+    height: 450px;
+  }
+  .masking .masking-view.aspect-ratio3 {
+    width: 600px;
+    height: 337.5px;
+  }
+  .masking .masking-view.aspect-ratio4 {
+    width: 600px;
     height: 300px;
   }
 }/*# sourceMappingURL=masking-style.css.map */
