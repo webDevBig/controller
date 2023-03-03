@@ -16,6 +16,9 @@
   justify-content: center;
   align-items: center;
 }
+.player-controler .circle-btn.controler-btn {
+  box-shadow: none;
+}
 .player-controler .circle-btn.eject-controler {
   position: absolute;
   left: 0;

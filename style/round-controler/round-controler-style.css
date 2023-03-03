@@ -9,6 +9,7 @@
   align-items: center;
   position: relative;
   margin: 0 auto;
+  overflow: hidden;
 }
 .round-controler::after {
   content: "";
@@ -37,6 +38,7 @@
   overflow: hidden;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 .round-controler .controler-btn {
   border: none;
@@ -51,10 +53,15 @@
   position: relative;
   z-index: 1;
   transition: all 0.3s;
+  overflow: hidden;
 }
-.round-controler .controler-btn:active, .round-controler .controler-btn.active {
+.round-controler .controler-btn:active, .round-controler .controler-btn.active, .round-controler .controler-btn:hover {
   background-color: var(--background);
   box-shadow: inset 4px 0px 16px rgba(0, 0, 0, 0.16);
+}
+.round-controler .controler-btn:focus, .round-controler .controler-btn:focus-visible {
+  box-shadow: none;
+  outline: none;
 }
 .round-controler .controler-btn img {
   width: 30px;

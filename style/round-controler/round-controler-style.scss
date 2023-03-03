@@ -9,6 +9,7 @@
     align-items: center;
     position: relative;
     margin: 0 auto;
+    overflow: hidden;
 
     &::after {
         content: "";
@@ -38,6 +39,7 @@
         overflow: hidden;
         position: relative;
         z-index: 1;
+        overflow: hidden;
 
     }
 
@@ -54,11 +56,19 @@
         position: relative;
         z-index: 1;
         transition: all .3s;
+        overflow: hidden;
 
         &:active,
-        &.active {
+        &.active,
+        &:hover {
             background-color: var(--background);
             box-shadow: inset 4px 0px 16px rgba(0, 0, 0, 0.16);
+            // overflow: hidden;
+        }
+        &:focus,
+        &:focus-visible {
+            box-shadow: none;
+            outline: none;
         }
 
         img {
