@@ -66,14 +66,26 @@
 .round-controler .controler-btn img {
   width: 30px;
 }
+.round-controler .controler-btn.top-controler {
+  border-radius: 0% 100% 0% 0%;
+}
 .round-controler .controler-btn.top-controler img {
   transform: translate3d(14px, -10px, 0px);
+}
+.round-controler .controler-btn.bottom-controler {
+  border-radius: 0% 0% 0% 100%;
 }
 .round-controler .controler-btn.bottom-controler img {
   transform: rotate(180deg) translate3d(12px, -11px, 0px);
 }
+.round-controler .controler-btn.left-controler {
+  border-radius: 0% 100% 0% 0%;
+}
 .round-controler .controler-btn.left-controler img {
   transform: rotate(-90deg) translate3d(13px, -8px, 0px);
+}
+.round-controler .controler-btn.right-controler {
+  border-radius: 0% 0% 100% 0%;
 }
 .round-controler .controler-btn.right-controler img {
   transform: rotate(90deg) translate3d(10px, -10px, 0px);
