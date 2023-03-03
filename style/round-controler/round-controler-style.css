@@ -78,7 +78,7 @@
   transform: rotate(180deg) translate3d(12px, -11px, 0px);
 }
 .round-controler .controler-btn.left-controler {
-  border-radius: 0% 100% 0% 0%;
+  border-radius: 100% 0% 0% 0%;
 }
 .round-controler .controler-btn.left-controler img {
   transform: rotate(-90deg) translate3d(13px, -8px, 0px);
