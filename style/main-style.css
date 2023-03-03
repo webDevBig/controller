@@ -89,6 +89,7 @@
   /* Old versions of Firefox */
   /* Internet Explorer/Edge */
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {

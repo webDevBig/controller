@@ -57,7 +57,6 @@
 }
 .round-controler .controler-btn:active, .round-controler .controler-btn.active, .round-controler .controler-btn:hover {
   background-color: var(--background);
-  box-shadow: inset 4px 0px 16px rgba(0, 0, 0, 0.16);
 }
 .round-controler .controler-btn:focus, .round-controler .controler-btn:focus-visible {
   box-shadow: none;
