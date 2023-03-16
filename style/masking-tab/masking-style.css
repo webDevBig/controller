@@ -133,8 +133,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
-  width: 388px;
-  height: 388px;
+  width: auto;
+  height: auto;
+  min-width: 388px;
+  min-height: 388px;
 }
 .masking .masking-view .masking-view-value {
   font-weight: 500;
@@ -149,19 +151,15 @@
 }
 .masking .masking-view.aspect-ratio1 {
   aspect-ratio: auto 1/1;
-  height: auto;
 }
 .masking .masking-view.aspect-ratio2 {
-  width: 1000px;
-  height: 750px;
+  aspect-ratio: auto 4/3;
 }
 .masking .masking-view.aspect-ratio3 {
-  width: 1000px;
-  height: 562.5px;
+  aspect-ratio: auto 16/9;
 }
 .masking .masking-view.aspect-ratio4 {
-  width: 1000px;
-  height: 500px;
+  aspect-ratio: auto 2.35/1;
 }
 
 @media all and (max-width: 1000px) {

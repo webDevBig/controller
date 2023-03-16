@@ -158,9 +158,12 @@
         background-size: cover;
 
         border-radius: 8px;
-        width: $w;
-        height: $h;
-        // aspect-ratio: auto 1 / 1;
+         width: auto;
+        height: auto;
+        min-width: 388px;
+        min-height: 388px;
+// this place when you can change speed. write a longer time and it will be executed more slowly.
+        // transition: all .5s;
 
         .masking-view-value {
             font-weight: 500;
@@ -177,35 +180,19 @@
         }
 
         &.aspect-ratio1 {
-            aspect-ratio: auto 1 / 1;
-            height: auto;
+           aspect-ratio: auto 1 / 1;
         }
 
         &.aspect-ratio2 {
-            // width: calc($w * 75);
-            // height: calc($h * 75);
-            // aspect-ratio: auto 4 / 3;
-            // height: auto;
-            width: 1000px;
-            height: 750px;
+          aspect-ratio: auto 4 / 3;
         }
 
         &.aspect-ratio3 {
-            // width: calc($w * 56);
-            // height: calc($h * 56);
-            // aspect-ratio: auto 16 / 9;
-            // height: auto;
-            width: 1000px;
-            height: 562.5px;
+            aspect-ratio: auto 16 / 9;
         }
 
         &.aspect-ratio4 {
-            // width: calc($w * 42);
-            // height: calc($h * 42);
-            // aspect-ratio: auto 2.35 / 1;
-            // height: auto;
-            width: 1000px;
-            height: 500px;
+            aspect-ratio: auto 2.35 / 1;
         }
     }
 }
