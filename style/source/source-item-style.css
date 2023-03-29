@@ -20,6 +20,10 @@
   margin: 0 0 48px;
   background-color: var(--icon-color);
 }
+.source-item .source-icon.apple-icon {
+  -webkit-mask-size: 72px;
+  mask-size: 72px;
+}
 .source-item.active {
   background: linear-gradient(130.35deg, #313538 -8.16%, rgba(49, 53, 56, 0) 135.93%);
 }

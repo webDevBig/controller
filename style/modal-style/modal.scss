@@ -36,7 +36,7 @@
         width: calc(100% - 1px);
         height: calc(100% - 1px);
         border: 1px solid transparent;
-        background: linear-gradient(312deg,#151525,  #343449) border-box;
+        background: linear-gradient(312deg, #151525, #343449) border-box;
         -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
         -webkit-mask-composite: xor;
         mask-composite: exclude;
@@ -55,6 +55,8 @@
         background-color: var(--active-color);
         -webkit-mask: url(../../img/source-icon/bluray.svg) no-repeat center;
         mask: url(../../img/source-icon/bluray.svg) no-repeat center;
+        -webkit-mask-size: 48px;
+        mask-size: 48px;
     }
 
     p {
@@ -99,6 +101,7 @@
     .stop2 {
         stop-color: rgba(30, 30, 32, 0.04);
     }
+
     .stop3 {
         stop-color: var(--font-color-alert);
     }
@@ -109,12 +112,11 @@
         stroke-dasharray: 300;
         animation: outline 1.7s cubic-bezier(0.1, 0, 0, 1) infinite;
 
-        &.circle-shutdown
-        {
+        &.circle-shutdown {
             stroke: url(#gradientStyleshutdown);
         }
-        &.circle-source
-        {
+
+        &.circle-source {
             stroke: url(#gradientStyleS);
         }
     }

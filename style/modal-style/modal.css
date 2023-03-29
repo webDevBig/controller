@@ -53,6 +53,8 @@
   background-color: var(--active-color);
   -webkit-mask: url(../../img/source-icon/bluray.svg) no-repeat center;
   mask: url(../../img/source-icon/bluray.svg) no-repeat center;
+  -webkit-mask-size: 48px;
+  mask-size: 48px;
 }
 #modal p {
   margin: 16px 0 48px;
