@@ -12,8 +12,8 @@
          el.classList.toggle('active');
          source_value.innerHTML = v;
          modalBackground.style.display = 'block';
-        //  source_img.setAttribute("src", "url(../../img/modal-icon/" + v + "-active.svg");
-         source_img.style.mask = 'url(../../img/source-icon/' + v + '.svg) no-repeat center;'
+         source_img.setAttribute("src", "url(../../img/modal-icon/" + v + "-active.svg");
+        //  source_img.style.mask = 'url(../../img/source-icon/' + v + '.svg) no-repeat center;'
 
          function page() {
             window.open(v + '.html', "_self")
