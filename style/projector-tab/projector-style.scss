@@ -196,7 +196,7 @@
 .loader {
     width: 24px;
     height: 24px;
-    border-left-color: $font-color;
+    border-left-color: var(--font-color);
     position: relative;
     animation: rotate2 .7s linear infinite;
 

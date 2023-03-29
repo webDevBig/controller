@@ -40,7 +40,7 @@
   mask-size: 24px;
 }
 .progector-content .projector-header-item .functional-icon.dowser-icon {
-  background-color: #52525A;
+  background-color: var(--icon-color);
   -webkit-mask: url(../../img/tab-icons/projector.svg) no-repeat center;
   mask: url(../../img/tab-icons/projector.svg) no-repeat center;
 }
@@ -51,13 +51,13 @@
   background-image: url(../../img/projector-icons/storage.svg);
 }
 .progector-content .projector-header-item .functional-icon.lamp-icon {
-  background-color: #52525A;
+  background-color: var(--icon-color);
   -webkit-mask: url(../../img/projector-icons/lamp.svg) no-repeat center;
   mask: url(../../img/projector-icons/lamp.svg) no-repeat center;
 }
 .progector-content .projector-header-item.active .dowser-icon,
 .progector-content .projector-header-item.active .lamp-icon {
-  background-color: #41FFB4;
+  background-color: var(--active-color);
 }
 .progector-content .projector-header-item .title {
   text-align: left;
@@ -65,16 +65,16 @@
 .progector-content .projector-header-item .title span {
   font-size: 14px;
   line-height: 20px;
-  color: #52525A;
+  color: var(--icon-color);
 }
 .progector-content .projector-header-item .title span.active {
-  color: #41FFB4;
+  color: var(--active-color);
 }
 .progector-content .projector-header-item .title span.storage {
-  color: #41FFB4;
+  color: var(--active-color);
 }
 .progector-content .projector-header-item .title span.inactive {
-  color: #FF7070;
+  color: var(--font-color-alert);
 }
 .progector-content .swiper {
   height: calc(100% - 164px);
@@ -158,7 +158,7 @@
 .loader {
   width: 24px;
   height: 24px;
-  border-left-color: white;
+  border-left-color: var(--font-color);
   position: relative;
   animation: rotate2 0.7s linear infinite;
 }
@@ -170,7 +170,7 @@
   transform: translate(-61%, -50%);
   width: 30px;
   height: 30px;
-  border-left-color: #41FFB4;
+  border-left-color: var(--active-color);
   animation: rotating 1.3s linear infinite;
 }
 .loader::after {
@@ -181,7 +181,7 @@
   transform: translate(-39%, -50%);
   width: 14px;
   height: 14px;
-  border-left-color: #FF7070;
+  border-left-color: var(--font-color-alert);
   animation: rotating 1s linear infinite;
 }
 
@@ -202,7 +202,7 @@
 .loading::before,
 .loading::after {
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-left-color: rgba(65, 255, 180, 0.4);
+  border-left-color: rgba(var(--active-color), 0.4);
   border-radius: 999px;
 }
 
@@ -270,7 +270,7 @@
     margin: 6px 0;
   }
   .progector-content .macros-btn .functional-title {
-    font-size: 14px;
+    font-size: var(--font-size-regular);
     line-height: 1;
   }
   .progector-content .swiper .swiper-wrapper {

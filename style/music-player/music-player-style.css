@@ -19,7 +19,7 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #41FFB4;
+  background-color: var(--active-color);
   cursor: pointer;
 }
 #player #timeline {
@@ -36,7 +36,7 @@
   height: 100%;
   background: #313538;
   border-radius: 16px;
-  background-image: linear-gradient(270deg, #41FFB4 9.76%, rgba(65, 255, 180, 0) 108.54%);
+  background-image: linear-gradient(270deg, var(--active-color) 9.76%, rgba(65, 255, 180, 0) 108.54%);
   background-size: 0% 100%;
   background-repeat: no-repeat;
   display: inline-block;
@@ -48,10 +48,10 @@
 }
 #player #currentTime,
 #player #durationTime {
-  font-size: 12px;
+  font-size: var(--font-size-small);
   line-height: 24px;
   text-align: center;
-  color: white;
+  color: var(--font-color);
 }
 #player #durationTime {
   color: #7D7D8E;

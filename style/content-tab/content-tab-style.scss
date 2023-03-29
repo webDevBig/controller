@@ -83,29 +83,18 @@
                 -webkit-mask: url(../../img/tab-icons/property.svg) no-repeat center 0%;
                 mask: url(../../img/tab-icons/property.svg) no-repeat center 0%;
             }
-
-
             &.content-tab-6 {
-                -webkit-mask: url(../../img/tab-icons/seating.svg) no-repeat center 0%;
-                mask: url(../../img/tab-icons/seating.svg) no-repeat center 0%;
-            }
-
-            &.content-tab-7 {
                 -webkit-mask: url(../../img/tab-icons/property.svg) no-repeat center 0%;
                 mask: url(../../img/tab-icons/property.svg) no-repeat center 0%;
             }
 
-            &.content-tab-8 {
-                -webkit-mask: url(../../img/tab-icons/frame.svg) no-repeat center 0%;
-                mask: url(../../img/tab-icons/frame.svg) no-repeat center 0%;
-            }
 
-            &.content-tab-9 {
+            &.content-tab-7 {
                 -webkit-mask: url(../../img/tab-icons/health.svg) no-repeat center 0%;
                 mask: url(../../img/tab-icons/health.svg) no-repeat center 0%;
             }
 
-            &.content-tab-10 {
+            &.content-tab-8 {
                 -webkit-mask: url(../../img/tab-icons/designtools.svg) no-repeat center 0%;
                 mask: url(../../img/tab-icons/designtools.svg) no-repeat center 0%;
             }
@@ -116,12 +105,6 @@
             a:hover,
             a {
                 background-color: var(--active-color);
-
-                // &.content-tab-2 {
-                //     -webkit-mask: url(../../img/tab-icons/masking-active.svg) no-repeat center 0%;
-                //     mask: url(../../img/tab-icons/masking-active.svg) no-repeat center 0%;
-                // }
-    
                 &.content-tab-3 {
                     -webkit-mask: url(../../img/tab-icons/volume-active.svg) no-repeat center 0%;
                     mask: url(../../img/tab-icons/volume-active.svg) no-repeat center 0%;
@@ -131,11 +114,7 @@
                     -webkit-mask: url(../../img/tab-icons/property-active.svg) no-repeat center 0%;
                     mask: url(../../img/tab-icons/property-active.svg) no-repeat center 0%;
                 }
-                &.content-tab-6 {
-                    -webkit-mask: url(../../img/tab-icons/seating-active.svg) no-repeat center 0%;
-                    mask: url(../../img/tab-icons/seating-active.svg) no-repeat center 0%;
-                }
-                &.content-tab-10 {
+                &.content-tab-8 {
                     -webkit-mask: url(../../img/tab-icons/designtools-active.svg) no-repeat center 0%;
                     mask: url(../../img/tab-icons/designtools-active.svg) no-repeat center 0%;
                 }

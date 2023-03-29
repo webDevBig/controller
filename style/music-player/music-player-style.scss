@@ -1,3 +1,5 @@
+$volume-bar-active-color: linear-gradient(270deg, var(--active-color) 9.76%, rgba(65, 255, 180, 0) 108.54%);
+
 #player {
     position: relative;
     width: 100%;
@@ -40,7 +42,7 @@
             height: 100%;
             background: #313538;
             border-radius: 16px;
-            background-image: var(--volume-bar-active-color);
+            background-image: $volume-bar-active-color;
             background-size: 0% 100%;
             background-repeat: no-repeat;
             display: inline-block;
@@ -60,7 +62,7 @@
         font-size: var(--font-size-small);
         line-height: 24px;
         text-align: center;
-        color: $font-color;
+        color: var(--font-color);
     }
 
     #durationTime {
