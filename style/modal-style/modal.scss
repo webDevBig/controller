@@ -53,11 +53,38 @@
         width: 48px;
         height: 48px;
         background-color: var(--active-color);
-        // -webkit-mask: url(../../img/source-icon/bluray.svg) no-repeat center;
-        // mask: url(../../img/source-icon/bluray.svg) no-repeat center;
-        background: url(../../img/source-icon/bluray.svg) no-repeat center;
         -webkit-mask-size: 48px;
         mask-size: 48px;
+
+        &.DCP {
+            -webkit-mask: url(../../img/source-icon/digital-cinema.svg) no-repeat center;
+            mask: url(../../img/source-icon/digital-cinema.svg) no-repeat center;
+        }
+
+        &.Blu-ray {
+            -webkit-mask: url(../../img/source-icon/bluray.svg) no-repeat center;
+            mask: url(../../img/source-icon/bluray.svg) no-repeat center;
+        }
+
+        &.Apple {
+            -webkit-mask: url(../../img/source-icon/icon-mac.svg) no-repeat center;
+            mask: url(../../img/source-icon/icon-mac.svg) no-repeat center;
+        }
+
+        &.Xbox {
+            -webkit-mask: url(../../img/source-icon/microsoft-xbox.svg) no-repeat center;
+            mask: url(../../img/source-icon/microsoft-xbox.svg) no-repeat center;
+        }
+
+        &.Nintendo {
+            -webkit-mask: url(../../img/source-icon/nintendo-switch.svg) no-repeat center;
+            mask: url(../../img/source-icon/nintendo-switch.svg) no-repeat center;
+        }
+
+        &.PS {
+            -webkit-mask: url(../../img/source-icon/sony-playstation.svg) no-repeat center;
+            mask: url(../../img/source-icon/sony-playstation.svg) no-repeat center;
+        }
     }
 
     p {
