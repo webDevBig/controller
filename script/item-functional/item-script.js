@@ -17,8 +17,8 @@
          function page() {
              window.open(v + '.html', "_self")
          }
-         // setTimeout(function () {
-         //     page()
-         // }, 2500);
+         setTimeout(function () {
+             page()
+         }, 2500);
      }
  });
