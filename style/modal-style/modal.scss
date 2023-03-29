@@ -53,8 +53,6 @@
         width: 48px;
         height: 48px;
         background-color: var(--active-color);
-        -webkit-mask-size: 48px;
-        mask-size: 48px;
 
         &.DCP {
             -webkit-mask: url(../../img/source-icon/digital-cinema.svg) no-repeat center;
@@ -85,6 +83,9 @@
             -webkit-mask: url(../../img/source-icon/sony-playstation.svg) no-repeat center;
             mask: url(../../img/source-icon/sony-playstation.svg) no-repeat center;
         }
+
+        -webkit-mask-size: 48px;
+        mask-size: 48px;
     }
 
     p {
