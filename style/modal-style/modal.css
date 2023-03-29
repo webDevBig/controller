@@ -47,8 +47,12 @@
 #modal span {
   color: var(--active-color);
 }
-#modal img {
+#modal i {
   width: 48px;
+  height: 48px;
+  background-color: var(--active-color);
+  -webkit-mask: url(../../img/source-icon/bluray.svg) no-repeat center;
+  mask: url(../../img/source-icon/bluray.svg) no-repeat center;
 }
 #modal p {
   margin: 16px 0 48px;

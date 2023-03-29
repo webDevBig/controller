@@ -49,8 +49,12 @@
         color: var(--active-color);
     }
 
-    img {
+    i {
         width: 48px;
+        height: 48px;
+        background-color: var(--active-color);
+        -webkit-mask: url(../../img/source-icon/bluray.svg) no-repeat center;
+        mask: url(../../img/source-icon/bluray.svg) no-repeat center;
     }
 
     p {
