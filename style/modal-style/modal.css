@@ -57,26 +57,38 @@
 #modal i.DCP {
   -webkit-mask: url(../../img/source-icon/digital-cinema.svg) no-repeat center;
   mask: url(../../img/source-icon/digital-cinema.svg) no-repeat center;
+  -webkit-mask-size: 48px;
+  mask-size: 48px;
 }
 #modal i.Blu-ray {
   -webkit-mask: url(../../img/source-icon/bluray.svg) no-repeat center;
   mask: url(../../img/source-icon/bluray.svg) no-repeat center;
+  -webkit-mask-size: 48px;
+  mask-size: 48px;
 }
 #modal i.Apple {
   -webkit-mask: url(../../img/source-icon/icon-mac.svg) no-repeat center;
   mask: url(../../img/source-icon/icon-mac.svg) no-repeat center;
+  -webkit-mask-size: 48px;
+  mask-size: 48px;
 }
 #modal i.Xbox {
   -webkit-mask: url(../../img/source-icon/microsoft-xbox.svg) no-repeat center;
   mask: url(../../img/source-icon/microsoft-xbox.svg) no-repeat center;
+  -webkit-mask-size: 48px;
+  mask-size: 48px;
 }
 #modal i.Nintendo {
   -webkit-mask: url(../../img/source-icon/nintendo-switch.svg) no-repeat center;
   mask: url(../../img/source-icon/nintendo-switch.svg) no-repeat center;
+  -webkit-mask-size: 48px;
+  mask-size: 48px;
 }
 #modal i.PS {
   -webkit-mask: url(../../img/source-icon/sony-playstation.svg) no-repeat center;
   mask: url(../../img/source-icon/sony-playstation.svg) no-repeat center;
+  -webkit-mask-size: 48px;
+  mask-size: 48px;
 }
 #modal p {
   margin: 16px 0 48px;
